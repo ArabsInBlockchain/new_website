@@ -5,6 +5,7 @@ import Hero from '@/components/home/Hero';
 import StatsBar from '@/components/home/StatsBar';
 import WhatWeDo from '@/components/home/WhatWeDo';
 import OpportunitiesTeaser from '@/components/home/OpportunitiesTeaser';
+import PartnersBar from '@/components/home/PartnersBar';
 import JoinCTA from '@/components/home/JoinCTA';
 
 type Props = { params: Promise<{ locale: string }> };
@@ -33,6 +34,7 @@ export default async function HomePage({ params }: Props) {
       <StatsBar />
       <WhatWeDo />
       <OpportunitiesTeaser />
+      <PartnersBar />
       <JoinCTA />
     </>
   );
