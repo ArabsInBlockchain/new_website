@@ -24,7 +24,7 @@
     "hero": {
       "arabicTitle": "العرب × بلوكتشين",
       "title": "Arabs in Blockchain",
-      "subtitle": "An open, borderless community empowering Arabs in blockchain — Arabic speakers, people of Arab origin, and people living in Arab countries",
+      "subtitle": "Built by Arabs, open to all — empowering the Arab world to thrive in blockchain domain.",
       "joinCta": "Join the Community",
       "eventsCta": "See Our Events"
     },
@@ -88,7 +88,7 @@
     },
     "join": {
       "title": "Your People Are Here",
-      "subtitle": "1,000+ members across 15+ countries. Come learn, connect, and find your place in the Arab Web3 world.",
+      "subtitle": "1,000+ members across 15+ countries. Come learn, connect, and find your place in the Web3 world.",
       "cta": "Join the Conversation"
     }
   },
@@ -270,7 +270,43 @@
   "speakers": {},
   "partners_data": {},
   "team": {},
-  "events_data": {},
+  "events_data": {
+    "cairo-community-meetup-2024": {
+      "title": "Cairo Community Meetup",
+      "description": "Our first in-person meetup of 2024 brought together blockchain enthusiasts from across Egypt for an evening of learning, Q&A, and networking.",
+      "location": "Cairo, Egypt"
+    },
+    "online-defi-workshop-2024": {
+      "title": "DeFi Deep Dive Workshop",
+      "description": "An online workshop for Arabic-speaking learners exploring DeFi protocols, liquidity, yield strategies, and the evolving decentralized finance landscape.",
+      "location": "Online (Zoom)"
+    },
+    "dubai-blockchain-week-2024": {
+      "title": "Dubai Blockchain Meetup",
+      "description": "A community gathering in Dubai during Blockchain Week, connecting Web3 builders and enthusiasts from across the Gulf region.",
+      "location": "Dubai, UAE"
+    },
+    "ethcc-brussels-side-event-2024": {
+      "title": "Arabs in Blockchain @ ETHcc 7",
+      "description": "Our side event at ETHcc 7 in Brussels — an evening for the Arab blockchain community attending the conference to connect and share ideas.",
+      "location": "Brussels, Belgium"
+    },
+    "devcon-7-side-event-2024": {
+      "title": "Arabs in Blockchain @ Devcon 7",
+      "description": "Our biggest side event to date at Devcon 7 in Bangkok — bringing together over 80 Arab and Arab-allied builders for an unforgettable night.",
+      "location": "Bangkok, Thailand"
+    },
+    "cairo-community-meetup-june-2026": {
+      "title": "Cairo Summer Meetup 2026",
+      "description": "Join us for our summer community meetup in Cairo — an open evening of talks, discussions, and networking for anyone interested in blockchain and Web3.",
+      "location": "Cairo, Egypt"
+    },
+    "online-ethereum-basics-2026": {
+      "title": "Ethereum Basics: Online Study Session",
+      "description": "A beginner-friendly online session covering Ethereum fundamentals — wallets, transactions, smart contracts, and how to get started in Web3.",
+      "location": "Online (Zoom)"
+    }
+  },
   "contributors": {},
   "common": {
     "loading": "Loading...",
