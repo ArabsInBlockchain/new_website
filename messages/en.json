@@ -1,0 +1,301 @@
+{
+  "metadata": {
+    "siteName": "Arabs in Blockchain",
+    "siteDescription": "An open, borderless community empowering Arabs in blockchain technology"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "events": "Events",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "community": "Community",
+    "opportunities": "Opportunities",
+    "partners": "Partners",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "join": "Join Us",
+    "toggleTheme": "Toggle theme",
+    "toggleLanguage": "Switch to Arabic",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "home": {
+    "hero": {
+      "arabicTitle": "العرب × بلوكتشين",
+      "title": "Arabs in Blockchain",
+      "subtitle": "An open, borderless community empowering Arabs in blockchain — Arabic speakers, people of Arab origin, and people living in Arab countries",
+      "joinCta": "Join the Community",
+      "eventsCta": "See Our Events"
+    },
+    "stats": {
+      "since": "Since",
+      "members": "500+ Members",
+      "events": "50+ Events",
+      "countries": "15+ Countries",
+      "partners": "20+ Partners"
+    },
+    "whatWeDo": {
+      "title": "What We Do",
+      "learn": {
+        "title": "Learn Together",
+        "description": "Study groups, workshops, and online AMAs for all experience levels"
+      },
+      "meet": {
+        "title": "Meet & Network",
+        "description": "Meetups in Egypt, UAE, MENA and globally at major conferences"
+      },
+      "represent": {
+        "title": "Represent Arabs in Web3",
+        "description": "Side events at Devcon, ETHcc, DevConnect and more"
+      }
+    },
+    "upcomingEvents": {
+      "title": "Upcoming Events",
+      "viewAll": "View All Events"
+    },
+    "opportunities": {
+      "title": "We Open Doors",
+      "tickets": {
+        "title": "Free Conference Tickets",
+        "description": "Access to global Web3 conferences"
+      },
+      "scholarships": {
+        "title": "Course Scholarships",
+        "description": "Learn from the best educators"
+      },
+      "grants": {
+        "title": "Grants & Funding",
+        "description": "Support for your projects and ideas"
+      },
+      "jobs": {
+        "title": "Job Opportunities",
+        "description": "Web3 jobs from our network"
+      },
+      "explore": "Explore Opportunities"
+    },
+    "partners": {
+      "title": "Trusted Partners & Sponsors"
+    },
+    "join": {
+      "title": "Ready to Join the Arab Blockchain Community?",
+      "subtitle": "Connect with Arab blockchain builders, learners, and leaders worldwide",
+      "cta": "Join on Telegram"
+    }
+  },
+  "events": {
+    "upcoming": {
+      "title": "Upcoming Events",
+      "subtitle": "Where the Arab blockchain community comes together"
+    },
+    "past": {
+      "title": "Past Events",
+      "subtitle": "Our journey so far"
+    },
+    "types": {
+      "all": "All Events",
+      "inPerson": "In-Person",
+      "online": "Online",
+      "sideEvent": "Side Event"
+    },
+    "card": {
+      "register": "Register Now",
+      "addToCalendar": "Add to Calendar",
+      "viewRecap": "View Recap",
+      "photos": "Photos"
+    },
+    "host": {
+      "title": "Want to host an event with us?",
+      "cta": "Contact Us"
+    },
+    "search": "Search events...",
+    "noResults": "No events found",
+    "gridView": "Grid view",
+    "listView": "List view"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Our story, mission, and the people behind the community",
+    "mission": {
+      "title": "Our Mission",
+      "body": "Arabs in Blockchain is an open, borderless community founded in 2020 to empower Arabs in blockchain technology — whether you're an Arabic speaker, of Arab origin, or living in an Arab country."
+    },
+    "whoWeWelcome": {
+      "title": "Who We Welcome",
+      "speakers": {
+        "title": "Arabic Speakers",
+        "description": "Anyone who speaks Arabic as their primary language"
+      },
+      "origin": {
+        "title": "Arab Origin",
+        "description": "People of Arab heritage from anywhere in the world"
+      },
+      "living": {
+        "title": "Living in Arab Countries",
+        "description": "Anyone residing in the Arab world"
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "openness": "Openness",
+      "education": "Education",
+      "empowerment": "Empowerment",
+      "community": "Community",
+      "identity": "Arab Identity",
+      "borderless": "Borderless"
+    },
+    "team": {
+      "title": "Core Team"
+    },
+    "timeline": {
+      "title": "Our Journey",
+      "2020": "Founded — Community launched on Telegram",
+      "2021": "First online workshops and study groups",
+      "2022": "First in-person meetups in Egypt and UAE",
+      "2023": "Side events at Devcon and ETHcc",
+      "2024": "Growing to 500+ members across 15+ countries"
+    },
+    "stats": {
+      "title": "Our Impact",
+      "members": "Members",
+      "events": "Events",
+      "countries": "Countries",
+      "since": "Since"
+    }
+  },
+  "community": {
+    "title": "Join the Community",
+    "subtitle": "Become part of the Arab blockchain movement",
+    "howItWorks": {
+      "title": "How to Join",
+      "step1": {
+        "title": "Click the Link",
+        "description": "Find our Telegram group link below"
+      },
+      "step2": {
+        "title": "Join Our Telegram",
+        "description": "The heart of our community"
+      },
+      "step3": {
+        "title": "Introduce Yourself!",
+        "description": "Tell us who you are and what you do"
+      }
+    },
+    "joinCta": "Join on Telegram",
+    "channels": {
+      "title": "Our Channels"
+    },
+    "opportunities": {
+      "title": "We Open Doors",
+      "subtitle": "Resources and opportunities for our community members",
+      "tickets": {
+        "title": "Free Conference Tickets",
+        "description": "We distribute free tickets to global Web3 conferences including Devcon, ETHcc, and more"
+      },
+      "scholarships": {
+        "title": "Course Scholarships",
+        "description": "Access to premium Web3 education resources and courses"
+      },
+      "grants": {
+        "title": "Grants & Funding",
+        "description": "Opportunities for grants and funding for your blockchain projects"
+      },
+      "jobs": {
+        "title": "Job Opportunities",
+        "description": "Curated Web3 jobs from our partner network"
+      }
+    }
+  },
+  "partners": {
+    "title": "Partners & Sponsors",
+    "subtitle": "Organizations that share our mission",
+    "current": "Current Partners",
+    "past": "Past Collaborations",
+    "types": {
+      "technology": "Technology",
+      "event": "Event",
+      "education": "Education",
+      "sponsor": "Sponsor"
+    },
+    "visitWebsite": "Visit Website",
+    "become": {
+      "title": "Become a Partner",
+      "subtitle": "Join us in empowering the Arab blockchain community",
+      "cta": "Get in Touch"
+    }
+  },
+  "gallery": {
+    "title": "Gallery",
+    "subtitle": "Moments from our community events",
+    "filters": {
+      "all": "All"
+    },
+    "loadMore": "Load More Photos",
+    "photoAlt": "Community event photo"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "We'd love to hear from you",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "subjects": {
+        "partnership": "Partnership",
+        "speaking": "Speaking",
+        "media": "Media",
+        "general": "General",
+        "other": "Other"
+      },
+      "message": "Message",
+      "submit": "Send Message",
+      "privacy": "Your information will only be used to respond to your inquiry.",
+      "success": "Message sent successfully! We'll get back to you soon.",
+      "error": "Failed to send message. Please try again."
+    },
+    "info": {
+      "title": "Contact Information",
+      "github": "Open Source on GitHub"
+    }
+  },
+  "speakers": {},
+  "partners_data": {},
+  "team": {},
+  "events_data": {},
+  "contributors": {},
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "close": "Close",
+    "open": "Open",
+    "previous": "Previous",
+    "next": "Next",
+    "backToHome": "Back to Home",
+    "openInNewTab": "Opens in a new tab",
+    "externalLink": "External link"
+  },
+  "footer": {
+    "tagline": "Connecting Arab Minds in Blockchain",
+    "quickLinks": "Quick Links",
+    "communityLinks": "Community",
+    "followUs": "Follow Us",
+    "copyright": "Arabs in Blockchain. Built by the community",
+    "openSource": "Open Source",
+    "privacy": "Privacy Policy",
+    "codeOfConduct": "Code of Conduct"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "subtitle": "The page you're looking for doesn't exist",
+    "backHome": "Back to Home",
+    "joinTelegram": "Join our Telegram"
+  },
+  "privacy": {
+    "title": "Privacy Policy"
+  },
+  "codeOfConduct": {
+    "title": "Code of Conduct"
+  }
+}

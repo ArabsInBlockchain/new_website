@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand */
+  --color-brand-violet: #3b1f8c;
+  --color-brand-gold: #f5a623;
+  --color-brand-teal: #00d4b4;
+  --color-brand-teal-dark: #003d5b;
+
+  /* Backgrounds */
+  --color-page: #0d0d1a;
+  --color-page-light: #f8f7ff;
+  --color-surface: #13132a;
+
+  /* Text */
+  --color-foreground: #e8e6f0;
+  --color-muted: #9b97b8;
+
+  /* Status */
+  --color-success: #22c55e;
+  --color-warning: #f59e0b;
+  --color-error: #f43f5e;
+
+  /* Event badges */
+  --color-badge-in-person: #16a34a;
+  --color-badge-online: #2563eb;
+  --color-badge-side-event: #7c3aed;
+
+  /* Fonts */
+  --font-sans: var(--font-space-grotesk);
+  --font-arabic: var(--font-cairo);
+  --font-mono: var(--font-jetbrains-mono);
+
+  /* Border radius */
+  --radius-card: 16px;
+  --radius-btn: 10px;
+  --radius-badge: 9999px;
+  --radius-input: 8px;
+  --radius-modal: 20px;
+}
+
+/* Gradients and shadows — referenced directly in components via CSS vars */
+:root {
+  --gradient-hero: linear-gradient(135deg, #0d0d1a 0%, #1a0f3c 50%, #0d0d1a 100%);
+  --gradient-cta: linear-gradient(135deg, #3b1f8c, #5b2fc0);
+  --gradient-gold: linear-gradient(135deg, #f5a623, #e8920f);
+  --gradient-card: linear-gradient(135deg, #13132a, #1e1640);
+  --gradient-stats: linear-gradient(90deg, #3b1f8c, #2d1870);
+
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-card-hover: 0 8px 40px rgba(59, 31, 140, 0.3);
+  --shadow-cta: 0 4px 20px rgba(59, 31, 140, 0.5);
+  --shadow-gold: 0 0 20px rgba(245, 166, 35, 0.2);
+  --shadow-nav: 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+/* Base */
+html {
+  background-color: #0d0d1a;
+  color: #e8e6f0;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-space-grotesk, system-ui, sans-serif);
+  min-height: 100vh;
+}
+
+/* Arabic: use Cairo and enforce RTL text rules */
+[dir="rtl"] body {
+  font-family: var(--font-cairo, system-ui, sans-serif);
+}
+
+[dir="rtl"] {
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+
+/* Focus rings */
+*:focus-visible {
+  outline: 2px solid #00d4b4;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
