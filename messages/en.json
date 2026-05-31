@@ -127,7 +127,7 @@
     "subtitle": "Our story, mission, and the people behind the community",
     "mission": {
       "title": "Our Mission",
-      "body": "Arabs in Blockchain is an open, borderless community founded in 2020 to empower Arabs in blockchain technology — whether you're an Arabic speaker, of Arab origin, or living in an Arab country."
+      "body": "Arabs in Blockchain is a borderless community dedicated to advancing Arab participation in Web3. We foster education, collaboration, and opportunity for Arabic speakers and Arabs globally, helping them go from enthusiasts to leaders in the blockchain space since 2020."
     },
     "whoWeWelcome": {
       "title": "Who We Welcome",
@@ -146,23 +146,23 @@
     },
     "values": {
       "title": "Our Values",
-      "openness": "Openness",
-      "education": "Education",
-      "empowerment": "Empowerment",
-      "community": "Community",
-      "identity": "Arab Identity",
-      "borderless": "Borderless"
+      "communityFirst": "Community First",
+      "collectiveLearning": "Collective Learning",
+      "arabExcellence": "Arab Excellence",
+      "trueInclusivity": "True Inclusivity",
+      "opportunityDriven": "Opportunity-Driven",
+      "transparencyTrust": "Transparency & Trust"
     },
     "team": {
       "title": "Core Team"
     },
     "timeline": {
       "title": "Our Journey",
-      "2020": "Founded — Community launched on Telegram",
-      "2021": "First online workshops and study groups",
-      "2022": "First in-person meetups in Egypt and UAE",
-      "2023": "Side events at Devcon and ETHcc",
-      "2024": "Growing to 500+ members across 15+ countries"
+      "2020": "Founded on Facebook, LinkedIn & Discord — launched our webinar series",
+      "2021": "Hosted the first Arab Blockchain Week — secured 25+ Consensys Academy scholarships — Telegram group launched, community building begins",
+      "2022": "First in-person event at the American University in Cairo",
+      "2024": "First side event in Cairo — introducing the concept to Egypt. First side event at a major global conference (ETHcc 7). Secured free Devcon Bangkok tickets for 20+ members, majority women and students.",
+      "2026": "Hosting IRL hub for Dev3pack Hack — uniting builders in Cairo for an intense, high-energy hacking experience"
     },
     "stats": {
       "title": "Our Impact",
