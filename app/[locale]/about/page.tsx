@@ -3,6 +3,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { Users, BookOpen, Zap, Heart, Compass, ShieldCheck } from 'lucide-react';
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.netlify.app';
+
 type Props = { params: Promise<{ locale: string }> };
 
 export function generateStaticParams() {
@@ -15,8 +17,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('title'),
     description: t('subtitle'),
-    alternates: { languages: { ar: '/ar/about', en: '/en/about' } },
-    openGraph: { type: 'website' },
+    alternates: {
+      canonical: `${SITE_URL}/${locale}/about`,
+      languages: {
+        ar: `${SITE_URL}/ar/about`,
+        en: `${SITE_URL}/en/about`,
+      },
+    },
+    openGraph: { type: 'website', url: `${SITE_URL}/${locale}/about` },
   };
 }
 

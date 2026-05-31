@@ -5,6 +5,8 @@ import { getUpcomingEvents, getPastEvents } from '@/lib/events';
 import EventsClient from '@/components/events/EventsClient';
 import type { EventDisplay } from '@/components/events/EventCard';
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.netlify.app';
+
 type Props = { params: Promise<{ locale: string }> };
 
 export function generateStaticParams() {
@@ -19,9 +21,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: t('upcoming.title'),
     description: t('upcoming.subtitle'),
     alternates: {
-      languages: { ar: '/ar/events', en: '/en/events' },
+      canonical: `${SITE_URL}/${locale}/events`,
+      languages: {
+        ar: `${SITE_URL}/ar/events`,
+        en: `${SITE_URL}/en/events`,
+      },
     },
-    openGraph: { type: 'website' },
+    openGraph: {
+      type: 'website',
+      url: `${SITE_URL}/${locale}/events`,
+    },
   };
 }
 
@@ -29,6 +38,33 @@ function badgeLabel(type: EventDisplay['type'], t: Awaited<ReturnType<typeof get
   if (type === 'in-person') return t('types.inPerson');
   if (type === 'online') return t('types.online');
   return t('types.sideEvent');
+}
+
+function buildEventsJsonLd(upcoming: EventDisplay[], siteUrl: string) {
+  if (upcoming.length === 0) return null;
+  return upcoming.map((event) => ({
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: event.title,
+    description: event.description,
+    startDate: event.time ? `${event.date}T${event.time}` : event.date,
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode:
+      event.type === 'online'
+        ? 'https://schema.org/OnlineEventAttendanceMode'
+        : 'https://schema.org/OfflineEventAttendanceMode',
+    location:
+      event.type === 'online'
+        ? { '@type': 'VirtualLocation', url: event.registration_url || siteUrl }
+        : { '@type': 'Place', name: event.location },
+    image: event.banner_image || undefined,
+    url: event.registration_url || `${siteUrl}/en/events`,
+    organizer: {
+      '@type': 'Organization',
+      name: 'Arabs in Blockchain',
+      url: siteUrl,
+    },
+  }));
 }
 
 export default async function EventsPage({ params }: Props) {
@@ -42,7 +78,6 @@ export default async function EventsPage({ params }: Props) {
 
   function toDisplay(slugs: ReturnType<typeof getUpcomingEvents>): EventDisplay[] {
     return slugs.map((meta) => {
-      // events_data may not yet have this slug — provide safe fallbacks
       let title = meta.slug;
       let description = '';
       let location = meta.platform ?? '';
@@ -64,9 +99,17 @@ export default async function EventsPage({ params }: Props) {
 
   const upcoming = toDisplay(getUpcomingEvents());
   const past = toDisplay(getPastEvents());
+  const eventsJsonLd = buildEventsJsonLd(upcoming, SITE_URL);
 
   return (
     <main>
+      {eventsJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventsJsonLd) }}
+        />
+      )}
+
       {/* Page header */}
       <div
         className="theme-always-dark px-4 py-16 text-center"

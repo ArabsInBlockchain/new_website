@@ -49,7 +49,7 @@ export async function generateMetadata({
     description: isAr
       ? 'مجتمع عربي مفتوح وغير ربحي لتمكين العرب في مجال بلوكتشين'
       : 'An open, borderless community empowering Arabs in blockchain technology',
-    metadataBase: new URL('https://arabsinblockchain.com'),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.netlify.app'),
     alternates: {
       languages: {
         ar: '/ar',
