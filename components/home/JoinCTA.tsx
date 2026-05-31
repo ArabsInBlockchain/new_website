@@ -19,8 +19,8 @@ export default function JoinCTA() {
       aria-label="Join the community"
     >
       <div className="mx-auto max-w-2xl">
-        <h2 className="text-3xl font-bold text-page md:text-4xl">{t('title')}</h2>
-        <p className="mt-4 text-page/80">{t('subtitle')}</p>
+        <h2 className="text-3xl font-bold text-on-gold md:text-4xl">{t('title')}</h2>
+        <p className="mt-4 text-on-gold/70">{t('subtitle')}</p>
         <div className="mt-8 flex flex-col items-center gap-4">
           <a
             href="https://t.me/ArabsInBlockchain"
@@ -30,7 +30,7 @@ export default function JoinCTA() {
             <Button
               variant="primary"
               size="lg"
-              className="bg-page text-brand-violet hover:bg-page/90 font-bold"
+              className="bg-white text-brand-violet hover:bg-white/90 font-bold shadow-md"
             >
               {t('cta')}
             </Button>

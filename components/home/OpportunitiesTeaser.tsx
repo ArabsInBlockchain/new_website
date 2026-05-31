@@ -36,7 +36,10 @@ export default function OpportunitiesTeaser() {
           ))}
         </div>
 
-        <div className="mt-10 text-center">
+        <div className="mt-12 text-center">
+          <p className="mb-6 text-sm text-muted italic max-w-xl mx-auto leading-relaxed">
+            {t('cultureNote')}
+          </p>
           <Link href={`/${locale}/community`}>
             <Button variant="outline" size="lg">{t('cta')}</Button>
           </Link>

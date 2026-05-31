@@ -31,6 +31,9 @@
   --font-arabic: var(--font-cairo);
   --font-mono: var(--font-jetbrains-mono);
 
+  /* Fixed text for always-gold sections (never changes with theme) */
+  --color-on-gold: #1a1040;
+
   /* Border radius */
   --radius-card: 16px;
   --radius-btn: 10px;

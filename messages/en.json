@@ -56,7 +56,8 @@
     },
     "opportunities": {
       "title": "The Community Has Your Back",
-      "intro": "Since 2020, this community has put members in rooms they wouldn't have found alone — free tickets to Devcon and DevConnect, 25+ scholarships to Consensys Academy Bootcamp, and connections to learning programs across the global Web3 ecosystem. It happened because people here pay attention and pass things along. That is the culture, and it keeps going.",
+      "intro": "Since 2020, this community has put members in rooms they wouldn't have found alone.",
+      "cultureNote": "It happened because people here pay attention and pass things along. That is the culture, and it keeps going.",
       "strip": {
         "item1": "🎟  Free tickets to Devcon",
         "item2": "🎟  Free tickets to DevConnect",
@@ -86,9 +87,9 @@
       "title": "Trusted Partners & Sponsors"
     },
     "join": {
-      "title": "Ready to Join the Arab Blockchain Community?",
-      "subtitle": "Connect with Arab blockchain builders, learners, and leaders worldwide",
-      "cta": "Join on Telegram"
+      "title": "Your People Are Here",
+      "subtitle": "1,000+ members across 15+ countries. Come learn, connect, and find your place in the Arab Web3 world.",
+      "cta": "Join the Conversation"
     }
   },
   "events": {
