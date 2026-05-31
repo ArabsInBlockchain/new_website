@@ -6,31 +6,12 @@ import Logo from '@/components/shared/Logo';
 const QUICK_LINKS = ['about', 'events', 'community', 'partners', 'gallery', 'contact'] as const;
 
 const SOCIAL_LINKS = [
-  {
-    label: 'Telegram',
-    href: 'https://t.me/ArabsInBlockchain',
-    icon: '/icons/telegram.svg',
-  },
-  {
-    label: 'X / Twitter',
-    href: 'https://x.com/ArabsInBC',
-    icon: '/icons/x.svg',
-  },
-  {
-    label: 'LinkedIn',
-    href: 'https://www.linkedin.com/company/arabs-in-blockchain/',
-    icon: '/icons/linkedin.svg',
-  },
-  {
-    label: 'Lu.ma',
-    href: 'https://luma.com/arabsInBlockchain',
-    icon: '/icons/luma.svg',
-  },
-  {
-    label: 'GitHub',
-    href: 'https://github.com',
-    icon: '/icons/github.svg',
-  },
+  { label: 'Telegram', href: 'https://t.me/ArabsInBlockchain', icon: '/icons/telegram.svg' },
+  { label: 'X / Twitter', href: 'https://x.com/ArabsInBC', icon: '/icons/x.svg' },
+  { label: 'LinkedIn', href: 'https://www.linkedin.com/company/arabs-in-blockchain/', icon: '/icons/linkedin.svg' },
+  { label: 'YouTube', href: 'https://www.youtube.com/channel/UC_5orftfcZkLNn5LmIPodAA', icon: '/icons/youtube.svg' },
+  { label: 'GitHub', href: 'https://github.com/ArabsInBlockchain', icon: '/icons/github.svg' },
+  { label: 'Lu.ma', href: 'https://luma.com/arabsInBlockchain', icon: '/icons/luma.svg' },
 ] as const;
 
 export default function Footer() {
@@ -141,7 +122,7 @@ export default function Footer() {
           <p className="text-xs text-muted">
             © {year} {t('copyright')} ·{' '}
             <a
-              href="https://github.com"
+              href="https://github.com/ArabsInBlockchain"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-brand-teal transition-colors"

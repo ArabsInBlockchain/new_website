@@ -199,6 +199,8 @@ Translated fields (name, title, bio) in `messages/[locale].json` under `speakers
 | Telegram (primary hub) | https://t.me/ArabsInBlockchain |
 | X / Twitter | https://x.com/ArabsInBC |
 | LinkedIn | https://www.linkedin.com/company/arabs-in-blockchain/ |
+| YouTube | https://www.youtube.com/channel/UC_5orftfcZkLNn5LmIPodAA |
+| GitHub | https://github.com/ArabsInBlockchain |
 | Events (Lu.ma) | https://luma.com/arabsInBlockchain |
 
 These are the canonical URLs — use them exactly when generating content, CTAs, or footer links.
