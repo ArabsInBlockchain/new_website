@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import Logo from '@/components/shared/Logo';
 
-const QUICK_LINKS = ['events'] as const;
+const QUICK_LINKS = ['about', 'events'] as const;
 
 const SOCIAL_LINKS = [
   { label: 'Telegram', href: 'https://t.me/ArabsInBlockchain', icon: '/icons/telegram.svg' },
