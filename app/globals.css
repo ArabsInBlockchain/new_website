@@ -46,6 +46,7 @@
   --gradient-gold: linear-gradient(135deg, #f5a623, #e8920f);
   --gradient-card: linear-gradient(135deg, #13132a, #1e1640);
   --gradient-stats: linear-gradient(90deg, #3b1f8c, #2d1870);
+  --opportunities-bg: rgba(59, 31, 140, 0.08);
 
   --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
   --shadow-card-hover: 0 8px 40px rgba(59, 31, 140, 0.3);
@@ -54,10 +55,27 @@
   --shadow-nav: 0 1px 0 rgba(255, 255, 255, 0.07);
 }
 
+/* Light mode overrides — toggled by .light-mode class on <html> */
+.light-mode {
+  --color-page: #f8f7ff;
+  --color-surface: #edeaf8;
+  --color-foreground: #1a1040;
+  --color-muted: #5c5880;
+
+  --gradient-hero: linear-gradient(135deg, #f8f7ff 0%, #ede8ff 50%, #f8f7ff 100%);
+  --gradient-card: linear-gradient(135deg, #edeaf8, #e2dcf5);
+  --gradient-stats: linear-gradient(90deg, #4c2ba8, #3a1f90);
+  --opportunities-bg: rgba(59, 31, 140, 0.05);
+
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.12);
+  --shadow-card-hover: 0 8px 40px rgba(59, 31, 140, 0.15);
+  --shadow-nav: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
 /* Base */
 html {
-  background-color: #0d0d1a;
-  color: #e8e6f0;
+  background-color: var(--color-page);
+  color: var(--color-foreground);
   font-size: 16px;
 }
 

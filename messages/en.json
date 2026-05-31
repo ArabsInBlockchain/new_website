@@ -56,24 +56,31 @@
     },
     "opportunities": {
       "title": "The Community Has Your Back",
-      "intro": "Since 2020, members of this community have shared free conference passes, scholarships, grants, and job leads — not because it was promised, but because that is the culture here. When someone finds something useful, they pass it along.",
+      "intro": "Since 2020, this community has put members in rooms they wouldn't have found alone — free tickets to Devcon and DevConnect, 25+ scholarships to Consensys Academy Bootcamp, and connections to learning programs across the global Web3 ecosystem. It happened because people here pay attention and pass things along. That is the culture, and it keeps going.",
+      "strip": {
+        "item1": "🎟  Free tickets to Devcon",
+        "item2": "🎟  Free tickets to DevConnect",
+        "item3": "📚  25+ free scholarships to Consensys Academy Bootcamp",
+        "item4": "🌍  Connections to global Web3 learning programs",
+        "note": "These happened. This is who we are."
+      },
       "tickets": {
         "title": "Free Tickets",
-        "description": "Members share free passes to major blockchain events when they come across them"
+        "description": "We've sent members to Devcon and DevConnect. When tickets come our way, the community gets first access."
       },
       "scholarships": {
-        "title": "Course Scholarships",
-        "description": "When scholarship opportunities come up, community members pass them along"
+        "title": "Learning Opportunities",
+        "description": "We watch the ecosystem and bring the best to Arab learners. It started with 25+ free Consensys Academy scholarships."
       },
       "grants": {
         "title": "Grants & Funding",
-        "description": "Members share grant leads and support each other through applications"
+        "description": "Members share grant leads and support each other through applications when they come up."
       },
       "jobs": {
         "title": "Job Opportunities",
-        "description": "Members pass along Web3 job openings and make introductions when they can"
+        "description": "Members pass along Web3 job openings and make introductions when they can."
       },
-      "explore": "Explore Opportunities"
+      "cta": "Join the Community"
     },
     "partners": {
       "title": "Trusted Partners & Sponsors"
