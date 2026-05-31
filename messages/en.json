@@ -30,24 +30,24 @@
     },
     "stats": {
       "since": "Since",
-      "members": "500+ Members",
-      "events": "50+ Events",
-      "countries": "15+ Countries",
-      "partners": "20+ Partners"
+      "telegram": "1K+ on Telegram",
+      "twitter": "600+ on X",
+      "linkedin": "2K+ on LinkedIn",
+      "luma": "1.5K+ on Lu.ma"
     },
     "whatWeDo": {
       "title": "What We Do",
       "learn": {
         "title": "Learn Together",
-        "description": "Study groups, workshops, and online AMAs for all experience levels"
+        "description": "Study sessions, workshops, and live Q&As — for every level, from curious to building"
       },
       "meet": {
         "title": "Meet & Network",
-        "description": "Community-organized meetups across Arab countries and globally at major blockchain conferences"
+        "description": "Community-run meetups across Arab countries and at major global blockchain conferences"
       },
       "represent": {
-        "title": "Represent Arabs in Web3",
-        "description": "Side events at Devcon, ETHcc, DevConnect and more"
+        "title": "Arabs in Web3",
+        "description": "We show up at Devcon, ETHcc, DevConnect, and more — so Arabs have a voice in this space"
       }
     },
     "upcomingEvents": {
@@ -55,22 +55,23 @@
       "viewAll": "View All Events"
     },
     "opportunities": {
-      "title": "We Open Doors",
+      "title": "The Community Has Your Back",
+      "intro": "Since 2020, members of this community have shared free conference passes, scholarships, grants, and job leads — not because it was promised, but because that is the culture here. When someone finds something useful, they pass it along.",
       "tickets": {
-        "title": "Free Conference Tickets",
-        "description": "Access to global Web3 conferences"
+        "title": "Free Tickets",
+        "description": "Members share free passes to major blockchain events when they come across them"
       },
       "scholarships": {
         "title": "Course Scholarships",
-        "description": "Learn from the best educators"
+        "description": "When scholarship opportunities come up, community members pass them along"
       },
       "grants": {
         "title": "Grants & Funding",
-        "description": "Support for your projects and ideas"
+        "description": "Members share grant leads and support each other through applications"
       },
       "jobs": {
         "title": "Job Opportunities",
-        "description": "Web3 jobs from our network"
+        "description": "Members pass along Web3 job openings and make introductions when they can"
       },
       "explore": "Explore Opportunities"
     },

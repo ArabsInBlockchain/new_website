@@ -20,6 +20,9 @@ export default function OpportunitiesTeaser() {
     <section className="px-4 py-20" style={{ background: 'rgba(59,31,140,0.08)' }}>
       <div className="mx-auto max-w-7xl md:px-8">
         <SectionTitle title={t('title')} centered />
+        <p className="mx-auto mb-10 max-w-2xl text-center text-sm text-muted leading-relaxed">
+          {t('intro')}
+        </p>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {ITEMS.map(({ key, icon: Icon }) => (
             <Card key={key} className="flex flex-col items-start gap-3">
