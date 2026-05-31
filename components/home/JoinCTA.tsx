@@ -15,12 +15,12 @@ export default function JoinCTA() {
 
   return (
     <section
-      className="px-4 py-20 text-center bg-page"
+      className="px-4 py-16 text-center bg-page"
       aria-label="Join the community"
     >
       {/* Gold accent divider */}
       <div
-        className="mx-auto mb-12"
+        className="mx-auto mb-8"
         style={{ width: 80, height: 2, background: 'var(--gradient-gold)', borderRadius: 2 }}
         aria-hidden
       />
@@ -56,7 +56,7 @@ export default function JoinCTA() {
                   alt={label}
                   width={size}
                   height={size}
-                  className="invert"
+                  className="invert [.light-mode_&]:invert-0 [.light-mode_&]:opacity-70"
                 />
               </a>
             ))}

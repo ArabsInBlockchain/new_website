@@ -12,10 +12,12 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 
 const variantClasses: Record<Variant, string> = {
   primary: 'bg-brand-violet text-foreground hover:opacity-90',
-  gold: 'text-page font-semibold hover:opacity-90',
+  /* text-on-gold is #1a1040 — a fixed CSS var that never changes with theme,
+     unlike text-page which becomes near-white in light mode */
+  gold: 'text-on-gold font-semibold hover:opacity-90',
   outline: 'border border-foreground/30 text-foreground hover:border-brand-teal hover:text-brand-teal',
   ghost: 'text-muted hover:text-foreground hover:bg-surface',
-  teal: 'bg-brand-teal text-page font-semibold hover:opacity-90',
+  teal: 'bg-brand-teal text-on-gold font-semibold hover:opacity-90',
 };
 
 const sizeClasses: Record<Size, string> = {

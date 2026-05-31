@@ -1,0 +1,17 @@
+{
+  "slug": "webinar-series-2020",
+  "type": "online",
+  "status": "past",
+  "date": "2020-06-01",
+  "time": "19:00",
+  "timezone": "Africa/Cairo",
+  "platform": "YouTube",
+  "conference": null,
+  "registration_url": "",
+  "recap_url": "https://www.youtube.com/playlist?list=PL-nGZ6Xa2xStRqsGvZEsTuTuZpbTDLGms",
+  "photos_count": 0,
+  "banner_image": "https://res.cloudinary.com/dcig9rsj0/image/upload/v1780235499/https_3A_2F_2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com_2Fpublic_2Fimages_2F795de405-6703-4b35-b70a-b8ce390d03aa_1600x931_p4q5ku.webp",
+  "tags": ["online", "webinar", "youtube", "education", "foundational"],
+  "speakers": [],
+  "contributors": []
+}

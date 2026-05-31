@@ -17,6 +17,9 @@
   --color-foreground: #e8e6f0;
   --color-muted: #9b97b8;
 
+  /* Adaptive heading accent: gold in dark, deep violet in light for contrast on white */
+  --color-card-title: #f5a623;
+
   /* Status */
   --color-success: #22c55e;
   --color-warning: #f59e0b;
@@ -32,7 +35,7 @@
   --font-arabic: var(--font-cairo);
   --font-mono: var(--font-jetbrains-mono);
 
-  /* Fixed text for always-gold sections (never changes with theme) */
+  /* Fixed text for always-gold sections — never changes with theme */
   --color-on-gold: #1a1040;
 
   /* Border radius */
@@ -52,6 +55,10 @@
   --gradient-stats: linear-gradient(90deg, #3b1f8c, #2d1870);
   --opportunities-bg: rgba(59, 31, 140, 0.08);
 
+  /* Card-specific tokens: subtle violet border in dark, more visible in light */
+  --color-card-bg: #13132a;
+  --color-card-border: rgba(59, 31, 140, 0.2);
+
   --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
   --shadow-card-hover: 0 8px 40px rgba(59, 31, 140, 0.3);
   --shadow-cta: 0 4px 20px rgba(59, 31, 140, 0.5);
@@ -66,14 +73,31 @@
   --color-foreground: #1a1040;
   --color-muted: #5c5880;
 
-  --gradient-hero: linear-gradient(135deg, #f8f7ff 0%, #ede8ff 50%, #f8f7ff 100%);
+  /* Card title switches to deep violet for contrast on white bg (gold → 2.4:1 fails WCAG) */
+  --color-card-title: #3b1f8c;
+
+  /* Hero stays dark — logo is white text, must remain readable */
+  --gradient-hero: linear-gradient(135deg, #1a0f3c 0%, #2d1060 50%, #1a0f3c 100%);
   --gradient-card: linear-gradient(135deg, #edeaf8, #e2dcf5);
   --gradient-stats: linear-gradient(90deg, #4c2ba8, #3a1f90);
   --opportunities-bg: rgba(59, 31, 140, 0.05);
 
-  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.12);
-  --shadow-card-hover: 0 8px 40px rgba(59, 31, 140, 0.15);
+  --color-card-bg: #ffffff;
+  --color-card-border: rgba(59, 31, 140, 0.14);
+
+  --shadow-card: 0 2px 16px rgba(59, 31, 140, 0.08);
+  --shadow-card-hover: 0 4px 24px rgba(59, 31, 140, 0.15);
   --shadow-nav: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+/*
+ * Sections that always sit on a dark background (hero, stats bar, footer)
+ * need dark-mode text values even when .light-mode is active on <html>.
+ * CSS custom props cascade from nearest ancestor — this class pins the values.
+ */
+.theme-always-dark {
+  --color-foreground: #e8e6f0;
+  --color-muted: #9b97b8;
 }
 
 /* Base */

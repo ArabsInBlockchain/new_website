@@ -7,7 +7,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import Logo from '@/components/shared/Logo';
 
-const NAV_LINKS = ['about', 'events', 'community', 'partners', 'gallery', 'contact'] as const;
+const NAV_LINKS = ['events'] as const;
 
 export default function Navbar() {
   const t = useTranslations('nav');
@@ -96,7 +96,7 @@ export default function Navbar() {
             href="https://t.me/ArabsInBlockchain"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden md:inline-flex items-center gap-2 rounded-btn px-4 py-2 text-sm font-semibold text-page transition-all hover:opacity-90 focus-visible:outline-brand-gold"
+            className="hidden md:inline-flex items-center gap-2 rounded-btn px-4 py-2 text-sm font-semibold text-on-gold transition-all hover:opacity-90 focus-visible:outline-brand-gold"
             style={{ background: 'var(--gradient-gold)', boxShadow: 'var(--shadow-cta)' }}
           >
             {t('join')}
@@ -138,7 +138,7 @@ export default function Navbar() {
                 href="https://t.me/ArabsInBlockchain"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex min-h-[44px] items-center justify-center rounded-btn px-4 text-sm font-semibold text-page"
+                className="flex min-h-[44px] items-center justify-center rounded-btn px-4 text-sm font-semibold text-on-gold"
                 style={{ background: 'var(--gradient-gold)' }}
               >
                 {t('join')}

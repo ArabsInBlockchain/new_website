@@ -1,0 +1,17 @@
+{
+  "slug": "0xcairo-tech-day-1-2024",
+  "type": "in-person",
+  "status": "past",
+  "date": "2024-01-27",
+  "time": "09:00",
+  "timezone": "Africa/Cairo",
+  "platform": null,
+  "conference": "Chainlink",
+  "registration_url": "",
+  "recap_url": "https://lu.ma/0xCairo",
+  "photos_count": 0,
+  "banner_image": "https://res.cloudinary.com/dcig9rsj0/image/upload/v1780234421/487044111_984818433836021_3003986036143841052_n_dgkks2.jpg",
+  "tags": ["cairo", "0xcairo", "tech-day", "blockchain", "chainlink", "zk-proofs", "education"],
+  "speakers": [],
+  "contributors": []
+}

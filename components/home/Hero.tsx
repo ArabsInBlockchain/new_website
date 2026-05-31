@@ -12,7 +12,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative flex min-h-screen items-center justify-center overflow-hidden px-4 text-center"
+      className="theme-always-dark relative flex min-h-screen items-center justify-center overflow-hidden px-4 text-center"
       style={{ background: 'var(--gradient-hero)' }}
       aria-label="Hero"
     >

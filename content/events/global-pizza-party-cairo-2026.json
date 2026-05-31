@@ -1,0 +1,17 @@
+{
+  "slug": "global-pizza-party-cairo-2026",
+  "type": "in-person",
+  "status": "past",
+  "date": "2026-05-22",
+  "time": "18:00",
+  "timezone": "Africa/Cairo",
+  "platform": null,
+  "conference": "PizzaDAO",
+  "registration_url": "",
+  "recap_url": "https://www.rsv.pizza/cairo",
+  "photos_count": 0,
+  "banner_image": "https://res.cloudinary.com/dcig9rsj0/image/upload/f_auto,q_auto/gpp-flyer-cmonm2teb0002ky0403c6c595_n87kgx",
+  "tags": ["cairo", "bitcoin", "pizza-day", "pizzadao", "ens", "community"],
+  "speakers": [],
+  "contributors": []
+}

@@ -25,9 +25,9 @@ export default function StatsBar() {
         >
           {/* Since year */}
           <li className="flex items-center gap-2">
-            <Calendar size={16} className="text-muted shrink-0" aria-hidden />
-            <span className="text-xs text-muted">{t('since')} </span>
-            <span className="text-sm font-bold text-brand-gold">2020</span>
+            <Calendar size={16} className="text-white/50 shrink-0" aria-hidden />
+            <span className="text-xs text-white/60">{t('since')} </span>
+            <span className="text-sm font-bold text-white">2020</span>
           </li>
 
           {/* Platform stats */}
@@ -46,10 +46,10 @@ export default function StatsBar() {
                   height={16}
                   className="opacity-50 group-hover:opacity-80 transition-opacity invert"
                 />
-                <span className="text-sm font-bold text-brand-gold">
+                <span className="text-sm font-bold text-white">
                   {t(`${key}.count`)}
                 </span>
-                <span className="text-xs text-muted">
+                <span className="text-xs text-white/60">
                   {t(`${key}.label`)}
                 </span>
               </a>

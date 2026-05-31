@@ -110,7 +110,7 @@
     "card": {
       "register": "Register Now",
       "addToCalendar": "Add to Calendar",
-      "viewRecap": "View Recap",
+      "viewRecap": "View more",
       "photos": "Photos"
     },
     "host": {
@@ -271,40 +271,125 @@
   "partners_data": {},
   "team": {},
   "events_data": {
-    "cairo-community-meetup-2024": {
-      "title": "Cairo Community Meetup",
-      "description": "Our first in-person meetup of 2024 brought together blockchain enthusiasts from across Egypt for an evening of learning, Q&A, and networking.",
+    "global-pizza-party-cairo-2026": {
+      "title": "2026 Global Pizza Party Cairo",
+      "description": "Celebrating Bitcoin Pizza Day with the global PizzaDAO movement — free pizza, crypto conversations, and a night honoring the 10,000 BTC transaction that started it all. Co-hosted with PizzaDAO, World Pizza Champions, and ENS.",
+      "location": "Sedra — 90th St. Branch, New Cairo, Egypt"
+    },
+    "dev3pack-hack-cairo-2026": {
+      "title": "Dev3pack Hack — Cairo Hub",
+      "description": "Arabs in Blockchain hosted the Cairo hub for Dev3pack Hack — bringing together local builders to collaborate, build, and compete in this global Web3 hackathon.",
+      "location": "Bosla Co-working Space, Dokki, Giza, Egypt"
+    },
+    "chainlink-convergence-mixer-2026": {
+      "title": "Build & Connect: Chainlink Convergence Mixer",
+      "description": "An evening mixer bringing together Cairo's blockchain builders for networking and discussions around the Chainlink ecosystem and Web3 development.",
+      "location": "Mercatura Forum, Cairo, Egypt"
+    },
+    "web3-compliance-meetup-2026": {
+      "title": "Build & Connect: Web3 Compliance Meetup",
+      "description": "A focused meetup exploring regulatory frameworks, compliance challenges, and the future of legal clarity in the Web3 space — with Cairo's blockchain community.",
+      "location": "Mercatura Forum, Cairo, Egypt"
+    },
+    "dune-cairo-meetup-2025": {
+      "title": "Build & Connect: Dune Cairo Meetup",
+      "description": "A deep dive into on-chain data analytics with Dune. Learn to query, visualize, and interpret blockchain data with Cairo's growing data community.",
+      "location": "Mercatura Forum, Cairo, Egypt"
+    },
+    "arab-connect-devcon-2025": {
+      "title": "Arab Connect @ Devconnect",
+      "description": "Our flagship side event at Devconnect in Buenos Aires — bringing together Arab builders, founders, and researchers from across the globe for an evening of connection.",
+      "location": "Buenos Aires, Argentina"
+    },
+    "road-to-sub0-cairo-2025": {
+      "title": "Road to sub0 — Builder Party Cairo",
+      "description": "A builder-focused gathering in Cairo ahead of Polkadot's sub0 conference, celebrating the local Web3 developer community and the Polkadot ecosystem.",
       "location": "Cairo, Egypt"
     },
-    "online-defi-workshop-2024": {
-      "title": "DeFi Deep Dive Workshop",
-      "description": "An online workshop for Arabic-speaking learners exploring DeFi protocols, liquidity, yield strategies, and the evolving decentralized finance landscape.",
-      "location": "Online (Zoom)"
+    "linkup-forte-hacks-cairo-2025": {
+      "title": "Link.Up Cairo: Forte-Hacks Mixer",
+      "description": "A community mixer bringing together Cairo's builders and hackers in celebration of the Forte-Hacks hackathon — networking, project showcases, and conversations.",
+      "location": "Cairo, Egypt"
     },
-    "dubai-blockchain-week-2024": {
-      "title": "Dubai Blockchain Meetup",
-      "description": "A community gathering in Dubai during Blockchain Week, connecting Web3 builders and enthusiasts from across the Gulf region.",
-      "location": "Dubai, UAE"
+    "0xcairo-bytes-zkverify-2025": {
+      "title": "0xCairo Bytes: Don't Trust, zkVerify",
+      "description": "A technical session at AUC exploring zero-knowledge proofs and the zkVerify protocol — with live demos, deep dives, and Q&A with ZK researchers.",
+      "location": "AUC, Cairo, Egypt"
     },
-    "ethcc-brussels-side-event-2024": {
-      "title": "Arabs in Blockchain @ ETHcc 7",
-      "description": "Our side event at ETHcc 7 in Brussels — an evening for the Arab blockchain community attending the conference to connect and share ideas.",
-      "location": "Brussels, Belgium"
+    "linkup-chainlink-cairo-2025": {
+      "title": "Link.Up Cairo: Chromion Mixer",
+      "description": "A Chainlink ecosystem mixer in Cairo, celebrating the Chromion milestone and bringing together 100+ builders from Egypt's Web3 scene.",
+      "location": "Cairo, Egypt"
     },
-    "devcon-7-side-event-2024": {
-      "title": "Arabs in Blockchain @ Devcon 7",
-      "description": "Our biggest side event to date at Devcon 7 in Bangkok — bringing together over 80 Arab and Arab-allied builders for an unforgettable night.",
+    "0xcairo-tech-day-1-2024": {
+      "title": "0xCairo Tech Day I",
+      "description": "A full-day Web3 educational event at The Egyptian Chinese University — featuring Blockchain 101, a hands-on CCIP cross-chain workshop, real-world ZK applications, and a panel on Web3's future in Egypt.",
+      "location": "The Egyptian Chinese University (ECU), Ain Shams, Cairo, Egypt"
+    },
+    "devcon-7-meetup-2024": {
+      "title": "الفيل في المنديل 🐘 — Arabs in Blockchain @ Devcon 7",
+      "description": "Our landmark gathering at Devcon 7 in Bangkok — over 137 Arab and Arab-allied builders came together for an unforgettable evening in Southeast Asia.",
       "location": "Bangkok, Thailand"
     },
-    "cairo-community-meetup-june-2026": {
-      "title": "Cairo Summer Meetup 2026",
-      "description": "Join us for our summer community meetup in Cairo — an open evening of talks, discussions, and networking for anyone interested in blockchain and Web3.",
+    "0xcairo-tech-day-2-2024": {
+      "title": "0xCairo Tech Day II",
+      "description": "Our second Tech Day in Cairo — a full-day event with technical talks, workshops, and demos attended by 776 builders. One of our biggest events ever.",
+      "location": "The GrEEK Campus, Cairo, Egypt"
+    },
+    "0xcairo-meetup-2024": {
+      "title": "0xCairo Meetup",
+      "description": "A relaxed community meetup for Cairo's blockchain builders — an evening of networking, knowledge sharing, and connecting with like-minded Web3 enthusiasts.",
       "location": "Cairo, Egypt"
     },
-    "online-ethereum-basics-2026": {
-      "title": "Ethereum Basics: Online Study Session",
-      "description": "A beginner-friendly online session covering Ethereum fundamentals — wallets, transactions, smart contracts, and how to get started in Web3.",
+    "ethcc-brussels-2024": {
+      "title": "بلجيكا شيكا بيكا 🇧🇪 — Arabs in Blockchain @ ETHcc 7",
+      "description": "Our side event at ETHcc 7 in Brussels — 78 Arab community members attending the conference gathered for an evening of connection and celebration.",
+      "location": "Brussels, Belgium"
+    },
+    "cv-workshop-2024": {
+      "title": "Workshop: Writing an Effective Developer CV",
+      "description": "An online workshop in Arabic helping Web3 developers craft compelling CVs and navigate the blockchain job market — practical, hands-on, and free.",
+      "location": "Online (Google Meet)"
+    },
+    "bitcoin-pizza-day-cairo-2024": {
+      "title": "Global Pizza Party 2024 — Cairo",
+      "description": "Cairo's celebration of Bitcoin Pizza Day — a community gathering honoring the legendary first real-world Bitcoin transaction with pizza, talks, and networking.",
+      "location": "Cairo, Egypt"
+    },
+    "ai-blockchain-brunch-cairo-2024": {
+      "title": "AI & Blockchain Community Brunch",
+      "description": "A morning brunch at The GrEEK Campus exploring the intersection of AI and blockchain — 247 attendees joined for talks, demos, and collaborative discussions.",
+      "location": "The GrEEK Campus, Cairo, Egypt"
+    },
+    "bitcoin-pizza-day-cairo-2023": {
+      "title": "Cairo Bitcoin Pizza Day 2023",
+      "description": "Cairo's celebration of Bitcoin Pizza Day 2023 — a community gathering marking the anniversary of the first real-world Bitcoin commercial transaction.",
+      "location": "New Cairo, Egypt"
+    },
+    "community-call-2023": {
+      "title": "Monthly Community Call",
+      "description": "Our regular monthly community call for Arab blockchain enthusiasts — updates, open discussions, and a chance to connect with members from across the Arab world.",
       "location": "Online (Zoom)"
+    },
+    "web3-wellness-day-2022": {
+      "title": "Web3 Wellness Day",
+      "description": "A unique event at AUC New Cairo blending wellness and Web3 — a day of mindful workshops, blockchain talks, and community building.",
+      "location": "AUC New Cairo, Egypt"
+    },
+    "arab-blockchain-week-2022": {
+      "title": "Arab Blockchain Week 2022",
+      "description": "The second edition of Arab Blockchain Week — a week-long virtual conference bringing together Arab blockchain builders, researchers, and community members from across the region.",
+      "location": "Online"
+    },
+    "arab-blockchain-week-2021": {
+      "title": "Arab Blockchain Week 2021 — First Edition",
+      "description": "The first edition of Arab Blockchain Week, June 12–17, 2021 — a week-long virtual conference co-hosted by the community, bringing together Arab speakers and blockchain leaders from across the region.",
+      "location": "Online"
+    },
+    "webinar-series-2020": {
+      "title": "Community Webinar Series 2020",
+      "description": "Our founding year of online webinars — the educational sessions that launched the Arab blockchain community. Watch the full series on YouTube.",
+      "location": "Online (YouTube)"
     }
   },
   "contributors": {},

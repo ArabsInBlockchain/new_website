@@ -30,7 +30,7 @@ export default function OpportunitiesTeaser() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-violet/20">
                 <Icon size={24} className="text-brand-gold" aria-hidden />
               </div>
-              <h3 className="font-bold text-brand-gold">{t(`${key}.title`)}</h3>
+              <h3 className="font-bold text-card-title">{t(`${key}.title`)}</h3>
               <p className="text-sm text-muted">{t(`${key}.description`)}</p>
             </Card>
           ))}
