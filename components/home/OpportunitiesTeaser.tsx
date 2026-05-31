@@ -17,7 +17,7 @@ export default function OpportunitiesTeaser() {
   const locale = useLocale();
 
   return (
-    <section className="px-4 py-20" style={{ background: 'var(--opportunities-bg)' }}>
+    <section className="px-4 py-20 bg-surface">
       <div className="mx-auto max-w-7xl md:px-8">
         <SectionTitle title={t('title')} centered />
         <p className="mx-auto mb-10 max-w-2xl text-center text-sm text-muted leading-relaxed">
@@ -30,7 +30,7 @@ export default function OpportunitiesTeaser() {
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-brand-violet/20">
                 <Icon size={24} className="text-brand-gold" aria-hidden />
               </div>
-              <h3 className="font-bold text-foreground">{t(`${key}.title`)}</h3>
+              <h3 className="font-bold text-brand-gold">{t(`${key}.title`)}</h3>
               <p className="text-sm text-muted">{t(`${key}.description`)}</p>
             </Card>
           ))}

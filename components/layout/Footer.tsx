@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { ExternalLink } from 'lucide-react';
 import { useTranslations, useLocale } from 'next-intl';
 import Logo from '@/components/shared/Logo';
 
@@ -11,7 +12,6 @@ const SOCIAL_LINKS = [
   { label: 'LinkedIn', href: 'https://www.linkedin.com/company/arabs-in-blockchain/', icon: '/icons/linkedin.svg' },
   { label: 'YouTube', href: 'https://www.youtube.com/channel/UC_5orftfcZkLNn5LmIPodAA', icon: '/icons/youtube.svg' },
   { label: 'GitHub', href: 'https://github.com/ArabsInBlockchain', icon: '/icons/github.svg' },
-  { label: 'Lu.ma', href: 'https://luma.com/arabsInBlockchain', icon: '/icons/luma.svg' },
 ] as const;
 
 export default function Footer() {
@@ -21,10 +21,10 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-surface bg-surface mt-20">
+    <footer className="border-t border-surface bg-footer mt-20">
       <div className="mx-auto max-w-7xl px-4 py-12 md:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
-          {/* Col 1 — Logo + tagline + social */}
+          {/* Col 1 — Logo + taglines + social */}
           <div className="md:col-span-2">
             <Logo height={36} />
             <p className="mt-4 max-w-xs text-sm text-muted leading-relaxed">
@@ -49,6 +49,16 @@ export default function Footer() {
                   />
                 </a>
               ))}
+              {/* Lu.ma — events platform, no brand icon available */}
+              <a
+                href="https://luma.com/arabsInBlockchain"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Lu.ma events"
+                className="flex h-9 w-9 items-center justify-center rounded-full border border-muted/30 transition-colors hover:border-brand-teal"
+              >
+                <ExternalLink size={16} className="text-muted/60 hover:text-muted transition-colors" strokeWidth={1.5} />
+              </a>
             </div>
           </div>
 

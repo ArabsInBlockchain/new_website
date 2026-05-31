@@ -30,10 +30,10 @@
     },
     "stats": {
       "since": "Since",
-      "telegram": "1K+ on Telegram",
-      "twitter": "600+ on X",
-      "linkedin": "2K+ on LinkedIn",
-      "luma": "1.5K+ on Lu.ma"
+      "telegram": { "count": "1K+", "label": "on Telegram" },
+      "twitter": { "count": "600+", "label": "on X" },
+      "linkedin": { "count": "2K+", "label": "on LinkedIn" },
+      "luma": { "count": "1.5K+", "label": "on Lu.ma" }
     },
     "whatWeDo": {
       "title": "What We Do",

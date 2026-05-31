@@ -30,10 +30,10 @@
     },
     "stats": {
       "since": "منذ",
-      "telegram": "+1K على تيليجرام",
-      "twitter": "+600 على إكس",
-      "linkedin": "+2K على لينكدإن",
-      "luma": "+1.5K على لوما"
+      "telegram": { "count": "+1K", "label": "على تيليجرام" },
+      "twitter": { "count": "+600", "label": "على إكس" },
+      "linkedin": { "count": "+2K", "label": "على لينكدإن" },
+      "luma": { "count": "+1.5K", "label": "على لوما" }
     },
     "whatWeDo": {
       "title": "ماذا نفعل",
@@ -286,7 +286,7 @@
     "externalLink": "رابط خارجي"
   },
   "footer": {
-    "tagline": "نربط العقول العربية في عالم البلوكتشين",
+    "tagline": "توصيل العقول العربية في البلوكتشين",
     "quickLinks": "روابط سريعة",
     "communityLinks": "المجتمع",
     "followUs": "تابعنا",
