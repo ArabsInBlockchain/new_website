@@ -39,13 +39,15 @@ export default async function ContributorsPage({ params }: Props) {
   ]);
 
   const slugs = getAllContributorSlugs();
-  const contributors = slugs.map((slug) => {
-    const meta = getContributorMeta(slug);
-    const events = getContributorEvents(slug);
-    let name = slug;
-    try { name = tContribs(`${slug}.name`); } catch { /* missing translation */ }
-    return { meta, name, events };
-  });
+  const contributors = slugs
+    .map((slug) => {
+      const meta = getContributorMeta(slug);
+      const events = getContributorEvents(slug);
+      let name = slug;
+      try { name = tContribs(`${slug}.name`); } catch { /* missing translation */ }
+      return { meta, name, events };
+    })
+    .sort((a, b) => b.events.length - a.events.length);
 
   const rolesT = {
     organizer: tCommunity('contributors.roles.organizer'),
