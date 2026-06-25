@@ -1,0 +1,17 @@
+{
+  "slug": "0xcairo-iii-security-day-2026",
+  "type": "in-person",
+  "status": "upcoming",
+  "date": "2026-07-25",
+  "time": "09:00",
+  "timezone": "Africa/Cairo",
+  "platform": null,
+  "conference": null,
+  "registration_url": "https://luma.com/99k4lv46",
+  "recap_url": null,
+  "photos_count": 0,
+  "banner_image": "https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=1,anim=false,background=white,quality=75,width=1920,height=1920/uploads/dz/689775e0-33ed-4d98-995b-2e3b0e704c75.png",
+  "tags": ["security", "CTF", "EVM", "solana", "AI", "0xcairo", "cairo"],
+  "speakers": [],
+  "contributors": []
+}

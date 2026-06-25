@@ -272,6 +272,11 @@
   "partners_data": {},
   "team": {},
   "events_data": {
+    "0xcairo-iii-security-day-2026": {
+      "title": "0xCairo III: Security Day",
+      "description": "A full-day security event with hands-on EVM and Solana auditing workshops, an Agentic AI Security track, and Cairo's first live Web3 CTF (Capture The Flag) competition. Limited seats — workshops and CTF available separately.",
+      "location": "The Egyptian Chinese University, Nasr City, Cairo, Egypt"
+    },
     "global-pizza-party-cairo-2026": {
       "title": "2026 Global Pizza Party Cairo",
       "description": "Celebrating Bitcoin Pizza Day with the global PizzaDAO movement — free pizza, crypto conversations, and a night honoring the 10,000 BTC transaction that started it all. Co-hosted with PizzaDAO, World Pizza Champions, and ENS.",
