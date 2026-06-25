@@ -181,7 +181,7 @@ export default async function ContributorProfilePage({ params }: Props) {
                     aria-label="Twitter / X"
                     className="opacity-60 transition-opacity hover:opacity-100"
                   >
-                    <Image src="/icons/x.svg" alt="X / Twitter" width={18} height={18} />
+                    <Image src="/icons/x.svg" alt="X / Twitter" width={18} height={18} className="invert" />
                   </a>
                 )}
                 {meta.linkedin && (
@@ -192,7 +192,7 @@ export default async function ContributorProfilePage({ params }: Props) {
                     aria-label="LinkedIn"
                     className="opacity-60 transition-opacity hover:opacity-100"
                   >
-                    <Image src="/icons/linkedin.svg" alt="LinkedIn" width={18} height={18} />
+                    <Image src="/icons/linkedin.svg" alt="LinkedIn" width={18} height={18} className="invert" />
                   </a>
                 )}
                 {meta.github && (
@@ -203,7 +203,7 @@ export default async function ContributorProfilePage({ params }: Props) {
                     aria-label="GitHub"
                     className="opacity-60 transition-opacity hover:opacity-100"
                   >
-                    <Image src="/icons/github.svg" alt="GitHub" width={18} height={18} />
+                    <Image src="/icons/github.svg" alt="GitHub" width={18} height={18} className="invert" />
                   </a>
                 )}
               </div>
