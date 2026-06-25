@@ -546,16 +546,23 @@
       "name": "Ahmed Elsharabassi"
     },
     "mohamed-elsharabassi": {
-      "name": "Mohamed Elsharabassi"
+      "name": "Mohamed Elsharabassi",
+      "title": "Data Scientist"
     },
     "janna-elsheshtawy": {
-      "name": "Janna Elsheshtawy"
+      "name": "Janna Elsheshtawy",
+      "title": "Software Developer | Teaching Assistant"
     },
     "adham-ahmed": {
       "name": "Adham Ahmed Kamel"
     },
     "beshoy-shehara": {
       "name": "Beshoy Shehara",
+      "bio": ""
+    },
+    "khawla-hassan": {
+      "name": "Khawla Hassan",
+      "title": "Technical Product Manager — Digital Assets, Blockchain & AI",
       "bio": ""
     }
   },

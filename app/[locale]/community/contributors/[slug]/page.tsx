@@ -79,8 +79,10 @@ export default async function ContributorProfilePage({ params }: Props) {
   const events = getContributorEvents(slug);
 
   let name = slug;
+  let title = '';
   let bio = '';
   try { name = tContribs(`${slug}.name`); } catch { /* missing translation */ }
+  try { title = tContribs(`${slug}.title`); } catch { /* missing translation */ }
   try { bio = tContribs(`${slug}.bio`); } catch { /* missing translation */ }
 
   // Build a lookup of event translated titles/locations for the timeline
@@ -159,6 +161,11 @@ export default async function ContributorProfilePage({ params }: Props) {
               >
                 {name}
               </h1>
+              {title && (
+                <p className="text-sm font-medium" style={{ color: 'var(--color-brand-teal)' }}>
+                  {title}
+                </p>
+              )}
               {bio && (
                 <p className="max-w-xl text-sm leading-relaxed text-muted">{bio}</p>
               )}
