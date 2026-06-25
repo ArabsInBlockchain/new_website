@@ -5,7 +5,7 @@ import { getUpcomingEvents, getPastEvents } from '@/lib/events';
 import EventsClient from '@/components/events/EventsClient';
 import type { EventDisplay } from '@/components/events/EventCard';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.netlify.app';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.com';
 
 type Props = { params: Promise<{ locale: string }> };
 

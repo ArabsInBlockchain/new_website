@@ -13,7 +13,7 @@ import Link from 'next/link';
 import { User, ArrowLeft } from 'lucide-react';
 import ContributionTimeline from '@/components/community/ContributionTimeline';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.netlify.app';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.com';
 
 type Props = { params: Promise<{ locale: string; slug: string }> };
 

@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://arabsinblockchain.netlify.app',
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || 'https://arabsinblockchain.com',
   generateRobotsTxt: true,
   robotsTxtOptions: {
     policies: [{ userAgent: '*', allow: '/' }],
@@ -10,11 +10,11 @@ module.exports = {
   // Treat ar as the primary locale
   alternateRefs: [
     {
-      href: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://arabsinblockchain.netlify.app'}/ar`,
+      href: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://arabsinblockchain.com'}/ar`,
       hreflang: 'ar',
     },
     {
-      href: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://arabsinblockchain.netlify.app'}/en`,
+      href: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://arabsinblockchain.com'}/en`,
       hreflang: 'en',
     },
   ],

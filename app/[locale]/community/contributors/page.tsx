@@ -4,7 +4,7 @@ import { routing } from '@/i18n/routing';
 import { getAllContributorSlugs, getContributorMeta, getContributorEvents } from '@/lib/content';
 import ContributorCard from '@/components/community/ContributorCard';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.netlify.app';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.com';
 
 type Props = { params: Promise<{ locale: string }> };
 

@@ -9,7 +9,7 @@ import PartnersBar from '@/components/home/PartnersBar';
 import JoinCTA from '@/components/home/JoinCTA';
 import ContributorsTeaser from '@/components/home/ContributorsTeaser';
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.netlify.app';
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.com';
 
 type Props = { params: Promise<{ locale: string }> };
 

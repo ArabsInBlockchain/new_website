@@ -79,7 +79,7 @@ export default function Image() {
             opacity: 0.8,
           }}
         >
-          arabsinblockchain.netlify.app
+          arabsinblockchain.com
         </div>
       </div>
     ),
