@@ -1,6 +1,5 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import { useTranslations, useLocale } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -27,11 +26,7 @@ export default function Hero() {
       />
 
       <div className="relative z-10 mx-auto max-w-4xl">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
+        <div className="hero-item-1">
           {/* Brand logo as hero headline — exact font, exact look */}
           <h1 className="sr-only">Arabs in Blockchain — العرب × بلوكتشين</h1>
           <Image
@@ -43,23 +38,13 @@ export default function Hero() {
             className="mx-auto w-72 md:w-[420px] lg:w-[480px]"
             style={{ height: 'auto' }}
           />
-        </motion.div>
+        </div>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mx-auto mt-6 max-w-2xl text-base text-muted md:text-lg"
-        >
+        <p className="hero-item-2 mx-auto mt-6 max-w-2xl text-base text-muted md:text-lg">
           {t('subtitle')}
-        </motion.p>
+        </p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
-        >
+        <div className="hero-item-3 mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
           <Button
             variant="gold"
             size="lg"
@@ -73,7 +58,7 @@ export default function Hero() {
               {t('eventsCta')}
             </Button>
           </Link>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
