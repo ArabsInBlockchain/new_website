@@ -5,6 +5,7 @@ import {
   getAllContributorSlugs,
   getContributorMeta,
   getContributorEvents,
+  avatarUrl,
 } from '@/lib/content';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -136,7 +137,7 @@ export default async function ContributorProfilePage({ params }: Props) {
               >
                 {meta.photo ? (
                   <Image
-                    src={meta.photo}
+                    src={avatarUrl(meta.photo, 400)}
                     alt={name}
                     fill
                     className="object-cover"

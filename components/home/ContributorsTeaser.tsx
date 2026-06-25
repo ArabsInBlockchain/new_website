@@ -6,6 +6,7 @@ import {
   getAllContributorSlugs,
   getContributorMeta,
   getContributorEvents,
+  avatarUrl,
 } from '@/lib/content';
 
 const PREVIEW_COUNT = 8;
@@ -70,7 +71,7 @@ export default async function ContributorsTeaser({ locale }: Props) {
                   >
                     {meta.photo ? (
                       <Image
-                        src={meta.photo}
+                        src={avatarUrl(meta.photo, 150)}
                         alt={name}
                         fill
                         className="object-cover"

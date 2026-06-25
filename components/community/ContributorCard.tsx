@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { User } from 'lucide-react';
 import type { ContributorMeta, ContributorEvent } from '@/lib/content';
+import { avatarUrl } from '@/lib/content';
 
 interface Props {
   meta: ContributorMeta;
@@ -38,7 +39,7 @@ export default function ContributorCard({ meta, name, events, locale, t }: Props
           style={{ backgroundColor: 'var(--color-bg-dark)' }}
         >
           {meta.photo ? (
-            <Image src={meta.photo} alt={name} fill className="object-cover" sizes="80px" />
+            <Image src={avatarUrl(meta.photo, 200)} alt={name} fill className="object-cover" sizes="80px" />
           ) : (
             <div
               className="flex h-full w-full items-center justify-center"

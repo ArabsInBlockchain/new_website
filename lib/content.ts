@@ -137,3 +137,10 @@ export function getContributorEvents(contributorSlug: string): ContributorEvent[
     (a, b) => new Date(b.eventMeta.date).getTime() - new Date(a.eventMeta.date).getTime(),
   );
 }
+
+// Transforms a Cloudinary URL to use face-detected square crop.
+// Passes non-Cloudinary URLs through unchanged.
+export function avatarUrl(photo: string, size = 400): string {
+  if (!photo || !photo.includes('res.cloudinary.com')) return photo;
+  return photo.replace('/image/upload/', `/image/upload/c_fill,g_face,w_${size},h_${size}/`);
+}
