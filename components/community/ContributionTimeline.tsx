@@ -34,7 +34,7 @@ export default function ContributionTimeline({ events, eventTitles, locale, t }:
               style={{
                 backgroundColor: isOrganizer
                   ? 'var(--color-brand-gold)'
-                  : 'var(--color-brand-teal)',
+                  : 'var(--color-brand-violet)',
               }}
               aria-hidden
             />
@@ -47,14 +47,14 @@ export default function ContributionTimeline({ events, eventTitles, locale, t }:
                   style={
                     isOrganizer
                       ? { backgroundColor: 'color-mix(in srgb, var(--color-brand-gold) 15%, transparent)', color: 'var(--color-brand-gold)' }
-                      : { backgroundColor: 'color-mix(in srgb, var(--color-brand-teal) 15%, transparent)', color: 'var(--color-brand-teal)' }
+                      : { backgroundColor: 'var(--badge-volunteer-bg)', color: 'var(--badge-volunteer-color)' }
                   }
                 >
                   {isOrganizer ? t.organizer : t.volunteer}
                 </span>
               </div>
 
-              <div className="flex flex-wrap gap-4 text-xs text-muted">
+              <div className="flex flex-wrap gap-4 text-xs text-foreground/60">
                 <span className="flex items-center gap-1">
                   <Calendar size={11} aria-hidden />
                   {formatDate(e.eventMeta.date, locale)}

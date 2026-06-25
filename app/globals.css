@@ -56,7 +56,7 @@
   --opportunities-bg: rgba(59, 31, 140, 0.08);
 
   /* Card-specific tokens: subtle violet border in dark, more visible in light */
-  --color-card-bg: #13132a;
+  --color-card-bg: #191830; /* lightened from #13132a — more distinct from page bg #0D0D1A */
   --color-card-border: rgba(59, 31, 140, 0.2);
 
   --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
@@ -64,6 +64,10 @@
   --shadow-cta: 0 4px 20px rgba(59, 31, 140, 0.5);
   --shadow-gold: 0 0 20px rgba(245, 166, 35, 0.2);
   --shadow-nav: 0 1px 0 rgba(255, 255, 255, 0.07);
+
+  /* Volunteer badge — lighter violet text readable on dark card bg */
+  --badge-volunteer-color: #9b80f0;
+  --badge-volunteer-bg: rgba(59, 31, 140, 0.25);
 }
 
 /* Light mode overrides — toggled by .light-mode class on <html> */
@@ -71,7 +75,7 @@
   --color-page: #f8f7ff;
   --color-surface: #edeaf8;
   --color-foreground: #1a1040;
-  --color-muted: #5c5880;
+  --color-muted: #3d3560; /* darkened from #5c5880 — higher contrast for nav/body text on white */
 
   /* Card title switches to deep violet for contrast on white bg (gold → 2.4:1 fails WCAG) */
   --color-card-title: #3b1f8c;
@@ -84,6 +88,10 @@
 
   --color-card-bg: #ffffff;
   --color-card-border: rgba(59, 31, 140, 0.14);
+
+  /* Volunteer badge — dark violet text readable on white card bg */
+  --badge-volunteer-color: #3b1f8c;
+  --badge-volunteer-bg: rgba(59, 31, 140, 0.10);
 
   --shadow-card: 0 2px 16px rgba(59, 31, 140, 0.08);
   --shadow-card-hover: 0 4px 24px rgba(59, 31, 140, 0.15);

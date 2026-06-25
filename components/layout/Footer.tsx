@@ -20,7 +20,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="theme-always-dark border-t border-white/5 bg-footer">
+    <footer className="theme-always-dark border-t border-white/10 bg-footer">
       <div className="mx-auto max-w-7xl px-4 py-12 md:px-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
           {/* Col 1 — Logo + taglines + social */}

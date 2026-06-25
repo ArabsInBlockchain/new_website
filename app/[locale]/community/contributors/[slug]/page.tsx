@@ -221,27 +221,22 @@ export default async function ContributorProfilePage({ params }: Props) {
           <div className="text-center">
             <p
               className="text-2xl font-extrabold"
-              style={{ color: 'var(--color-brand-teal)' }}
+              style={{ color: 'var(--color-brand-gold)' }}
             >
               {events.length}
             </p>
-            <p className="text-xs text-white/70">{tCommunity('contributors.contributions')}</p>
+            <p className="text-xs text-white/90">{tCommunity('contributors.contributions')}</p>
           </div>
 
           {roles.map((role) => (
             <div key={role} className="text-center">
               <p
                 className="text-2xl font-extrabold"
-                style={{
-                  color:
-                    role === 'organizer'
-                      ? 'var(--color-brand-gold)'
-                      : 'var(--color-brand-teal)',
-                }}
+                style={{ color: 'var(--color-brand-gold)' }}
               >
                 {role === 'organizer' ? '★' : '◆'}
               </p>
-              <p className="text-xs text-white/70">
+              <p className="text-xs text-white/90">
                 {role === 'organizer'
                   ? tCommunity('contributors.roles.organizer')
                   : tCommunity('contributors.roles.volunteer')}
@@ -257,7 +252,7 @@ export default async function ContributorProfilePage({ params }: Props) {
               >
                 {activeSince}
               </p>
-              <p className="text-xs text-white/70">
+              <p className="text-xs text-white/90">
                 {tCommunity('contributors.activeSince')}
               </p>
             </div>

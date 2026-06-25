@@ -14,6 +14,8 @@
   "tags": ["security", "CTF", "EVM", "solana", "AI", "0xcairo", "cairo"],
   "speakers": [],
   "contributors": [
-    { "slug": "eman-herawy", "role_key": "organizer" }
+    { "slug": "eman-herawy", "role_key": "organizer" },
+    { "slug": "janna-elsheshtawy", "role_key": "organizer" },
+    { "slug": "nour-elden-nader", "role_key": "organizer" }
   ]
 }
