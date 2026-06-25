@@ -432,133 +432,213 @@
   "contributors": {
     "eman-herawy": {
       "name": "Eman Herawy",
-      "bio": "Founder of Arabs in Blockchain. Smart contract developer and open-source advocate building the bridge between the Arab world and global blockchain ecosystems since 2020."
+      "bio": "Founder of Arabs in Blockchain. Smart contract developer and open-source advocate building the bridge between the Arab world and global blockchain ecosystems since 2020.",
+      "title": ""
     },
     "bahaa-taha": {
-      "name": "Bahaa Ehab Taha"
+      "name": "Bahaa Ehab Taha",
+      "title": "",
+      "bio": ""
     },
     "omar-seifelnasr": {
-      "name": "Omar Mahmoud Seifelnasr"
+      "name": "Omar Mahmoud Seifelnasr",
+      "title": "",
+      "bio": ""
     },
     "omar-osman": {
-      "name": "Omar Osman"
+      "name": "Omar Osman",
+      "title": "",
+      "bio": ""
     },
     "hossam-elanany": {
-      "name": "Hossam Elanany"
+      "name": "Hossam Elanany",
+      "title": "",
+      "bio": ""
     },
     "mohamed-ayman-zaki": {
-      "name": "Mohamed Ayman Zaki"
+      "name": "Mohamed Ayman Zaki",
+      "title": "",
+      "bio": ""
     },
     "nour-elden-nader": {
-      "name": "Nour Elden Nader"
+      "name": "Nour Elden Nader",
+      "title": "",
+      "bio": ""
     },
     "hassan-elashiry": {
-      "name": "Hassan Elashiry"
+      "name": "Hassan Elashiry",
+      "title": "",
+      "bio": ""
     },
     "tarek-mahdy": {
-      "name": "Tarek Mahdy"
+      "name": "Tarek Mahdy",
+      "title": "",
+      "bio": ""
     },
     "abdulrahman-fiala": {
-      "name": "Abdulrahman Fiala"
+      "name": "Abdulrahman Fiala",
+      "title": "",
+      "bio": ""
     },
     "tasneem-toolba": {
-      "name": "Tasneem Toolba"
+      "name": "Tasneem Toolba",
+      "title": "",
+      "bio": ""
     },
     "ahmed-bakry": {
-      "name": "Ahmed Bakry"
+      "name": "Ahmed Bakry",
+      "title": "",
+      "bio": ""
     },
     "mohamed-ashraf": {
-      "name": "Mohamed Ashraf"
+      "name": "Mohamed Ashraf",
+      "title": "",
+      "bio": ""
     },
     "shkeir": {
-      "name": "Shkeir"
+      "name": "Shkeir",
+      "title": "",
+      "bio": ""
     },
     "hassaan-alansary": {
-      "name": "Hassaan Alansary"
+      "name": "Hassaan Alansary",
+      "title": "",
+      "bio": ""
     },
     "abdelrahman-shaban": {
-      "name": "Abdelrahman Shaban"
+      "name": "Abdelrahman Shaban",
+      "title": "",
+      "bio": ""
     },
     "ahmad-ateya": {
-      "name": "Ahmad Ateya"
+      "name": "Ahmad Ateya",
+      "title": "",
+      "bio": ""
     },
     "gamal-omar": {
-      "name": "Gamal Omar Mohamed"
+      "name": "Gamal Omar Mohamed",
+      "title": "",
+      "bio": ""
     },
     "tamer-nabil": {
-      "name": "Tamer Nabil"
+      "name": "Tamer Nabil",
+      "title": "",
+      "bio": ""
     },
     "anas-abuelhaag": {
-      "name": "Anas Abuelhaag"
+      "name": "Anas Abuelhaag",
+      "title": "",
+      "bio": ""
     },
     "abdelrahman-ahmed": {
-      "name": "Abdelrahman Ahmed Mohamed"
+      "name": "Abdelrahman Ahmed Mohamed",
+      "title": "",
+      "bio": ""
     },
     "abdulrahman-reda": {
-      "name": "AbdulRahman Reda"
+      "name": "AbdulRahman Reda",
+      "title": "",
+      "bio": ""
     },
     "kareem-akram": {
-      "name": "Kareem Akram"
+      "name": "Kareem Akram",
+      "title": "",
+      "bio": ""
     },
     "sherief-abdelqader": {
-      "name": "Sherief Abdelqader"
+      "name": "Sherief Abdelqader",
+      "title": "",
+      "bio": ""
     },
     "rida-rhnizar": {
-      "name": "Rida Rhnizar"
+      "name": "Rida Rhnizar",
+      "title": "",
+      "bio": ""
     },
     "ali-adel": {
-      "name": "Ali Adel"
+      "name": "Ali Adel",
+      "title": "",
+      "bio": ""
     },
     "tarek-abdallah": {
-      "name": "Tarek Abdallah"
+      "name": "Tarek Abdallah",
+      "title": "",
+      "bio": ""
     },
     "ahmed-atif": {
-      "name": "Ahmed Atif"
+      "name": "Ahmed Atif",
+      "title": "",
+      "bio": ""
     },
     "yousef-medhat": {
-      "name": "Yousef Medhat Mohamed"
+      "name": "Yousef Medhat Mohamed",
+      "title": "",
+      "bio": ""
     },
     "abdulaziz-elnoti": {
-      "name": "Abdulaziz Muhammed Elnoti"
+      "name": "Abdulaziz Muhammed Elnoti",
+      "title": "",
+      "bio": ""
     },
     "ahmed-galal": {
-      "name": "Ahmed Galal Abdelhai"
+      "name": "Ahmed Galal Abdelhai",
+      "title": "",
+      "bio": ""
     },
     "eslam-ahmed": {
-      "name": "Eslam Ahmed Saber"
+      "name": "Eslam Ahmed Saber",
+      "title": "",
+      "bio": ""
     },
     "hager-abobakr": {
-      "name": "Hager Abobakr Hussien"
+      "name": "Hager Abobakr Hussien",
+      "title": "",
+      "bio": ""
     },
     "ahmed-mostafa": {
-      "name": "Ahmed Mostafa"
+      "name": "Ahmed Mostafa",
+      "title": "",
+      "bio": ""
     },
     "mohamed-ayman": {
-      "name": "Mohamed Ayman"
+      "name": "Mohamed Ayman",
+      "title": "",
+      "bio": ""
     },
     "salma-ahmed": {
-      "name": "Salma Ahmed"
+      "name": "Salma Ahmed",
+      "title": "",
+      "bio": ""
     },
     "kareem-kasaab": {
-      "name": "Kareem Kasaab"
+      "name": "Kareem Kasaab",
+      "title": "",
+      "bio": ""
     },
     "ahmed-elsharabassi": {
-      "name": "Ahmed Elsharabassi"
+      "name": "Ahmed Elsharabassi",
+      "title": "",
+      "bio": ""
     },
     "mohamed-elsharabassi": {
       "name": "Mohamed Elsharabassi",
-      "title": "Data Scientist"
+      "title": "Data Scientist",
+      "bio": ""
     },
     "janna-elsheshtawy": {
       "name": "Janna Elsheshtawy",
-      "title": "Software Developer | Teaching Assistant"
+      "title": "Software Developer | Teaching Assistant",
+      "bio": ""
     },
     "adham-ahmed": {
-      "name": "Adham Ahmed Kamel"
+      "name": "Adham Ahmed Kamel",
+      "title": "",
+      "bio": ""
     },
     "beshoy-shehara": {
       "name": "Beshoy Shehara",
-      "bio": ""
+      "bio": "",
+      "title": ""
     },
     "khawla-hassan": {
       "name": "Khawla Hassan",

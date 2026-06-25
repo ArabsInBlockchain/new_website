@@ -432,133 +432,213 @@
   "contributors": {
     "eman-herawy": {
       "name": "إيمان هراوي",
-      "bio": "مؤسِّسة مجتمع العرب في البلوكشين، ومطوِّرة عقود ذكية، وناشطة في المصدر المفتوح — تبني الجسر بين العالم العربي ومنظومة البلوكشين العالمية منذ 2020."
+      "bio": "مؤسِّسة مجتمع العرب في البلوكشين، ومطوِّرة عقود ذكية، وناشطة في المصدر المفتوح — تبني الجسر بين العالم العربي ومنظومة البلوكشين العالمية منذ 2020.",
+      "title": ""
     },
     "bahaa-taha": {
-      "name": "بهاء إيهاب طه"
+      "name": "بهاء إيهاب طه",
+      "title": "",
+      "bio": ""
     },
     "omar-seifelnasr": {
-      "name": "عمر محمود سيف النصر"
+      "name": "عمر محمود سيف النصر",
+      "title": "",
+      "bio": ""
     },
     "omar-osman": {
-      "name": "عمر عثمان"
+      "name": "عمر عثمان",
+      "title": "",
+      "bio": ""
     },
     "hossam-elanany": {
-      "name": "حسام العناني"
+      "name": "حسام العناني",
+      "title": "",
+      "bio": ""
     },
     "mohamed-ayman-zaki": {
-      "name": "محمد أيمن زكي"
+      "name": "محمد أيمن زكي",
+      "title": "",
+      "bio": ""
     },
     "nour-elden-nader": {
-      "name": "نور الدين نادر"
+      "name": "نور الدين نادر",
+      "title": "",
+      "bio": ""
     },
     "hassan-elashiry": {
-      "name": "حسن العشيري"
+      "name": "حسن العشيري",
+      "title": "",
+      "bio": ""
     },
     "tarek-mahdy": {
-      "name": "طارق مهدي"
+      "name": "طارق مهدي",
+      "title": "",
+      "bio": ""
     },
     "abdulrahman-fiala": {
-      "name": "عبدالرحمن فيالة"
+      "name": "عبدالرحمن فيالة",
+      "title": "",
+      "bio": ""
     },
     "tasneem-toolba": {
-      "name": "تسنيم طلبة"
+      "name": "تسنيم طلبة",
+      "title": "",
+      "bio": ""
     },
     "ahmed-bakry": {
-      "name": "أحمد بكري"
+      "name": "أحمد بكري",
+      "title": "",
+      "bio": ""
     },
     "mohamed-ashraf": {
-      "name": "محمد أشرف"
+      "name": "محمد أشرف",
+      "title": "",
+      "bio": ""
     },
     "shkeir": {
-      "name": "شكير"
+      "name": "شكير",
+      "title": "",
+      "bio": ""
     },
     "hassaan-alansary": {
-      "name": "حسان الأنصاري"
+      "name": "حسان الأنصاري",
+      "title": "",
+      "bio": ""
     },
     "abdelrahman-shaban": {
-      "name": "عبدالرحمن شعبان محمد"
+      "name": "عبدالرحمن شعبان محمد",
+      "title": "",
+      "bio": ""
     },
     "ahmad-ateya": {
-      "name": "أحمد عطية"
+      "name": "أحمد عطية",
+      "title": "",
+      "bio": ""
     },
     "gamal-omar": {
-      "name": "جمال عمر محمد"
+      "name": "جمال عمر محمد",
+      "title": "",
+      "bio": ""
     },
     "tamer-nabil": {
-      "name": "تامر نبيل"
+      "name": "تامر نبيل",
+      "title": "",
+      "bio": ""
     },
     "anas-abuelhaag": {
-      "name": "أنس أبو الحاج"
+      "name": "أنس أبو الحاج",
+      "title": "",
+      "bio": ""
     },
     "abdelrahman-ahmed": {
-      "name": "عبدالرحمن أحمد محمد"
+      "name": "عبدالرحمن أحمد محمد",
+      "title": "",
+      "bio": ""
     },
     "abdulrahman-reda": {
-      "name": "عبدالرحمن رضا"
+      "name": "عبدالرحمن رضا",
+      "title": "",
+      "bio": ""
     },
     "kareem-akram": {
-      "name": "كريم أكرم"
+      "name": "كريم أكرم",
+      "title": "",
+      "bio": ""
     },
     "sherief-abdelqader": {
-      "name": "شريف عبد القادر"
+      "name": "شريف عبد القادر",
+      "title": "",
+      "bio": ""
     },
     "rida-rhnizar": {
-      "name": "رضا رحنيزار"
+      "name": "رضا رحنيزار",
+      "title": "",
+      "bio": ""
     },
     "ali-adel": {
-      "name": "علي عادل"
+      "name": "علي عادل",
+      "title": "",
+      "bio": ""
     },
     "tarek-abdallah": {
-      "name": "طارق محمد عبدالله"
+      "name": "طارق محمد عبدالله",
+      "title": "",
+      "bio": ""
     },
     "ahmed-atif": {
-      "name": "أحمد عاطف"
+      "name": "أحمد عاطف",
+      "title": "",
+      "bio": ""
     },
     "yousef-medhat": {
-      "name": "يوسف مدحت محمد"
+      "name": "يوسف مدحت محمد",
+      "title": "",
+      "bio": ""
     },
     "abdulaziz-elnoti": {
-      "name": "عبدالعزيز محمد النوتي"
+      "name": "عبدالعزيز محمد النوتي",
+      "title": "",
+      "bio": ""
     },
     "ahmed-galal": {
-      "name": "أحمد جلال عبد الحي"
+      "name": "أحمد جلال عبد الحي",
+      "title": "",
+      "bio": ""
     },
     "eslam-ahmed": {
-      "name": "إسلام أحمد صابر"
+      "name": "إسلام أحمد صابر",
+      "title": "",
+      "bio": ""
     },
     "hager-abobakr": {
-      "name": "هاجر أبوبكر حسين"
+      "name": "هاجر أبوبكر حسين",
+      "title": "",
+      "bio": ""
     },
     "ahmed-mostafa": {
-      "name": "أحمد مصطفى"
+      "name": "أحمد مصطفى",
+      "title": "",
+      "bio": ""
     },
     "mohamed-ayman": {
-      "name": "محمد أيمن"
+      "name": "محمد أيمن",
+      "title": "",
+      "bio": ""
     },
     "salma-ahmed": {
-      "name": "سلمى أحمد"
+      "name": "سلمى أحمد",
+      "title": "",
+      "bio": ""
     },
     "kareem-kasaab": {
-      "name": "كريم قصاب"
+      "name": "كريم قصاب",
+      "title": "",
+      "bio": ""
     },
     "ahmed-elsharabassi": {
-      "name": "أحمد الشرباصي"
+      "name": "أحمد الشرباصي",
+      "title": "",
+      "bio": ""
     },
     "mohamed-elsharabassi": {
       "name": "محمد الشرباصي",
-      "title": "عالِمة بيانات"
+      "title": "عالِمة بيانات",
+      "bio": ""
     },
     "janna-elsheshtawy": {
       "name": "جنا الششتاوي",
-      "title": "مطوّرة برمجيات | مساعدة تدريس"
+      "title": "مطوّرة برمجيات | مساعدة تدريس",
+      "bio": ""
     },
     "adham-ahmed": {
-      "name": "أدهم أحمد كامل"
+      "name": "أدهم أحمد كامل",
+      "title": "",
+      "bio": ""
     },
     "beshoy-shehara": {
       "name": "بيشوي شهارة",
-      "bio": ""
+      "bio": "",
+      "title": ""
     },
     "khawla-hassan": {
       "name": "خولة حسن",
