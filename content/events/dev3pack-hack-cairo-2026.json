@@ -11,7 +11,26 @@
   "recap_url": "https://luma.com/sys949qa",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/ue/cc5b6c10-ecb9-4601-868a-02ff61a17c30.png",
-  "tags": ["cairo", "hackathon", "dev3pack", "builders", "web3"],
+  "tags": [
+    "cairo",
+    "hackathon",
+    "dev3pack",
+    "builders",
+    "web3"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "tasneem-toolba",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "mohamed-elsharabassi",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    }
+  ]
 }

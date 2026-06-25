@@ -11,7 +11,26 @@
   "recap_url": "https://www.eventbrite.com/e/cairo-bitcoin-pizza-tickets-640142352007?aff=ebdsoporgprofile",
   "photos_count": 0,
   "banner_image": "https://res.cloudinary.com/dcig9rsj0/image/upload/v1780234421/image_2_g0x9jd.webp",
-  "tags": ["cairo", "bitcoin", "pizza-day", "community", "celebration"],
+  "tags": [
+    "cairo",
+    "bitcoin",
+    "pizza-day",
+    "community",
+    "celebration"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "salma-ahmed",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "kareem-kasaab",
+      "role_key": "organizer"
+    }
+  ]
 }

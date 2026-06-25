@@ -7,6 +7,7 @@ import WhatWeDo from '@/components/home/WhatWeDo';
 import OpportunitiesTeaser from '@/components/home/OpportunitiesTeaser';
 import PartnersBar from '@/components/home/PartnersBar';
 import JoinCTA from '@/components/home/JoinCTA';
+import ContributorsTeaser from '@/components/home/ContributorsTeaser';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.netlify.app';
 
@@ -66,6 +67,7 @@ export default async function HomePage({ params }: Props) {
       <StatsBar />
       <WhatWeDo />
       <OpportunitiesTeaser />
+      <ContributorsTeaser locale={locale} />
       <PartnersBar />
       <JoinCTA />
     </>

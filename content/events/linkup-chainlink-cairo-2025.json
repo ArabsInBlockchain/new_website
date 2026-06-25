@@ -11,7 +11,30 @@
   "recap_url": "https://lu.ma/riwj2o9j",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/f7/10e0a90b-0749-44b3-9f6d-98a71a1dd834.png",
-  "tags": ["cairo", "chainlink", "chromion", "mixer", "linkup"],
+  "tags": [
+    "cairo",
+    "chainlink",
+    "chromion",
+    "mixer",
+    "linkup"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "nour-elden-nader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "janna-elsheshtawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "kareem-kasaab",
+      "role_key": "organizer"
+    }
+  ]
 }

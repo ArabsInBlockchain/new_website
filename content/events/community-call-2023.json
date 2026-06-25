@@ -11,7 +11,17 @@
   "recap_url": "https://www.eventbrite.com/e/monthly-community-call-tickets-506446975537?aff=ebdsoporgprofile",
   "photos_count": 0,
   "banner_image": "https://res.cloudinary.com/dcig9rsj0/image/upload/v1780234420/image_1_a0izfn.webp",
-  "tags": ["online", "community-call", "monthly", "web3"],
+  "tags": [
+    "online",
+    "community-call",
+    "monthly",
+    "web3"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    }
+  ]
 }

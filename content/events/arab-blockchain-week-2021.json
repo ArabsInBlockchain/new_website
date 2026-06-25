@@ -11,7 +11,22 @@
   "recap_url": "https://www.arabblockchainweek.com/arab-blockchain-week-2021-all-speakers/",
   "photos_count": 0,
   "banner_image": "https://res.cloudinary.com/dcig9rsj0/image/upload/v1780234180/ABW-4-Black-Back_eejfex.png",
-  "tags": ["arab-blockchain-week", "online", "conference", "speakers", "community"],
+  "tags": [
+    "arab-blockchain-week",
+    "online",
+    "conference",
+    "speakers",
+    "community"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "omar-osman",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    }
+  ]
 }

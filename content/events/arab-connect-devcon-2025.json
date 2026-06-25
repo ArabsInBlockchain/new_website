@@ -11,7 +11,22 @@
   "recap_url": "https://lu.ma/vt1yvjtm",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/ww/81b3efc7-8d87-40e7-8c91-29814e012d53.png",
-  "tags": ["devcon", "buenos-aires", "side-event", "networking", "ethereum"],
+  "tags": [
+    "devcon",
+    "buenos-aires",
+    "side-event",
+    "networking",
+    "ethereum"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "nour-elden-nader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    }
+  ]
 }

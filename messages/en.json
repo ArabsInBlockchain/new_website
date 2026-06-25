@@ -30,10 +30,22 @@
     },
     "stats": {
       "since": "Since",
-      "telegram": { "count": "1K+", "label": "on Telegram" },
-      "twitter": { "count": "600+", "label": "on X" },
-      "linkedin": { "count": "2K+", "label": "on LinkedIn" },
-      "luma": { "count": "1.5K+", "label": "on Lu.ma" }
+      "telegram": {
+        "count": "1K+",
+        "label": "on Telegram"
+      },
+      "twitter": {
+        "count": "600+",
+        "label": "on X"
+      },
+      "linkedin": {
+        "count": "2K+",
+        "label": "on LinkedIn"
+      },
+      "luma": {
+        "count": "1.5K+",
+        "label": "on Lu.ma"
+      }
     },
     "whatWeDo": {
       "title": "What We Do",
@@ -91,6 +103,11 @@
       "title": "Your People Are Here",
       "subtitle": "1,000+ members across 15+ countries. Come learn, connect, and find your place in the Web3 world.",
       "cta": "Join Us"
+    },
+    "contributors": {
+      "title": "People Who Make It Happen",
+      "subtitle": "Every event is powered by community volunteers",
+      "viewAll": "View All Contributors"
     }
   },
   "events": {
@@ -214,6 +231,20 @@
         "title": "Job Opportunities",
         "description": "Curated Web3 jobs from our partner network"
       }
+    },
+    "contributors": {
+      "title": "Our Contributors",
+      "subtitle": "The people who make it happen — event by event",
+      "roles": {
+        "organizer": "Organizer",
+        "volunteer": "Event Volunteer"
+      },
+      "contributions": "Contributions",
+      "noContributions": "No contributors yet",
+      "viewEvent": "View Event",
+      "activeSince": "Active since",
+      "shareProfile": "Share Profile",
+      "backToContributors": "All Contributors"
     }
   },
   "partners": {
@@ -398,7 +429,132 @@
       "location": "Online (YouTube)"
     }
   },
-  "contributors": {},
+  "contributors": {
+    "eman-herawy": {
+      "name": "Eman Herawy",
+      "bio": "Founder of Arabs in Blockchain. Smart contract developer and open-source advocate building the bridge between the Arab world and global blockchain ecosystems since 2020."
+    },
+    "bahaa-taha": {
+      "name": "Bahaa Ehab Taha"
+    },
+    "omar-seifelnasr": {
+      "name": "Omar Mahmoud Seifelnasr"
+    },
+    "omar-osman": {
+      "name": "Omar Osman"
+    },
+    "hossam-elanany": {
+      "name": "Hossam Elanany"
+    },
+    "mohamed-ayman-zaki": {
+      "name": "Mohamed Ayman Zaki"
+    },
+    "nour-elden-nader": {
+      "name": "Nour Elden Nader"
+    },
+    "hassan-elashiry": {
+      "name": "Hassan Elashiry"
+    },
+    "tarek-mahdy": {
+      "name": "Tarek Mahdy"
+    },
+    "abdulrahman-fiala": {
+      "name": "Abdulrahman Fiala"
+    },
+    "tasneem-toolba": {
+      "name": "Tasneem Toolba"
+    },
+    "ahmed-bakry": {
+      "name": "Ahmed Bakry"
+    },
+    "mohamed-ashraf": {
+      "name": "Mohamed Ashraf"
+    },
+    "shkeir": {
+      "name": "Shkeir"
+    },
+    "hassaan-alansary": {
+      "name": "Hassaan Alansary"
+    },
+    "abdelrahman-shaban": {
+      "name": "Abdelrahman Shaban"
+    },
+    "ahmad-ateya": {
+      "name": "Ahmad Ateya"
+    },
+    "gamal-omar": {
+      "name": "Gamal Omar Mohamed"
+    },
+    "tamer-nabil": {
+      "name": "Tamer Nabil"
+    },
+    "anas-abuelhaag": {
+      "name": "Anas Abuelhaag"
+    },
+    "abdelrahman-ahmed": {
+      "name": "Abdelrahman Ahmed Mohamed"
+    },
+    "abdulrahman-reda": {
+      "name": "AbdulRahman Reda"
+    },
+    "kareem-akram": {
+      "name": "Kareem Akram"
+    },
+    "sherief-abdelqader": {
+      "name": "Sherief Abdelqader"
+    },
+    "rida-rhnizar": {
+      "name": "Rida Rhnizar"
+    },
+    "ali-adel": {
+      "name": "Ali Adel"
+    },
+    "tarek-abdallah": {
+      "name": "Tarek Abdallah"
+    },
+    "ahmed-atif": {
+      "name": "Ahmed Atif"
+    },
+    "yousef-medhat": {
+      "name": "Yousef Medhat Mohamed"
+    },
+    "abdulaziz-elnoti": {
+      "name": "Abdulaziz Muhammed Elnoti"
+    },
+    "ahmed-galal": {
+      "name": "Ahmed Galal Abdelhai"
+    },
+    "eslam-ahmed": {
+      "name": "Eslam Ahmed Saber"
+    },
+    "hager-abobakr": {
+      "name": "Hager Abobakr Hussien"
+    },
+    "ahmed-mostafa": {
+      "name": "Ahmed Mostafa"
+    },
+    "mohamed-ayman": {
+      "name": "Mohamed Ayman"
+    },
+    "salma-ahmed": {
+      "name": "Salma Ahmed"
+    },
+    "kareem-kasaab": {
+      "name": "Kareem Kasaab"
+    },
+    "ahmed-elsharabassi": {
+      "name": "Ahmed Elsharabassi"
+    },
+    "mohamed-elsharabassi": {
+      "name": "Mohamed Elsharabassi"
+    },
+    "janna-elsheshtawy": {
+      "name": "Janna Elsheshtawy"
+    },
+    "adham-ahmed": {
+      "name": "Adham Ahmed Kamel"
+    }
+  },
   "common": {
     "loading": "Loading...",
     "error": "Something went wrong",

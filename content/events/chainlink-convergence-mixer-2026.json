@@ -11,7 +11,22 @@
   "recap_url": "https://lu.ma/affnvmmd",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/dr/65c11296-8c81-4450-b9d4-8cabd396ca49.png",
-  "tags": ["cairo", "chainlink", "networking", "web3", "build-and-connect"],
+  "tags": [
+    "cairo",
+    "chainlink",
+    "networking",
+    "web3",
+    "build-and-connect"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "nour-elden-nader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    }
+  ]
 }

@@ -11,7 +11,66 @@
   "recap_url": "https://lu.ma/64h34xz7",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/ia/d51dd7b2-1eda-4969-9f8b-fac0324821b2.png",
-  "tags": ["cairo", "zero-knowledge", "zkverify", "0xcairo", "privacy"],
+  "tags": [
+    "cairo",
+    "zero-knowledge",
+    "zkverify",
+    "0xcairo",
+    "privacy"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "abdelrahman-ahmed",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "ali-adel",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "tarek-abdallah",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "ahmed-atif",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "yousef-medhat",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "nour-elden-nader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "abdulrahman-fiala",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "abdulaziz-elnoti",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "sherief-abdelqader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "ahmed-galal",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "janna-elsheshtawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "kareem-kasaab",
+      "role_key": "organizer"
+    }
+  ]
 }

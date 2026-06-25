@@ -11,7 +11,26 @@
   "recap_url": "https://lu.ma/55bt5n6o",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/9e/c7d97d11-fdd9-4137-9fba-c68b964d6228.png",
-  "tags": ["cairo", "dune", "analytics", "onchain-data", "build-and-connect"],
+  "tags": [
+    "cairo",
+    "dune",
+    "analytics",
+    "onchain-data",
+    "build-and-connect"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "nour-elden-nader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "hager-abobakr",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    }
+  ]
 }

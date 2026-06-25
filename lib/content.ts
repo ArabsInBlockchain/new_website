@@ -106,8 +106,34 @@ export interface ContributorMeta {
   photo: string;
   twitter: string;
   linkedin: string;
+  github?: string;
+}
+
+export type ContributorRole = 'organizer' | 'volunteer';
+
+export interface ContributorEvent {
+  role: ContributorRole;
+  eventMeta: EventMeta;
 }
 
 export function getContributorMeta(slug: string): ContributorMeta {
   return { slug, ...readJSON<Omit<ContributorMeta, 'slug'>>(path.join(contentDir, 'contributors', `${slug}.json`)) };
+}
+
+export function getAllContributorSlugs(): string[] {
+  return listSlugs('contributors');
+}
+
+export function getContributorEvents(contributorSlug: string): ContributorEvent[] {
+  const result: ContributorEvent[] = [];
+  for (const slug of getAllEventSlugs()) {
+    const meta = getEventMeta(slug);
+    const contrib = meta.contributors.find((c) => c.slug === contributorSlug);
+    if (contrib) {
+      result.push({ role: contrib.role_key as ContributorRole, eventMeta: meta });
+    }
+  }
+  return result.sort(
+    (a, b) => new Date(b.eventMeta.date).getTime() - new Date(a.eventMeta.date).getTime(),
+  );
 }

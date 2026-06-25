@@ -11,7 +11,18 @@
   "recap_url": "https://lu.ma/4elbifbc",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/bn/6c2955ee-4e7c-4d1f-8d36-f646561c750d",
-  "tags": ["online", "career", "cv", "job-hunting", "developers"],
+  "tags": [
+    "online",
+    "career",
+    "cv",
+    "job-hunting",
+    "developers"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    }
+  ]
 }

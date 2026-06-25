@@ -11,7 +11,38 @@
   "recap_url": "https://lu.ma/AI-Blockchain-Cairo",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/a2/7c044bac-d070-45d7-8254-15395c4598ef",
-  "tags": ["cairo", "ai", "blockchain", "brunch", "networking"],
+  "tags": [
+    "cairo",
+    "ai",
+    "blockchain",
+    "brunch",
+    "networking"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "nour-elden-nader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "salma-ahmed",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "ahmed-elsharabassi",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "janna-elsheshtawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "kareem-kasaab",
+      "role_key": "organizer"
+    }
+  ]
 }

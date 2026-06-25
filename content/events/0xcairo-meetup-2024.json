@@ -11,7 +11,38 @@
   "recap_url": "https://lu.ma/5g9xghsh",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/qi/89ab2c16-4ee6-4a02-bd0b-def87d12a921",
-  "tags": ["cairo", "meetup", "networking", "0xcairo", "web3"],
+  "tags": [
+    "cairo",
+    "meetup",
+    "networking",
+    "0xcairo",
+    "web3"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "abdulrahman-fiala",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "nour-elden-nader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "ahmed-elsharabassi",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "janna-elsheshtawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "kareem-kasaab",
+      "role_key": "organizer"
+    }
+  ]
 }

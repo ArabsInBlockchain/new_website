@@ -30,10 +30,22 @@
     },
     "stats": {
       "since": "منذ",
-      "telegram": { "count": "+1K", "label": "على تيليجرام" },
-      "twitter": { "count": "+600", "label": "على إكس" },
-      "linkedin": { "count": "+2K", "label": "على لينكدإن" },
-      "luma": { "count": "+1.5K", "label": "على لوما" }
+      "telegram": {
+        "count": "+1K",
+        "label": "على تيليجرام"
+      },
+      "twitter": {
+        "count": "+600",
+        "label": "على إكس"
+      },
+      "linkedin": {
+        "count": "+2K",
+        "label": "على لينكدإن"
+      },
+      "luma": {
+        "count": "+1.5K",
+        "label": "على لوما"
+      }
     },
     "whatWeDo": {
       "title": "ماذا نفعل",
@@ -91,6 +103,11 @@
       "title": "مجتمعك هنا",
       "subtitle": "أكثر من 1000 عضو من 15+ دولة. تعلّم، تواصل، وابدأ رحلتك في عالم ويب٣ .",
       "cta": "انضم إلينا"
+    },
+    "contributors": {
+      "title": "الأشخاص الذين يصنعون الأثر",
+      "subtitle": "كل فعالية تقوم على أكتاف متطوعين من المجتمع",
+      "viewAll": "عرض جميع المساهمين"
     }
   },
   "events": {
@@ -214,6 +231,20 @@
         "title": "فرص عمل",
         "description": "وظائف ويب٣ منتقاة من شبكة شركائنا"
       }
+    },
+    "contributors": {
+      "title": "مساهمونا",
+      "subtitle": "الأشخاص الذين يصنعون الأثر — فعالية تلو الأخرى",
+      "roles": {
+        "organizer": "منظّم",
+        "volunteer": "متطوع"
+      },
+      "contributions": "المساهمات",
+      "noContributions": "لا مساهمين بعد",
+      "viewEvent": "عرض الفعالية",
+      "activeSince": "نشط منذ",
+      "shareProfile": "مشاركة الملف الشخصي",
+      "backToContributors": "جميع المساهمين"
     }
   },
   "partners": {
@@ -398,7 +429,132 @@
       "location": "أونلاين (يوتيوب)"
     }
   },
-  "contributors": {},
+  "contributors": {
+    "eman-herawy": {
+      "name": "إيمان هراوي",
+      "bio": "مؤسِّسة مجتمع العرب في البلوكشين، ومطوِّرة عقود ذكية، وناشطة في المصدر المفتوح — تبني الجسر بين العالم العربي ومنظومة البلوكشين العالمية منذ 2020."
+    },
+    "bahaa-taha": {
+      "name": "بهاء إيهاب طه"
+    },
+    "omar-seifelnasr": {
+      "name": "عمر محمود سيف النصر"
+    },
+    "omar-osman": {
+      "name": "عمر عثمان"
+    },
+    "hossam-elanany": {
+      "name": "حسام العناني"
+    },
+    "mohamed-ayman-zaki": {
+      "name": "محمد أيمن زكي"
+    },
+    "nour-elden-nader": {
+      "name": "نور الدين نادر"
+    },
+    "hassan-elashiry": {
+      "name": "حسن العشيري"
+    },
+    "tarek-mahdy": {
+      "name": "طارق مهدي"
+    },
+    "abdulrahman-fiala": {
+      "name": "عبدالرحمن فيالة"
+    },
+    "tasneem-toolba": {
+      "name": "تسنيم طلبة"
+    },
+    "ahmed-bakry": {
+      "name": "أحمد بكري"
+    },
+    "mohamed-ashraf": {
+      "name": "محمد أشرف"
+    },
+    "shkeir": {
+      "name": "شكير"
+    },
+    "hassaan-alansary": {
+      "name": "حسان الأنصاري"
+    },
+    "abdelrahman-shaban": {
+      "name": "عبدالرحمن شعبان محمد"
+    },
+    "ahmad-ateya": {
+      "name": "أحمد عطية"
+    },
+    "gamal-omar": {
+      "name": "جمال عمر محمد"
+    },
+    "tamer-nabil": {
+      "name": "تامر نبيل"
+    },
+    "anas-abuelhaag": {
+      "name": "أنس أبو الحاج"
+    },
+    "abdelrahman-ahmed": {
+      "name": "عبدالرحمن أحمد محمد"
+    },
+    "abdulrahman-reda": {
+      "name": "عبدالرحمن رضا"
+    },
+    "kareem-akram": {
+      "name": "كريم أكرم"
+    },
+    "sherief-abdelqader": {
+      "name": "شريف عبد القادر"
+    },
+    "rida-rhnizar": {
+      "name": "رضا رحنيزار"
+    },
+    "ali-adel": {
+      "name": "علي عادل"
+    },
+    "tarek-abdallah": {
+      "name": "طارق محمد عبدالله"
+    },
+    "ahmed-atif": {
+      "name": "أحمد عاطف"
+    },
+    "yousef-medhat": {
+      "name": "يوسف مدحت محمد"
+    },
+    "abdulaziz-elnoti": {
+      "name": "عبدالعزيز محمد النوتي"
+    },
+    "ahmed-galal": {
+      "name": "أحمد جلال عبد الحي"
+    },
+    "eslam-ahmed": {
+      "name": "إسلام أحمد صابر"
+    },
+    "hager-abobakr": {
+      "name": "هاجر أبوبكر حسين"
+    },
+    "ahmed-mostafa": {
+      "name": "أحمد مصطفى"
+    },
+    "mohamed-ayman": {
+      "name": "محمد أيمن"
+    },
+    "salma-ahmed": {
+      "name": "سلمى أحمد"
+    },
+    "kareem-kasaab": {
+      "name": "كريم قصاب"
+    },
+    "ahmed-elsharabassi": {
+      "name": "أحمد الشرباصي"
+    },
+    "mohamed-elsharabassi": {
+      "name": "محمد الشرباصي"
+    },
+    "janna-elsheshtawy": {
+      "name": "جنا الششتاوي"
+    },
+    "adham-ahmed": {
+      "name": "أدهم أحمد كامل"
+    }
+  },
   "common": {
     "loading": "جاري التحميل...",
     "error": "حدث خطأ ما",

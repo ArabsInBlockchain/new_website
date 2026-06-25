@@ -11,7 +11,30 @@
   "recap_url": "https://www.eventbrite.com/e/web3-wellness-day-tickets-417400093917?aff=ebdsoporgprofile",
   "photos_count": 0,
   "banner_image": "https://res.cloudinary.com/dcig9rsj0/image/upload/v1780234420/image_axvghe.webp",
-  "tags": ["cairo", "wellness", "web3", "auc", "community"],
+  "tags": [
+    "cairo",
+    "wellness",
+    "web3",
+    "auc",
+    "community"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "salma-ahmed",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "omar-osman",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "kareem-kasaab",
+      "role_key": "organizer"
+    }
+  ]
 }

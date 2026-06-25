@@ -11,7 +11,126 @@
   "recap_url": "https://lu.ma/jzzxdqyr",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/yt/1163851c-e04b-43fb-9f01-a4bf147c4545",
-  "tags": ["cairo", "chainlink", "0xcairo", "tech-day", "blockchain"],
+  "tags": [
+    "cairo",
+    "chainlink",
+    "0xcairo",
+    "tech-day",
+    "blockchain"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "bahaa-taha",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "omar-seifelnasr",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "omar-osman",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "hossam-elanany",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "mohamed-ayman-zaki",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "nour-elden-nader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "hassan-elashiry",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "tarek-mahdy",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "abdulrahman-fiala",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "tasneem-toolba",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "ahmed-bakry",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "mohamed-ashraf",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "shkeir",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "hassaan-alansary",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "abdelrahman-shaban",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "ahmad-ateya",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "gamal-omar",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "tamer-nabil",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "anas-abuelhaag",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "abdelrahman-ahmed",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "abdulrahman-reda",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "kareem-akram",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "sherief-abdelqader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "rida-rhnizar",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "ahmed-elsharabassi",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "janna-elsheshtawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "kareem-kasaab",
+      "role_key": "organizer"
+    }
+  ]
 }

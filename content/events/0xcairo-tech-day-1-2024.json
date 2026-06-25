@@ -11,7 +11,68 @@
   "recap_url": "https://lu.ma/0xCairo",
   "photos_count": 0,
   "banner_image": "https://res.cloudinary.com/dcig9rsj0/image/upload/v1780234421/487044111_984818433836021_3003986036143841052_n_dgkks2.jpg",
-  "tags": ["cairo", "0xcairo", "tech-day", "blockchain", "chainlink", "zk-proofs", "education"],
+  "tags": [
+    "cairo",
+    "0xcairo",
+    "tech-day",
+    "blockchain",
+    "chainlink",
+    "zk-proofs",
+    "education"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "bahaa-taha",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "omar-osman",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "eslam-ahmed",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "gamal-omar",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "mohamed-ashraf",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "abdulrahman-reda",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "hager-abobakr",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "ahmed-mostafa",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "mohamed-ayman",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "salma-ahmed",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "janna-elsheshtawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "kareem-kasaab",
+      "role_key": "organizer"
+    }
+  ]
 }

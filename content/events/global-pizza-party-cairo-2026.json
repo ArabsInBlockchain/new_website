@@ -11,7 +11,23 @@
   "recap_url": "https://www.rsv.pizza/cairo",
   "photos_count": 0,
   "banner_image": "https://res.cloudinary.com/dcig9rsj0/image/upload/f_auto,q_auto/gpp-flyer-cmonm2teb0002ky0403c6c595_n87kgx",
-  "tags": ["cairo", "bitcoin", "pizza-day", "pizzadao", "ens", "community"],
+  "tags": [
+    "cairo",
+    "bitcoin",
+    "pizza-day",
+    "pizzadao",
+    "ens",
+    "community"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "adham-ahmed",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    }
+  ]
 }

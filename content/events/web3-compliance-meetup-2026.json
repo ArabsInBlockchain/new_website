@@ -11,7 +11,22 @@
   "recap_url": "https://lu.ma/38t8whsf",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/je/9734d7be-8cc6-49cc-965e-19ed140101ba.png",
-  "tags": ["cairo", "compliance", "regulation", "web3", "build-and-connect"],
+  "tags": [
+    "cairo",
+    "compliance",
+    "regulation",
+    "web3",
+    "build-and-connect"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "nour-elden-nader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    }
+  ]
 }

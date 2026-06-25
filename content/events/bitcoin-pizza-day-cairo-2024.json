@@ -11,7 +11,30 @@
   "recap_url": "https://lu.ma/pcgmtqvk",
   "photos_count": 0,
   "banner_image": "https://images.lumacdn.com/event-covers/cf/516b4040-304d-4dd2-86da-ca5672baf7e9",
-  "tags": ["cairo", "bitcoin", "pizza-day", "community", "celebration"],
+  "tags": [
+    "cairo",
+    "bitcoin",
+    "pizza-day",
+    "community",
+    "celebration"
+  ],
   "speakers": [],
-  "contributors": []
+  "contributors": [
+    {
+      "slug": "nour-elden-nader",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "janna-elsheshtawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "eman-herawy",
+      "role_key": "organizer"
+    },
+    {
+      "slug": "kareem-kasaab",
+      "role_key": "organizer"
+    }
+  ]
 }
