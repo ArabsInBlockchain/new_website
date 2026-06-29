@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://arabsinblockchain.netlify.app
+Host: https://arabsinblockchain.com
 
 # Sitemaps
-Sitemap: https://arabsinblockchain.netlify.app/sitemap.xml
+Sitemap: https://arabsinblockchain.com/sitemap.xml
