@@ -242,7 +242,7 @@ export default async function CommunityPage({ params }: Props) {
     <main>
       {/* Hero */}
       <div
-        className="theme-always-dark px-4 py-16 text-center"
+        className="theme-always-dark px-4 py-20 text-center"
         style={{ background: 'var(--gradient-hero)' }}
       >
         <div className="mx-auto max-w-3xl md:px-8">
@@ -252,7 +252,7 @@ export default async function CommunityPage({ params }: Props) {
           <h1 className="mb-4 text-3xl font-extrabold text-foreground md:text-5xl">
             {t('people.title')}
           </h1>
-          <p className="mx-auto max-w-xl text-base text-muted">{t('people.subtitle')}</p>
+          <p className="mx-auto max-w-2xl text-base text-muted">{t('people.subtitle')}</p>
         </div>
       </div>
 

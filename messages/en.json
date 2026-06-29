@@ -246,24 +246,24 @@
       }
     },
     "people": {
-      "title": "Our Community",
-      "subtitle": "Meet the people who power Arabs in Blockchain"
+      "title": "People Who Make It Happen",
+      "subtitle": "Every event, every line of code, every stage moment — powered by community"
     },
     "volunteers": {
-      "title": "Event Volunteers",
-      "subtitle": "The people behind every event — organizing, hosting, and showing up",
+      "title": "The Crew",
+      "subtitle": "The people who show up, roll up their sleeves, and make every event happen",
       "noMembers": "No volunteers yet",
       "backToAll": "All Community"
     },
     "speakers": {
-      "title": "Speakers",
-      "subtitle": "Community members who have taken the stage at our events",
+      "title": "On Stage",
+      "subtitle": "Voices who've taken the mic and shared their knowledge with the community",
       "noMembers": "No speakers listed yet",
       "backToAll": "All Community"
     },
     "donors": {
       "title": "Community Pillars",
-      "subtitle": "Individuals who go above and beyond to make our events possible",
+      "subtitle": "Those who believe in this community deeply enough to fund it",
       "noMembers": "No community pillars listed yet",
       "badge": "Community Pillar",
       "eventsSupported": "Events supported",
@@ -271,8 +271,8 @@
       "backToAll": "All Community"
     },
     "contributors": {
-      "title": "Open-Source Contributors",
-      "subtitle": "Members who contribute to our open-source projects on GitHub",
+      "title": "Open-Source Builders",
+      "subtitle": "Developers putting in real work — PRs merged, bugs squashed, features shipped",
       "roles": {
         "organizer": "Organizer",
         "volunteer": "Event Volunteer"
