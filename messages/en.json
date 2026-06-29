@@ -206,20 +206,9 @@
   "community": {
     "title": "Join the Community",
     "subtitle": "Become part of the Arab blockchain movement",
-    "howItWorks": {
-      "title": "How to Join",
-      "step1": {
-        "title": "Click the Link",
-        "description": "Find our Telegram group link below"
-      },
-      "step2": {
-        "title": "Join Our Telegram",
-        "description": "The heart of our community"
-      },
-      "step3": {
-        "title": "Introduce Yourself!",
-        "description": "Tell us who you are and what you do"
-      }
+    "join": {
+      "title": "We're on Telegram",
+      "subtitle": "Free to join. Open to all. Come say hi."
     },
     "joinCta": "Join on Telegram",
     "channels": {

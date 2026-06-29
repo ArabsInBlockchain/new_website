@@ -304,27 +304,14 @@ export default async function CommunityPage({ params }: Props) {
         />
       </div>
 
-      {/* How to Join */}
+      {/* Join CTA */}
       <section
-        className="theme-always-dark px-4 py-16"
+        className="theme-always-dark px-4 py-16 text-center"
         style={{ backgroundColor: 'color-mix(in srgb, var(--color-brand-violet) 15%, var(--color-bg-dark))' }}
       >
-        <div className="mx-auto max-w-3xl text-center md:px-8">
-          <h2 className="mb-10 text-2xl font-extrabold text-foreground">{t('howItWorks.title')}</h2>
-          <div className="mb-10 grid gap-6 sm:grid-cols-3">
-            {(['step1', 'step2', 'step3'] as const).map((step, i) => (
-              <div key={step} className="flex flex-col items-center gap-3 text-center">
-                <div
-                  className="flex h-12 w-12 items-center justify-center rounded-full text-lg font-extrabold text-white"
-                  style={{ background: 'var(--gradient-cta)' }}
-                >
-                  {i + 1}
-                </div>
-                <h3 className="font-semibold text-foreground">{t(`howItWorks.${step}.title`)}</h3>
-                <p className="text-sm text-muted">{t(`howItWorks.${step}.description`)}</p>
-              </div>
-            ))}
-          </div>
+        <div className="mx-auto max-w-xl md:px-8">
+          <h2 className="mb-3 text-2xl font-extrabold text-foreground">{t('join.title')}</h2>
+          <p className="mb-8 text-base text-muted">{t('join.subtitle')}</p>
           <a
             href="https://t.me/ArabsInBlockchain"
             target="_blank"
