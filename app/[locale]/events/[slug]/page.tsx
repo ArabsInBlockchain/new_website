@@ -227,9 +227,13 @@ export default async function EventDetailPage({ params }: Props) {
   const volunteers = meta.contributors
     .filter((c) => c.role_key === 'volunteer')
     .map((c) => loadPerson(c.slug, tPeople));
+  const donors = meta.donors.map((d) => loadPerson(d, tPeople));
 
   const hasPeople =
-    speakers.length > 0 || organizers.length > 0 || volunteers.length > 0;
+    speakers.length > 0 ||
+    organizers.length > 0 ||
+    volunteers.length > 0 ||
+    donors.length > 0;
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -424,6 +428,11 @@ export default async function EventDetailPage({ params }: Props) {
             people={volunteers}
             locale={locale}
             profileBasePath="volunteers"
+          />
+          <PeopleSection
+            title={tEvents('detail.donors')}
+            people={donors}
+            locale={locale}
           />
         </div>
       )}
