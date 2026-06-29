@@ -18,7 +18,12 @@
     "0xcairo",
     "privacy"
   ],
-  "speakers": [],
+  "speakers": [
+    "milica-vulic",
+    "al-qaqaa",
+    "frank-castle",
+    "rami-khalil"
+  ],
   "contributors": [
     {
       "slug": "abdelrahman-ahmed",
@@ -80,5 +85,6 @@
       "slug": "hossam-elanany",
       "role_key": "volunteer"
     }
-  ]
+  ],
+  "donors": []
 }

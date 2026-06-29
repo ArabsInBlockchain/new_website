@@ -18,7 +18,9 @@
     "mixer",
     "linkup"
   ],
-  "speakers": [],
+  "speakers": [
+    "tasneem-toolba"
+  ],
   "contributors": [
     {
       "slug": "nour-elden-nader",
@@ -28,5 +30,6 @@
       "slug": "eman-herawy",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

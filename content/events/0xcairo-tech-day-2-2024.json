@@ -18,7 +18,18 @@
     "tech-day",
     "blockchain"
   ],
-  "speakers": [],
+  "speakers": [
+    "eman-herawy",
+    "kareem-kasaab",
+    "janna-elsheshtawy",
+    "bahaa-taha",
+    "rami-khalil",
+    "al-qaqaa",
+    "frank-castle",
+    "yehia-tarek",
+    "mohamed-hassanien",
+    "ahmed-elsharabassi"
+  ],
   "contributors": [
     {
       "slug": "bahaa-taha",
@@ -69,10 +80,6 @@
       "role_key": "volunteer"
     },
     {
-      "slug": "shkeir",
-      "role_key": "volunteer"
-    },
-    {
       "slug": "hassaan-alansary",
       "role_key": "volunteer"
     },
@@ -86,10 +93,6 @@
     },
     {
       "slug": "gamal-omar",
-      "role_key": "volunteer"
-    },
-    {
-      "slug": "tamer-nabil",
       "role_key": "volunteer"
     },
     {
@@ -113,10 +116,6 @@
       "role_key": "volunteer"
     },
     {
-      "slug": "rida-rhnizar",
-      "role_key": "volunteer"
-    },
-    {
       "slug": "ahmed-elsharabassi",
       "role_key": "organizer"
     },
@@ -132,5 +131,6 @@
       "slug": "kareem-kasaab",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

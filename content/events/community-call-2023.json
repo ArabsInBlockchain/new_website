@@ -17,11 +17,19 @@
     "monthly",
     "web3"
   ],
-  "speakers": [],
+  "speakers": [
+    "eman-herawy",
+    "khawla-hassan",
+    "beshoy-shehara",
+    "mohamed-abdou",
+    "mustafa-elnaquip",
+    "mohamed-darwish"
+  ],
   "contributors": [
     {
       "slug": "eman-herawy",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

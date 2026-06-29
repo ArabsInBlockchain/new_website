@@ -1,27 +1,28 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { User } from 'lucide-react';
-import type { ContributorMeta, ContributorEvent } from '@/lib/content';
+import type { PersonMeta, ContributorEvent } from '@/lib/content';
 import { avatarUrl } from '@/lib/content';
 
 interface Props {
-  meta: ContributorMeta;
+  meta: PersonMeta;
   name: string;
   events: ContributorEvent[];
   locale: string;
+  profileBasePath?: string;
   t: { organizer: string; volunteer: string };
 }
 
 const MAX_DOTS = 12;
 
-export default function ContributorCard({ meta, name, events, locale, t }: Props) {
+export default function ContributorCard({ meta, name, events, locale, profileBasePath = 'contributors', t }: Props) {
   const roles = [...new Set(events.map((e) => e.role))];
   const visibleDots = events.slice(0, MAX_DOTS);
   const extra = events.length - MAX_DOTS;
 
   return (
     <Link
-      href={`/${locale}/community/contributors/${meta.slug}`}
+      href={`/${locale}/community/${profileBasePath}/${meta.slug}`}
       className="group flex flex-col items-center gap-4 rounded-card p-6 text-center transition-all duration-300 hover:-translate-y-1"
       style={{
         backgroundColor: 'var(--color-card-bg)',

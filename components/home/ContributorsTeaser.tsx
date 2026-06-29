@@ -3,9 +3,9 @@ import Image from 'next/image';
 import { ArrowRight, User } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';
 import {
-  getAllContributorSlugs,
-  getContributorMeta,
-  getContributorEvents,
+  getAllVolunteerSlugs,
+  getPersonMeta,
+  getVolunteerEvents,
   avatarUrl,
 } from '@/lib/content';
 
@@ -19,11 +19,11 @@ export default async function ContributorsTeaser({ locale }: Props) {
   const t = await getTranslations({ locale, namespace: 'home.contributors' });
   const tContribs = await getTranslations({ locale, namespace: 'contributors' });
 
-  const allSlugs = getAllContributorSlugs();
+  const allSlugs = getAllVolunteerSlugs();
 
   // Sort by event count descending — most active volunteers first
   const ranked = allSlugs
-    .map((slug) => ({ slug, count: getContributorEvents(slug).length }))
+    .map((slug) => ({ slug, count: getVolunteerEvents(slug).length }))
     .sort((a, b) => b.count - a.count);
 
   const preview = ranked.slice(0, PREVIEW_COUNT);
@@ -46,14 +46,14 @@ export default async function ContributorsTeaser({ locale }: Props) {
         {/* Avatar grid */}
         <div className="mb-8 flex flex-wrap justify-center gap-6">
           {preview.map(({ slug, count }) => {
-            const meta = getContributorMeta(slug);
+            const meta = getPersonMeta(slug);
             let name = slug;
             try { name = tContribs(`${slug}.name`); } catch { /* missing */ }
 
             return (
               <Link
                 key={slug}
-                href={`/${locale}/community/contributors/${slug}`}
+                href={`/${locale}/community/volunteers/${slug}`}
                 className="group flex flex-col items-center gap-2"
                 title={name}
               >
@@ -113,7 +113,7 @@ export default async function ContributorsTeaser({ locale }: Props) {
           {/* +N more pill */}
           {extra > 0 && (
             <Link
-              href={`/${locale}/community/contributors`}
+              href={`/${locale}/community/volunteers`}
               className="flex flex-col items-center gap-2"
             >
               <div
@@ -130,7 +130,7 @@ export default async function ContributorsTeaser({ locale }: Props) {
         {/* View All CTA */}
         <div className="text-center">
           <Link
-            href={`/${locale}/community/contributors`}
+            href={`/${locale}/community/volunteers`}
             className="inline-flex items-center gap-2 rounded-btn border px-6 py-2.5 text-sm font-semibold transition-colors hover:border-brand-teal hover:text-brand-teal"
             style={{ borderColor: 'var(--color-card-border)', color: 'var(--color-text-muted)' }}
           >

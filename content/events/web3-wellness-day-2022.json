@@ -18,7 +18,18 @@
     "auc",
     "community"
   ],
-  "speakers": [],
+  "speakers": [
+    "wes-saunders",
+    "mohamed-abdou",
+    "mohamed-taysir",
+    "hussein-hashish",
+    "laman-mohamed",
+    "beshoy-shehara",
+    "mohammed-mahmoud-2",
+    "christine-lewis",
+    "kareem-kasaab",
+    "mohamed-darwish"
+  ],
   "contributors": [
     {
       "slug": "omar-osman",
@@ -32,5 +43,6 @@
       "slug": "kareem-kasaab",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

@@ -18,7 +18,14 @@
     "brunch",
     "networking"
   ],
-  "speakers": [],
+  "speakers": [
+    "youssef-kamal",
+    "tarry-singh",
+    "shaheen-ahmed",
+    "elif-hilal",
+    "mohamed-abdou",
+    "mohamed-taysir"
+  ],
   "contributors": [
     {
       "slug": "nour-elden-nader",
@@ -44,5 +51,6 @@
       "slug": "kareem-kasaab",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

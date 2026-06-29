@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://arabsinblockchain.netlify.app
+
+# Sitemaps
+Sitemap: https://arabsinblockchain.netlify.app/sitemap.xml

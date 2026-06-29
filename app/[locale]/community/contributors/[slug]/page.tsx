@@ -2,9 +2,9 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import {
-  getAllContributorSlugs,
-  getContributorMeta,
-  getContributorEvents,
+  getAllPeopleSlugs,
+  getPersonMeta,
+  getVolunteerEvents,
   avatarUrl,
 } from '@/lib/content';
 import { notFound } from 'next/navigation';
@@ -18,7 +18,7 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.
 type Props = { params: Promise<{ locale: string; slug: string }> };
 
 export function generateStaticParams() {
-  const slugs = getAllContributorSlugs();
+  const slugs = getAllPeopleSlugs();
   return routing.locales.flatMap((locale) =>
     slugs.map((slug) => ({ locale, slug })),
   );
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   let name = slug;
   try { name = tContribs(`${slug}.name`); } catch { /* missing translation */ }
 
-  const events = getContributorEvents(slug);
+  const events = getVolunteerEvents(slug);
   const roles = [...new Set(events.map((e) => e.role))];
   const roleLabels = roles
     .map((r) =>
@@ -68,7 +68,7 @@ export default async function ContributorProfilePage({ params }: Props) {
   const { locale, slug } = await params;
   setRequestLocale(locale);
 
-  if (!getAllContributorSlugs().includes(slug)) notFound();
+  if (!getAllPeopleSlugs().includes(slug)) notFound();
 
   const [tCommunity, tContribs, tEventData] = await Promise.all([
     getTranslations({ locale, namespace: 'community' }),
@@ -76,8 +76,8 @@ export default async function ContributorProfilePage({ params }: Props) {
     getTranslations({ locale, namespace: 'events_data' }),
   ]);
 
-  const meta = getContributorMeta(slug);
-  const events = getContributorEvents(slug);
+  const meta = getPersonMeta(slug);
+  const events = getVolunteerEvents(slug);
 
   let name = slug;
   let title = '';

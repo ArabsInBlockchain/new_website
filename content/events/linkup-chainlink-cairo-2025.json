@@ -18,7 +18,9 @@
     "mixer",
     "linkup"
   ],
-  "speakers": [],
+  "speakers": [
+    "eman-herawy"
+  ],
   "contributors": [
     {
       "slug": "nour-elden-nader",
@@ -36,5 +38,6 @@
       "slug": "kareem-kasaab",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

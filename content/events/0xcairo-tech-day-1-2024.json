@@ -20,7 +20,17 @@
     "zk-proofs",
     "education"
   ],
-  "speakers": [],
+  "speakers": [
+    "kareem-kasaab",
+    "eman-herawy",
+    "mohammed-mahmoud",
+    "aya-ramadan",
+    "mohamed-taysir",
+    "ahmed-elsharabassi",
+    "hussein-hashish",
+    "soha-safwat",
+    "janna-elsheshtawy"
+  ],
   "contributors": [
     {
       "slug": "bahaa-taha",
@@ -74,5 +84,6 @@
       "slug": "kareem-kasaab",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

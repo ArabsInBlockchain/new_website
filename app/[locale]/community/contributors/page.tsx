@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
-import { getAllContributorSlugs, getContributorMeta, getContributorEvents } from '@/lib/content';
-import ContributorCard from '@/components/community/ContributorCard';
+import { getAllOssContributorSlugs, getPersonMeta } from '@/lib/content';
+import OssContributorCard from '@/components/community/OssContributorCard';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.com';
 
@@ -33,30 +33,23 @@ export default async function ContributorsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const [tCommunity, tContribs] = await Promise.all([
+  const [tCommunity, tPeople] = await Promise.all([
     getTranslations({ locale, namespace: 'community' }),
     getTranslations({ locale, namespace: 'contributors' }),
   ]);
 
-  const slugs = getAllContributorSlugs();
-  const contributors = slugs
-    .map((slug) => {
-      const meta = getContributorMeta(slug);
-      const events = getContributorEvents(slug);
-      let name = slug;
-      try { name = tContribs(`${slug}.name`); } catch { /* missing translation */ }
-      return { meta, name, events };
-    })
-    .sort((a, b) => b.events.length - a.events.length);
-
-  const rolesT = {
-    organizer: tCommunity('contributors.roles.organizer'),
-    volunteer: tCommunity('contributors.roles.volunteer'),
-  };
+  const slugs = getAllOssContributorSlugs();
+  const contributors = slugs.map((slug) => {
+    const meta = getPersonMeta(slug);
+    let name = slug;
+    let title = '';
+    try { name = tPeople(`${slug}.name`); } catch { /* missing translation */ }
+    try { title = tPeople(`${slug}.title`); } catch { /* missing translation */ }
+    return { meta, name, title };
+  });
 
   return (
     <main>
-      {/* Page header */}
       <div
         className="theme-always-dark px-4 py-16 text-center"
         style={{ background: 'var(--gradient-hero)' }}
@@ -74,20 +67,17 @@ export default async function ContributorsPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Contributors grid */}
       <section className="mx-auto max-w-7xl px-4 py-16 md:px-8">
         {contributors.length === 0 ? (
           <p className="text-center text-muted">{tCommunity('contributors.noContributions')}</p>
         ) : (
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-            {contributors.map(({ meta, name, events }) => (
-              <ContributorCard
+            {contributors.map(({ meta, name, title }) => (
+              <OssContributorCard
                 key={meta.slug}
                 meta={meta}
                 name={name}
-                events={events}
-                locale={locale}
-                t={rolesT}
+                title={title}
               />
             ))}
           </div>

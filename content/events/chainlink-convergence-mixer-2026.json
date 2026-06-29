@@ -18,7 +18,9 @@
     "web3",
     "build-and-connect"
   ],
-  "speakers": [],
+  "speakers": [
+    "eman-herawy"
+  ],
   "contributors": [
     {
       "slug": "nour-elden-nader",
@@ -28,5 +30,6 @@
       "slug": "eman-herawy",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

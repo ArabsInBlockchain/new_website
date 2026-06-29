@@ -18,11 +18,16 @@
     "education",
     "foundational"
   ],
-  "speakers": [],
+  "speakers": [
+    "mohamed-fouda",
+    "hassan-imam",
+    "eman-herawy"
+  ],
   "contributors": [
     {
       "slug": "eman-herawy",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

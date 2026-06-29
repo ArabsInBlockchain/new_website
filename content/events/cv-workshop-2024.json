@@ -18,7 +18,10 @@
     "job-hunting",
     "developers"
   ],
-  "speakers": [],
+  "speakers": [
+    "aya-ramadan",
+    "khawla-hassan"
+  ],
   "contributors": [
     {
       "slug": "eman-herawy",
@@ -28,5 +31,6 @@
       "slug": "khawla-hassan",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

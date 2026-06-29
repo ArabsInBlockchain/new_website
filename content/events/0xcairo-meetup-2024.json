@@ -18,7 +18,9 @@
     "0xcairo",
     "web3"
   ],
-  "speakers": [],
+  "speakers": [
+    "eiman-abdelmoneim"
+  ],
   "contributors": [
     {
       "slug": "abdulrahman-fiala",
@@ -40,5 +42,6 @@
       "slug": "kareem-kasaab",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

@@ -35,6 +35,7 @@ export interface EventMeta {
   tags: string[];
   speakers: string[];
   contributors: Array<{ slug: string; role_key: string }>;
+  donors: string[];
 }
 
 export function getEventMeta(slug: string): EventMeta {
@@ -43,23 +44,6 @@ export function getEventMeta(slug: string): EventMeta {
 
 export function getAllEventSlugs(): string[] {
   return listSlugs('events');
-}
-
-// ── Speakers ──────────────────────────────────────────────────────────────────
-
-export interface SpeakerMeta {
-  slug: string;
-  photo: string;
-  twitter: string;
-  linkedin: string;
-}
-
-export function getSpeakerMeta(slug: string): SpeakerMeta {
-  return { slug, ...readJSON<Omit<SpeakerMeta, 'slug'>>(path.join(contentDir, 'speakers', `${slug}.json`)) };
-}
-
-export function getAllSpeakerSlugs(): string[] {
-  return listSlugs('speakers');
 }
 
 // ── Partners ──────────────────────────────────────────────────────────────────
@@ -99,16 +83,20 @@ export function getAllTeamSlugs(): string[] {
   return listSlugs('team');
 }
 
-// ── Contributors ──────────────────────────────────────────────────────────────
+// ── People (all community members) ───────────────────────────────────────────
 
-export interface ContributorMeta {
+export interface PersonMeta {
   slug: string;
   photo: string;
   twitter: string;
   linkedin: string;
   github?: string;
+  is_oss_contributor: boolean;
+  is_donor: boolean;
+  donor_since?: string;
 }
 
+// Role a person held in a specific event (as a contributor/volunteer)
 export type ContributorRole = 'organizer' | 'volunteer';
 
 export interface ContributorEvent {
@@ -116,19 +104,20 @@ export interface ContributorEvent {
   eventMeta: EventMeta;
 }
 
-export function getContributorMeta(slug: string): ContributorMeta {
-  return { slug, ...readJSON<Omit<ContributorMeta, 'slug'>>(path.join(contentDir, 'contributors', `${slug}.json`)) };
+export function getPersonMeta(slug: string): PersonMeta {
+  return { slug, ...readJSON<Omit<PersonMeta, 'slug'>>(path.join(contentDir, 'people', `${slug}.json`)) };
 }
 
-export function getAllContributorSlugs(): string[] {
-  return listSlugs('contributors');
+export function getAllPeopleSlugs(): string[] {
+  return listSlugs('people');
 }
 
-export function getContributorEvents(contributorSlug: string): ContributorEvent[] {
+// Events where this person appears in event.contributors[] (organizer or volunteer)
+export function getVolunteerEvents(personSlug: string): ContributorEvent[] {
   const result: ContributorEvent[] = [];
   for (const slug of getAllEventSlugs()) {
     const meta = getEventMeta(slug);
-    const contrib = meta.contributors.find((c) => c.slug === contributorSlug);
+    const contrib = meta.contributors.find((c) => c.slug === personSlug);
     if (contrib) {
       result.push({ role: contrib.role_key as ContributorRole, eventMeta: meta });
     }
@@ -136,6 +125,54 @@ export function getContributorEvents(contributorSlug: string): ContributorEvent[
   return result.sort(
     (a, b) => new Date(b.eventMeta.date).getTime() - new Date(a.eventMeta.date).getTime(),
   );
+}
+
+// Events where this person appears in event.speakers[]
+export function getSpeakerEventMetas(personSlug: string): EventMeta[] {
+  return getAllEventSlugs()
+    .map(getEventMeta)
+    .filter((meta) => meta.speakers.includes(personSlug))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+// Events where this person appears in event.donors[]
+export function getDonorEventMetas(personSlug: string): EventMeta[] {
+  return getAllEventSlugs()
+    .map(getEventMeta)
+    .filter((meta) => meta.donors.includes(personSlug))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+// All unique person slugs who appear in any event.contributors[]
+export function getAllVolunteerSlugs(): string[] {
+  const slugs = new Set<string>();
+  for (const slug of getAllEventSlugs()) {
+    getEventMeta(slug).contributors.forEach((c) => slugs.add(c.slug));
+  }
+  return [...slugs];
+}
+
+// All unique person slugs who appear in any event.speakers[]
+export function getAllSpeakerSlugs(): string[] {
+  const slugs = new Set<string>();
+  for (const slug of getAllEventSlugs()) {
+    getEventMeta(slug).speakers.forEach((s) => slugs.add(s));
+  }
+  return [...slugs];
+}
+
+// All person slugs where is_donor: true
+export function getAllDonorSlugs(): string[] {
+  return getAllPeopleSlugs().filter((slug) => {
+    try { return getPersonMeta(slug).is_donor; } catch { return false; }
+  });
+}
+
+// All person slugs where is_oss_contributor: true
+export function getAllOssContributorSlugs(): string[] {
+  return getAllPeopleSlugs().filter((slug) => {
+    try { return getPersonMeta(slug).is_oss_contributor; } catch { return false; }
+  });
 }
 
 // Transforms a Cloudinary URL to use face-detected square crop.

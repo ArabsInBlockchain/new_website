@@ -18,7 +18,10 @@
     "builder-party",
     "web3"
   ],
-  "speakers": [],
+  "speakers": [
+    "tarek-m-abdalla",
+    "yehia-tarek"
+  ],
   "contributors": [
     {
       "slug": "nour-elden-nader",
@@ -32,5 +35,6 @@
       "slug": "eman-herawy",
       "role_key": "organizer"
     }
-  ]
+  ],
+  "donors": []
 }

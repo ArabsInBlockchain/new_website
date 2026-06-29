@@ -178,7 +178,7 @@
       "title": "Our Journey",
       "2020": "Founded on Facebook, LinkedIn & Discord — launched our webinar series",
       "2021": "Hosted the first Arab Blockchain Week — secured 25+ Consensys Academy scholarships — Telegram group launched, community building begins",
-      "2022": "First in-person event at the American University in Cairo",
+      "2022": "First in-person events at AUC Cairo — Web3 Wellness Day — exhibited at GITEX Tech Week Dubai — co-organized Pitch Run Arabia",
       "2024": "First side event in Cairo — introducing the concept to Egypt. First side event at a major global conference (ETHcc 7). Secured free Devcon Bangkok tickets for 20+ members, majority women and students.",
       "2026": "Hosting IRL hub for Dev3pack Hack — uniting builders in Cairo for an intense, high-energy hacking experience"
     },
@@ -232,9 +232,34 @@
         "description": "Curated Web3 jobs from our partner network"
       }
     },
+    "people": {
+      "title": "Our Community",
+      "subtitle": "Meet the people who power Arabs in Blockchain"
+    },
+    "volunteers": {
+      "title": "Event Volunteers",
+      "subtitle": "The people behind every event — organizing, hosting, and showing up",
+      "noMembers": "No volunteers yet",
+      "backToAll": "All Community"
+    },
+    "speakers": {
+      "title": "Speakers",
+      "subtitle": "Community members who have taken the stage at our events",
+      "noMembers": "No speakers listed yet",
+      "backToAll": "All Community"
+    },
+    "donors": {
+      "title": "Community Pillars",
+      "subtitle": "Individuals who go above and beyond to make our events possible",
+      "noMembers": "No community pillars listed yet",
+      "badge": "Community Pillar",
+      "eventsSupported": "Events supported",
+      "supportingSince": "Supporting since",
+      "backToAll": "All Community"
+    },
     "contributors": {
-      "title": "Our Contributors",
-      "subtitle": "The people who make it happen — event by event",
+      "title": "Open-Source Contributors",
+      "subtitle": "Members who contribute to our open-source projects on GitHub",
       "roles": {
         "organizer": "Organizer",
         "volunteer": "Event Volunteer"
@@ -242,7 +267,7 @@
       "contributions": "Contributions",
       "noContributions": "No contributors yet",
       "viewEvent": "View Event",
-      "activeSince": "Active since",
+      "activeSince": "Contributing since",
       "shareProfile": "Share Profile",
       "backToContributors": "All Contributors"
     }
@@ -437,8 +462,8 @@
     },
     "bahaa-taha": {
       "name": "Bahaa Ehab Taha",
-      "title": "",
-      "bio": ""
+      "title": "Full-Stack Blockchain Developer & Founder of Tecno Blocks",
+      "bio": "Blockchain Developer with 9 years of experience. Passionate about building sites and apps, with a focus on integrating Web2 and Web3 technologies. Founder of Tecno Blocks and ardapps."
     },
     "omar-seifelnasr": {
       "name": "Omar Mahmoud Seifelnasr",
@@ -482,8 +507,8 @@
     },
     "tasneem-toolba": {
       "name": "Tasneem Toolba",
-      "title": "",
-      "bio": ""
+      "title": "Full-Stack Web3 Developer",
+      "bio": "Full-Stack Web3 Developer and multiple hackathon winner."
     },
     "ahmed-bakry": {
       "name": "Ahmed Bakry",
@@ -591,19 +616,14 @@
       "bio": ""
     },
     "kareem-kasaab": {
-      "name": "Kareem Kasaab",
-      "title": "",
+      "name": "Kareem Kassab",
+      "title": "Founder of Blokkat",
       "bio": ""
     },
     "ahmed-elsharabassi": {
       "name": "Ahmed Elsharabassi",
-      "title": "",
-      "bio": ""
-    },
-    "mohamed-elsharabassi": {
-      "name": "Mohamed Elsharabassi",
-      "title": "Data Scientist",
-      "bio": ""
+      "title": "Events Manager at 1inch Network",
+      "bio": "Web3 events expert with a background in Engineering and Management. MSc from TU Berlin. Managing global events at 1inch Network, the leading DeFi Aggregation Protocol."
     },
     "janna-elsheshtawy": {
       "name": "Janna Elsheshtawy",
@@ -616,13 +636,203 @@
       "bio": ""
     },
     "beshoy-shehara": {
-      "name": "Beshoy Shehara",
-      "bio": "",
-      "title": ""
+      "name": "Beshoy Shehata",
+      "title": "DeFi Talent Alumni",
+      "bio": ""
     },
     "khawla-hassan": {
       "name": "Khawla Hassan",
       "title": "Technical Product Manager — Digital Assets, Blockchain & AI",
+      "bio": ""
+    },
+    "mustafa-elnaquip": {
+      "name": "Mustafa Abdullah Elnaquip",
+      "title": "Fintech Engineer — AWS, C++, Python",
+      "bio": ""
+    },
+    "mohamed-darwish": {
+      "name": "Mohamed Darwish",
+      "title": "",
+      "bio": ""
+    },
+    "hussein-hashish": {
+      "name": "Hussein Hashish",
+      "title": "Founder & CEO at likwid",
+      "bio": "Spent thirteen years in supply chain and shipping before falling down the blockchain rabbit hole in 2018. MSc in Blockchain & Digital Currencies from University of Nicosia. Founded Blockchain Hub Egypt, launched Metaversive (a Web3 advisory), and now building likwid — a blockchain-powered loyalty app."
+    },
+    "mohammed-mahmoud-2": {
+      "name": "Mohammed Mahmoud",
+      "title": "",
+      "bio": ""
+    },
+    "mohammed-mahmoud": {
+      "name": "Mohammed Mahmoud",
+      "title": "Researcher at ZkLC",
+      "bio": "Engineer building real-world applications in crypto — including a trade finance escrow service and verifiable accounting software. Active contributor in the Mina, Starknet, Aztec, Ethereum, and Bitcoin ecosystems."
+    },
+    "mohamed-taysir": {
+      "name": "Mohamed Taysir",
+      "title": "CEO at Singularity Finance",
+      "bio": "CEO of Singularity Finance, a Blockchain Fintech startup in the UAE. Active in the blockchain space since 2017, global speaker at high-level events across Egypt, Japan, UAE, USA, UK, and Africa. Certified blockchain solutions architect and instructor."
+    },
+    "yehia-tarek": {
+      "name": "Yehia Tarek",
+      "title": "Blockchain Engineer at Nethermind",
+      "bio": "Blockchain Engineer at Nethermind, contributing to DeFi and tokenization platforms. Builds solutions in blockchain technology to improve and innovate in the financial sector."
+    },
+    "aya-ramadan": {
+      "name": "Aya Ramadan Ali",
+      "title": "Technical Recruiter (ex-Nethermind)",
+      "bio": "Technical Recruiter, formerly at Nethermind where she helped expand their reach to over 50 countries. Connects top Web3 talent with opportunities across the globe."
+    },
+    "ahmed-akram": {
+      "name": "Ahmed Akram",
+      "title": "Tech Lead & Co-founder at FuzeX",
+      "bio": "Seasoned software engineer and co-founder of FuzeX, serving as tech lead. Works across blockchain, full-stack development, and deep learning."
+    },
+    "milica-vulic": {
+      "name": "Milica Vulic",
+      "title": "Developer Relations Engineer & PhD candidate in ZK",
+      "bio": "Developer Relations Engineer at zkVerify and Horizen, and a PhD candidate specialising in Zero Knowledge Proofs. With over 8 years of experience as a developer and working in Web3 since 2018, she crafts developer-first content, tutorials, and workshops that make ZK approachable and practical for builders."
+    },
+    "al-qaqaa": {
+      "name": "Al-Qa'qa'",
+      "title": "Web3 Security Researcher",
+      "bio": "EVM smart contract auditor and Web3 security researcher who secures smart contracts to avoid loss of funds."
+    },
+    "frank-castle": {
+      "name": "Frank Castle",
+      "title": "Rust/Solana Security Auditor",
+      "bio": "Professional smart contract security researcher with focused expertise in auditing Rust-based programs and decentralized infrastructure across leading blockchain ecosystems, with 2 years of experience in Solana programs auditing."
+    },
+    "rami-khalil": {
+      "name": "Rami Khalil",
+      "title": "Blockchain Protocol Engineer at Boundless",
+      "bio": "Formally studied Blockchain protocols at Imperial College London for his PhD, and at ETH Zurich for his MSc. Has been developing ZK protocols at RISC Zero/Boundless for the past three years."
+    },
+    "mohamed-fouda": {
+      "name": "Dr. Mohamed Fouda",
+      "title": "Tech Builder & Investor — Building financial products for Muslims worldwide",
+      "bio": "Researcher and engineer with extensive experience in blockchain, cryptocurrency consensus mechanisms, and economics. PhD graduate from Northwestern University. Author of numerous technical and economic articles on blockchain."
+    },
+    "hassan-imam": {
+      "name": "Hassan Imam",
+      "title": "Blockchain Researcher & Educator",
+      "bio": "M.Sc. in International Relations from Aydin University, with a thesis on blockchain technology and the future of US power in international relations. Researcher in blockchain social impact with articles and educational videos published on the الفلاشاية platform."
+    },
+    "soha-safwat": {
+      "name": "Dr. Soha Safwat",
+      "title": "Dean, Faculty of Computers and Information Systems — Egyptian Chinese University",
+      "bio": ""
+    },
+    "blank-almasry": {
+      "name": "Blank Almasry",
+      "title": "Self-Taught Developer",
+      "bio": ""
+    },
+    "mohammed-s-hassan": {
+      "name": "Mohammed S. Hassan",
+      "title": "",
+      "bio": ""
+    },
+    "shaban-gomaa": {
+      "name": "Shaban Gomaa",
+      "title": "Entrepreneur & Blockchain Developer",
+      "bio": ""
+    },
+    "andreolf": {
+      "name": "Francesco Andreoli",
+      "title": "DevRel at ConsenSys / MetaMask",
+      "bio": ""
+    },
+    "beshoy-shehata": {
+      "name": "Beshoy Shehata",
+      "title": "",
+      "bio": ""
+    },
+    "shkeir": {
+      "name": "Shkeir",
+      "title": "",
+      "bio": ""
+    },
+    "tamer-nabil": {
+      "name": "Tamer Nabil",
+      "title": "",
+      "bio": ""
+    },
+    "rida-rhnizar": {
+      "name": "Rida Rhnizar",
+      "title": "",
+      "bio": ""
+    },
+    "wes-saunders": {
+      "name": "Weslye Saunders",
+      "title": "NFL Veteran & Spiritual Life Advisor",
+      "bio": "National Football League veteran, formerly of the Pittsburgh Steelers and Indianapolis Colts. Holistic trainer, certified instructor with the International Institute of Sport & Movement, and emotional intelligence coach. Explores social solutions through Web3."
+    },
+    "mohamed-abdou": {
+      "name": "Mohamed Abdou",
+      "title": "Founder & CEO at Pravica",
+      "bio": ""
+    },
+    "laman-mohamed": {
+      "name": "Laman Mohamed",
+      "title": "Head of Metaverse & AI at Egyptian Geographic | PhD Researcher",
+      "bio": "Head of the Metaverse and Artificial Intelligence Sector at the Egyptian Foundation for the Simplification of Science (Egyptian Geographic). PhD researcher in virtual and augmented reality."
+    },
+    "christine-lewis": {
+      "name": "Christine Lewis",
+      "title": "The Yoga Boss — Founder of Yog8 DAO",
+      "bio": "Known as The Yoga Boss after teaching Transformational Yoga Therapy since 2009 to founders of multi-billion-dollar companies and professional athletes. Launched a Yoga DAO to democratize access to yoga and meditation through Web3 incentives. Creator of Yoga Boss NFTs and the Yog8 DAO wellness metaverse."
+    },
+    "eiman-abdelmoneim": {
+      "name": "Eiman Abdelmoneim",
+      "title": "Staff Engineer, Applied AI @ Nebula | ex-thirdweb",
+      "bio": "Staff Engineer in Applied AI at Nebula, owning the AI-native middle of the funnel across forward-deployed engineering, product, and customer success. Previously at thirdweb."
+    },
+    "mohammad-tayel": {
+      "name": "Mohammad Tayel",
+      "title": "LLM, MLRO @ Western Union | Co-Founder @ Qistaschain",
+      "bio": ""
+    },
+    "kareem-hassan": {
+      "name": "Kareem Hassan",
+      "title": "Digital Assets Data Specialist @ Dune",
+      "bio": ""
+    },
+    "tarek-m-abdalla": {
+      "name": "Tarek Mohamed Abdalla",
+      "title": "Blockchain Engineer at Moonsong Labs",
+      "bio": ""
+    },
+    "youssef-kamal": {
+      "name": "Youssef Kamal",
+      "title": "CEO at Euclid Solutions | Founder of People of Data",
+      "bio": "Holds three master's degrees. Established data science and AI teams for various startups and founded a data science & AI consultancy. AI tutor at Udacity and founder of the People of Data community."
+    },
+    "tarry-singh": {
+      "name": "Tarry Singh",
+      "title": "Board Director & AI Researcher at Real AI Inc. & DK AI Lab",
+      "bio": "Over 25 years in Data. Chairman & CEO of DK AI Holding, co-founder of Real AI (enterprise AI) and Earthscan.io (energy AI). All companies are part of the NVIDIA Inception Program."
+    },
+    "shaheen-ahmed": {
+      "name": "Shaheen Ahmed",
+      "title": "Developer Advocate at Cartesi",
+      "bio": "Developer Advocacy Contributor at Cartesi — manages Discord, judges hackathons, prototypes ideas, and builds developer relationships. Background in Computer Science from VIT-Vellore; focused on decentralized protocols and full-stack Ethereum applications."
+    },
+    "elif-hilal": {
+      "name": "Elif Hilal Umucu",
+      "title": "DevRel (ex-Chainlink Labs)",
+      "bio": "Elif developed a personal alphabet at age 10, igniting her passion for cryptography. By 17, she founded a global organization for blockchain enthusiasts and worked on blockchain projects at the Turkish Presidency Digital Transformation Office while in university. Her work spans smart contracts, digital identities, and blockchain innovation."
+    },
+    "mohamed-hassanien": {
+      "name": "Mohamed Hassanien",
+      "title": "Co-Founder & CTO at StudentGator",
+      "bio": ""
+    },
+    "mohamed-elsharabassi": {
+      "name": "Mohamed Elsharabassi",
+      "title": "",
       "bio": ""
     }
   },
