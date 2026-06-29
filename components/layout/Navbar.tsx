@@ -7,7 +7,7 @@ import { useTranslations, useLocale } from 'next-intl';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import Logo from '@/components/shared/Logo';
 
-const NAV_LINKS = ['about', 'events'] as const;
+const NAV_LINKS = ['about', 'events', 'community'] as const;
 
 export default function Navbar() {
   const t = useTranslations('nav');

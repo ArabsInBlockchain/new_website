@@ -3,6 +3,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { getAllVolunteerSlugs, getPersonMeta, getVolunteerEvents } from '@/lib/content';
 import ContributorCard from '@/components/community/ContributorCard';
+import Link from 'next/link';
+import { ArrowLeft } from 'lucide-react';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.com';
 
@@ -61,6 +63,13 @@ export default async function VolunteersPage({ params }: Props) {
         style={{ background: 'var(--gradient-hero)' }}
       >
         <div className="mx-auto max-w-7xl md:px-8">
+          <Link
+            href={`/${locale}/community`}
+            className="mb-8 inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-brand-teal"
+          >
+            <ArrowLeft size={16} aria-hidden />
+            {tCommunity('volunteers.backToAll')}
+          </Link>
           <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-brand-teal">
             Arabs in Blockchain
           </p>

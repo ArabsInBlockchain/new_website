@@ -3,7 +3,8 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { getAllDonorSlugs, getPersonMeta, getDonorEventMetas, avatarUrl } from '@/lib/content';
 import Image from 'next/image';
-import { Heart, User } from 'lucide-react';
+import Link from 'next/link';
+import { Heart, User, ArrowLeft } from 'lucide-react';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.com';
 
@@ -55,6 +56,13 @@ export default async function DonorsPage({ params }: Props) {
         style={{ background: 'var(--gradient-hero)' }}
       >
         <div className="mx-auto max-w-7xl md:px-8">
+          <Link
+            href={`/${locale}/community`}
+            className="mb-8 inline-flex items-center gap-2 text-sm text-muted transition-colors hover:text-brand-teal"
+          >
+            <ArrowLeft size={16} aria-hidden />
+            {tCommunity('donors.backToAll')}
+          </Link>
           <p className="mb-3 text-xs font-semibold uppercase tracking-widest" style={{ color: '#F43F5E' }}>
             Arabs in Blockchain
           </p>
