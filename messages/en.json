@@ -138,7 +138,16 @@
     "search": "Search events...",
     "noResults": "No events found",
     "gridView": "Grid view",
-    "listView": "List view"
+    "listView": "List view",
+    "detail": {
+      "backToEvents": "All Events",
+      "speakers": "Speakers",
+      "organizers": "Organizers",
+      "volunteers": "Volunteers",
+      "donors": "Supporters",
+      "viewDetails": "View Details",
+      "tags": "Tags"
+    }
   },
   "about": {
     "title": "About Us",

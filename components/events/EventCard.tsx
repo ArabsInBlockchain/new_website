@@ -1,5 +1,6 @@
-import { MapPin, Monitor, Calendar, ExternalLink, Image as ImageIcon, BookOpen } from 'lucide-react';
+import { MapPin, Monitor, Calendar, ExternalLink, Image as ImageIcon, BookOpen, ChevronRight } from 'lucide-react';
 import { formatDate } from '@/lib/utils';
+import Link from 'next/link';
 import EventBadge from './EventBadge';
 import type { EventMeta } from '@/lib/content';
 
@@ -18,6 +19,7 @@ interface EventCardProps {
     addToCalendar: string;
     viewRecap: string;
     photos: string;
+    viewDetails: string;
   };
   compact?: boolean;
 }
@@ -107,6 +109,14 @@ export default function EventCard({ event, locale, t, compact = false }: EventCa
 
       {/* CTAs */}
       <div className="mt-auto flex flex-wrap items-center gap-2 pt-1">
+        <Link
+          href={`/${locale}/events/${event.slug}`}
+          className="inline-flex items-center gap-1 rounded-btn border border-brand-violet/40 px-3 py-2 text-xs font-medium text-muted transition-colors hover:border-brand-teal hover:text-brand-teal"
+        >
+          {t.viewDetails}
+          <ChevronRight size={12} aria-hidden />
+        </Link>
+
         {isUpcoming && event.registration_url && (
           <a
             href={event.registration_url}

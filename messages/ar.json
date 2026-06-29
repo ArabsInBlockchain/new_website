@@ -138,7 +138,16 @@
     "search": "ابحث في الفعاليات...",
     "noResults": "لا توجد فعاليات",
     "gridView": "عرض شبكي",
-    "listView": "عرض قائمة"
+    "listView": "عرض قائمة",
+    "detail": {
+      "backToEvents": "جميع الفعاليات",
+      "speakers": "المتحدثون",
+      "organizers": "المنظمون",
+      "volunteers": "المتطوعون",
+      "donors": "الداعمون",
+      "viewDetails": "عرض التفاصيل",
+      "tags": "الوسوم"
+    }
   },
   "about": {
     "title": "من نحن",
