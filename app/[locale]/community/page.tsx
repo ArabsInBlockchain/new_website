@@ -101,7 +101,7 @@ function CategorySection({
       </div>
 
       {/* Avatar grid */}
-      <div className="mb-6 flex flex-wrap gap-5">
+      <div className="mb-6 flex flex-wrap justify-center gap-5">
         {preview.map(({ slug, name, photo, count }) => (
           <Link
             key={slug}
