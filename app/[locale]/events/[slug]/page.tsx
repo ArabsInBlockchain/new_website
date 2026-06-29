@@ -227,13 +227,9 @@ export default async function EventDetailPage({ params }: Props) {
   const volunteers = meta.contributors
     .filter((c) => c.role_key === 'volunteer')
     .map((c) => loadPerson(c.slug, tPeople));
-  const donors = meta.donors.map((d) => loadPerson(d, tPeople));
 
   const hasPeople =
-    speakers.length > 0 ||
-    organizers.length > 0 ||
-    volunteers.length > 0 ||
-    donors.length > 0;
+    speakers.length > 0 || organizers.length > 0 || volunteers.length > 0;
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -268,153 +264,150 @@ export default async function EventDetailPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* Hero */}
-      <div
-        className="theme-always-dark relative"
-        style={{ minHeight: '420px' }}
-      >
-        {/* Banner image */}
-        {meta.banner_image && (
-          <div className="absolute inset-0">
-            <Image
-              src={meta.banner_image}
-              alt={title}
-              fill
-              className="object-cover object-center"
-              priority
-              sizes="100vw"
-            />
-          </div>
+      {/* Banner image — visual only */}
+      <div className="theme-always-dark relative h-64 w-full md:h-96 lg:h-[440px]">
+        {meta.banner_image ? (
+          <Image
+            src={meta.banner_image}
+            alt={title}
+            fill
+            className="object-cover object-center"
+            priority
+            sizes="100vw"
+          />
+        ) : (
+          <div className="absolute inset-0" style={{ background: 'var(--gradient-hero)' }} />
         )}
-        {/* Gradient overlay */}
+        {/* Subtle bottom fade so the page background blends in */}
         <div
-          className="absolute inset-0"
-          style={{
-            background: meta.banner_image
-              ? 'linear-gradient(to bottom, rgba(13,13,26,0.55) 0%, rgba(13,13,26,0.82) 60%, rgba(13,13,26,0.97) 100%)'
-              : 'var(--gradient-hero)',
-          }}
+          className="absolute inset-x-0 bottom-0 h-24"
+          style={{ background: 'linear-gradient(to bottom, transparent, var(--color-bg-dark))' }}
           aria-hidden
         />
-
-        {/* Content */}
-        <div className="relative mx-auto max-w-4xl px-4 py-12 md:px-8">
-          {/* Back link */}
+        {/* Back link — overlaid top-start */}
+        <div className="absolute start-4 top-4 md:start-8">
           <Link
             href={`/${locale}/events`}
-            className="mb-8 inline-flex items-center gap-2 text-sm text-white/70 transition-colors hover:text-brand-teal"
+            className="inline-flex items-center gap-2 rounded-btn border border-white/20 bg-black/40 px-3 py-1.5 text-xs font-medium text-white/80 backdrop-blur-sm transition-colors hover:border-brand-teal hover:text-brand-teal"
           >
-            <ArrowLeft size={16} aria-hidden />
+            <ArrowLeft size={14} aria-hidden />
             {tEvents('detail.backToEvents')}
           </Link>
+        </div>
+      </div>
 
-          {/* Badges */}
-          <div className="mb-4 flex flex-wrap items-center gap-2">
-            <EventBadge type={meta.type} label={typeBadgeLabel} />
-            {isUpcoming && (
-              <span className="rounded-badge bg-success/15 px-2.5 py-0.5 text-xs font-semibold text-success">
-                Upcoming
-              </span>
-            )}
-            {meta.conference && (
-              <span className="rounded-badge border border-white/20 px-2.5 py-0.5 text-xs text-white/70">
-                {meta.conference}
-              </span>
-            )}
-          </div>
-
-          {/* Title */}
-          <h1 className="mb-4 text-3xl font-extrabold text-white md:text-4xl lg:text-5xl leading-tight">
-            {title}
-          </h1>
-
-          {/* Date + location */}
-          <div className="mb-5 flex flex-wrap gap-4 text-sm text-white/70">
-            <span className="flex items-center gap-1.5">
-              <Calendar size={14} aria-hidden />
-              {dateStr}
-              {meta.time && (
-                <span className="ms-1 text-white/50">
-                  {meta.time} {meta.timezone.split('/')[1]?.replace('_', ' ')}
-                </span>
-              )}
+      {/* Event info — separate readable section */}
+      <div className="mx-auto max-w-4xl px-4 pb-10 pt-6 md:px-8">
+        {/* Badges */}
+        <div className="mb-4 flex flex-wrap items-center gap-2">
+          <EventBadge type={meta.type} label={typeBadgeLabel} />
+          {isUpcoming && (
+            <span className="rounded-badge bg-success/15 px-2.5 py-0.5 text-xs font-semibold text-success">
+              Upcoming
             </span>
-            {location && (
-              <span className="flex items-center gap-1.5">
-                {meta.type === 'online' ? (
-                  <Monitor size={14} aria-hidden />
-                ) : (
-                  <MapPin size={14} aria-hidden />
-                )}
-                {location}
-              </span>
-            )}
-          </div>
-
-          {/* Description */}
-          {description && (
-            <p className="mb-7 max-w-2xl text-base leading-relaxed text-white/80">
-              {description}
-            </p>
           )}
-
-          {/* CTAs */}
-          <div className="flex flex-wrap gap-3">
-            {isUpcoming && meta.registration_url && (
-              <a
-                href={meta.registration_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-btn px-5 py-2.5 text-sm font-semibold text-on-gold transition-opacity hover:opacity-90"
-                style={{ background: 'var(--gradient-gold)' }}
-              >
-                <Calendar size={15} aria-hidden />
-                {tEvents('card.register')}
-              </a>
-            )}
-            {isUpcoming && (
-              <a
-                href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${meta.date.replace(/-/g, '')}/${meta.date.replace(/-/g, '')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-btn border border-white/30 px-4 py-2.5 text-sm text-white/80 transition-colors hover:border-brand-teal hover:text-brand-teal"
-              >
-                <ExternalLink size={14} aria-hidden />
-                {tEvents('card.addToCalendar')}
-              </a>
-            )}
-            {!isUpcoming && meta.recap_url && (
-              <a
-                href={meta.recap_url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-btn border border-white/30 px-4 py-2.5 text-sm text-white/80 transition-colors hover:border-brand-teal hover:text-brand-teal"
-              >
-                <BookOpen size={14} aria-hidden />
-                {tEvents('card.viewRecap')}
-              </a>
-            )}
-          </div>
-
-          {/* Tags */}
-          {meta.tags.length > 0 && (
-            <div className="mt-7 flex flex-wrap gap-2">
-              {meta.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="rounded-badge border border-white/15 px-2.5 py-0.5 text-xs text-white/50"
-                >
-                  #{tag}
-                </span>
-              ))}
-            </div>
+          {meta.conference && (
+            <span
+              className="rounded-badge border px-2.5 py-0.5 text-xs"
+              style={{ borderColor: 'var(--color-card-border)', color: 'var(--color-text-muted)' }}
+            >
+              {meta.conference}
+            </span>
           )}
         </div>
+
+        {/* Title */}
+        <h1 className="mb-4 text-3xl font-extrabold text-foreground md:text-4xl lg:text-5xl leading-tight">
+          {title}
+        </h1>
+
+        {/* Date + location */}
+        <div className="mb-5 flex flex-wrap gap-5 text-sm text-muted">
+          <span className="flex items-center gap-1.5">
+            <Calendar size={14} aria-hidden />
+            {dateStr}
+            {meta.time && (
+              <span className="ms-1 opacity-70">
+                {meta.time} {meta.timezone.split('/')[1]?.replace('_', ' ')}
+              </span>
+            )}
+          </span>
+          {location && (
+            <span className="flex items-center gap-1.5">
+              {meta.type === 'online' ? (
+                <Monitor size={14} aria-hidden />
+              ) : (
+                <MapPin size={14} aria-hidden />
+              )}
+              {location}
+            </span>
+          )}
+        </div>
+
+        {/* Description */}
+        {description && (
+          <p className="mb-7 max-w-2xl text-base leading-relaxed text-muted">
+            {description}
+          </p>
+        )}
+
+        {/* CTAs */}
+        <div className="mb-7 flex flex-wrap gap-3">
+          {isUpcoming && meta.registration_url && (
+            <a
+              href={meta.registration_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-btn px-5 py-2.5 text-sm font-semibold text-on-gold transition-opacity hover:opacity-90"
+              style={{ background: 'var(--gradient-gold)' }}
+            >
+              <Calendar size={15} aria-hidden />
+              {tEvents('card.register')}
+            </a>
+          )}
+          {isUpcoming && (
+            <a
+              href={`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${meta.date.replace(/-/g, '')}/${meta.date.replace(/-/g, '')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-btn border border-foreground/20 px-4 py-2.5 text-sm text-muted transition-colors hover:border-brand-teal hover:text-brand-teal"
+            >
+              <ExternalLink size={14} aria-hidden />
+              {tEvents('card.addToCalendar')}
+            </a>
+          )}
+          {!isUpcoming && meta.recap_url && (
+            <a
+              href={meta.recap_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-btn border border-foreground/20 px-4 py-2.5 text-sm text-muted transition-colors hover:border-brand-teal hover:text-brand-teal"
+            >
+              <BookOpen size={14} aria-hidden />
+              {tEvents('card.viewRecap')}
+            </a>
+          )}
+        </div>
+
+        {/* Tags */}
+        {meta.tags.length > 0 && (
+          <div className="flex flex-wrap gap-2">
+            {meta.tags.map((tag) => (
+              <span
+                key={tag}
+                className="rounded-badge border px-2.5 py-0.5 text-xs text-muted"
+                style={{ borderColor: 'var(--color-card-border)' }}
+              >
+                #{tag}
+              </span>
+            ))}
+          </div>
+        )}
       </div>
 
       {/* People sections */}
       {hasPeople && (
-        <div className="mx-auto max-w-4xl space-y-12 px-4 py-14 md:px-8">
+        <div className="mx-auto max-w-4xl space-y-12 px-4 py-10 md:px-8">
           <PeopleSection
             title={tEvents('detail.speakers')}
             people={speakers}
@@ -431,11 +424,6 @@ export default async function EventDetailPage({ params }: Props) {
             people={volunteers}
             locale={locale}
             profileBasePath="volunteers"
-          />
-          <PeopleSection
-            title={tEvents('detail.donors')}
-            people={donors}
-            locale={locale}
           />
         </div>
       )}
