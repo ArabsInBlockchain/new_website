@@ -166,14 +166,16 @@ function CategorySection({
       </div>
 
       {/* View All */}
-      <Link
-        href={`/${locale}/community/${href}`}
-        className="inline-flex items-center gap-2 text-sm font-semibold transition-colors hover:text-brand-teal"
-        style={{ color: accent }}
-      >
-        {viewAllLabel}
-        <ArrowRight size={14} aria-hidden />
-      </Link>
+      <div className="mt-2 text-center">
+        <Link
+          href={`/${locale}/community/${href}`}
+          className="inline-flex items-center gap-2 text-sm font-semibold transition-colors hover:text-brand-teal"
+          style={{ color: accent }}
+        >
+          {viewAllLabel}
+          <ArrowRight size={14} aria-hidden />
+        </Link>
+      </div>
     </section>
   );
 }
