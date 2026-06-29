@@ -141,10 +141,14 @@
     "listView": "عرض قائمة",
     "detail": {
       "backToEvents": "جميع الفعاليات",
-      "speakers": "المتحدثون",
-      "organizers": "المنظمون",
-      "volunteers": "المتطوعون",
-      "donors": "الداعمون",
+      "speakers": "على المنصة",
+      "speakersSubtitle": "الأصوات التي شاركت معرفتها في هذه الفعالية",
+      "organizers": "الفريق المنظّم",
+      "organizersSubtitle": "من خططوا وعملوا لإحياء هذه الفعالية",
+      "volunteers": "أبطال المجتمع",
+      "volunteersSubtitle": "أبناء المجتمع الذين أضافوا روحهم لإنجاح الفعالية",
+      "donors": "بدعم من",
+      "donorsSubtitle": "من آمنوا بهذه الفعالية وأسهموا في تحقيقها",
       "viewDetails": "عرض التفاصيل",
       "tags": "الوسوم"
     }

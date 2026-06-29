@@ -163,11 +163,15 @@ function AvatarCard({
 
 function PeopleSection({
   title,
+  subtitle,
+  accent,
   people,
   locale,
   profileBasePath,
 }: {
   title: string;
+  subtitle: string;
+  accent: string;
   people: PersonCard[];
   locale: string;
   profileBasePath?: string;
@@ -175,7 +179,13 @@ function PeopleSection({
   if (people.length === 0) return null;
   return (
     <section>
-      <h2 className="mb-5 text-lg font-bold text-foreground">{title}</h2>
+      <div className="mb-6 flex items-start gap-3">
+        <div className="mt-1 h-8 w-1 shrink-0 rounded-full" style={{ backgroundColor: accent }} aria-hidden />
+        <div>
+          <h2 className="text-xl font-extrabold text-foreground">{title}</h2>
+          <p className="mt-0.5 text-sm text-muted">{subtitle}</p>
+        </div>
+      </div>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
         {people.map((p) => (
           <AvatarCard
@@ -414,23 +424,31 @@ export default async function EventDetailPage({ params }: Props) {
         <div className="mx-auto max-w-4xl space-y-12 px-4 py-10 md:px-8">
           <PeopleSection
             title={tEvents('detail.speakers')}
+            subtitle={tEvents('detail.speakersSubtitle')}
+            accent="var(--color-brand-teal)"
             people={speakers}
             locale={locale}
           />
           <PeopleSection
             title={tEvents('detail.organizers')}
+            subtitle={tEvents('detail.organizersSubtitle')}
+            accent="var(--color-brand-gold)"
             people={organizers}
             locale={locale}
             profileBasePath="volunteers"
           />
           <PeopleSection
             title={tEvents('detail.volunteers')}
+            subtitle={tEvents('detail.volunteersSubtitle')}
+            accent="var(--color-brand-teal)"
             people={volunteers}
             locale={locale}
             profileBasePath="volunteers"
           />
           <PeopleSection
             title={tEvents('detail.donors')}
+            subtitle={tEvents('detail.donorsSubtitle')}
+            accent="#F43F5E"
             people={donors}
             locale={locale}
           />

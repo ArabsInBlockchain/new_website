@@ -141,10 +141,14 @@
     "listView": "List view",
     "detail": {
       "backToEvents": "All Events",
-      "speakers": "Speakers",
-      "organizers": "Organizers",
-      "volunteers": "Volunteers",
-      "donors": "Supporters",
+      "speakers": "On Stage",
+      "speakersSubtitle": "The voices who shared their knowledge at this event",
+      "organizers": "The Team Behind It",
+      "organizersSubtitle": "The people who planned, coordinated, and brought this event to life",
+      "volunteers": "Community Heroes",
+      "volunteersSubtitle": "Community members who showed up and helped to make it happen",
+      "donors": "Made Possible By",
+      "donorsSubtitle": "Those who believed in this event and financially supported it",
       "viewDetails": "View Details",
       "tags": "Tags"
     }

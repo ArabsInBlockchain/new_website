@@ -133,19 +133,12 @@ export default async function DonorsPage({ params }: Props) {
                   {tCommunity('donors.badge')}
                 </span>
 
-                {/* Since + events count */}
-                <div className="flex flex-wrap justify-center gap-4 text-xs text-muted">
-                  {meta.donor_since && (
-                    <span>
-                      {tCommunity('donors.supportingSince')} {meta.donor_since}
-                    </span>
-                  )}
-                  {events.length > 0 && (
-                    <span>
-                      {events.length} {tCommunity('donors.eventsSupported')}
-                    </span>
-                  )}
-                </div>
+                {/* Events count */}
+                {events.length > 0 && (
+                  <p className="text-xs text-muted">
+                    {events.length} {tCommunity('donors.eventsSupported')}
+                  </p>
+                )}
 
                 {/* Social links */}
                 {(meta.twitter || meta.linkedin) && (
