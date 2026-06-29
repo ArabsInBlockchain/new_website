@@ -284,6 +284,26 @@
       "shareProfile": "مشاركة الملف الشخصي",
       "backToAll": "المجتمع",
       "backToContributors": "جميع المساهمين"
+    },
+    "profile": {
+      "backToAll": "المجتمع",
+      "speaking": "على المنصة",
+      "speakingSubtitle": "الفعاليات التي شاركوا فيها بمحاضراتهم",
+      "organizing": "التنظيم",
+      "organizingSubtitle": "الفعاليات التي خططوا لها وأحيوها",
+      "volunteering": "التطوع",
+      "volunteeringSubtitle": "الفعاليات التي أسهموا في إنجاحها",
+      "openSource": "المصدر المفتوح",
+      "openSourceSubtitle": "يساهمون في مشاريع عرب في البلوكتشين على GitHub",
+      "openSourceCta": "عرض المساهمات على GitHub",
+      "supporting": "الدعم المالي",
+      "supportingSubtitle": "الفعاليات التي آمنوا بها وساعدوا في تمويلها",
+      "viewEvent": "عرض الفعالية",
+      "talk": "محاضرة",
+      "talks": "محاضرات",
+      "organized": "نظّم",
+      "volunteered": "تطوّع",
+      "supported": "دعم"
     }
   },
   "partners": {

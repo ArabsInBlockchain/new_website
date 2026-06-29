@@ -284,6 +284,26 @@
       "shareProfile": "Share Profile",
       "backToAll": "All Community",
       "backToContributors": "All Contributors"
+    },
+    "profile": {
+      "backToAll": "All Community",
+      "speaking": "On Stage",
+      "speakingSubtitle": "Events where they shared their knowledge",
+      "organizing": "Organizing",
+      "organizingSubtitle": "Events they planned and brought to life",
+      "volunteering": "Volunteering",
+      "volunteeringSubtitle": "Events they showed up to help make happen",
+      "openSource": "Open Source",
+      "openSourceSubtitle": "Contributing to Arabs in Blockchain on GitHub",
+      "openSourceCta": "View contributions on GitHub",
+      "supporting": "Financially Supporting",
+      "supportingSubtitle": "Events they believed in and helped fund",
+      "viewEvent": "View Event",
+      "talk": "Talk",
+      "talks": "Talks",
+      "organized": "Organized",
+      "volunteered": "Volunteered",
+      "supported": "Supported"
     }
   },
   "partners": {

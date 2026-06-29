@@ -53,7 +53,7 @@ export default async function ContributorsTeaser({ locale }: Props) {
             return (
               <Link
                 key={slug}
-                href={`/${locale}/community/volunteers/${slug}`}
+                href={`/${locale}/community/members/${slug}`}
                 className="group flex flex-col items-center gap-2"
                 title={name}
               >

@@ -94,7 +94,7 @@ export default async function VolunteersPage({ params }: Props) {
                 name={name}
                 events={events}
                 locale={locale}
-                profileBasePath="volunteers"
+                profileBasePath="members"
                 t={rolesT}
               />
             ))}

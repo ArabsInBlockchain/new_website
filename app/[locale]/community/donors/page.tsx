@@ -4,6 +4,7 @@ import { routing } from '@/i18n/routing';
 import { getAllDonorSlugs, getPersonMeta, getDonorEventMetas, avatarUrl } from '@/lib/content';
 import Image from 'next/image';
 import Link from 'next/link';
+
 import { Heart, User, ArrowLeft } from 'lucide-react';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.com';
@@ -81,9 +82,10 @@ export default async function DonorsPage({ params }: Props) {
         ) : (
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
             {donors.map(({ meta, name, events }) => (
-              <div
+              <Link
                 key={meta.slug}
-                className="flex flex-col items-center gap-4 rounded-card p-6 text-center"
+                href={`/${locale}/community/members/${meta.slug}`}
+                className="group flex flex-col items-center gap-4 rounded-card p-6 text-center transition-all duration-300 hover:-translate-y-1"
                 style={{
                   backgroundColor: 'var(--color-card-bg)',
                   border: '1px solid color-mix(in srgb, #F43F5E 30%, var(--color-card-border))',
@@ -167,7 +169,7 @@ export default async function DonorsPage({ params }: Props) {
                     )}
                   </div>
                 )}
-              </div>
+              </Link>
             ))}
           </div>
         )}

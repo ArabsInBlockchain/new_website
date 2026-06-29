@@ -435,7 +435,7 @@ export default async function EventDetailPage({ params }: Props) {
             accent="var(--color-brand-gold)"
             people={organizers}
             locale={locale}
-            profileBasePath="volunteers"
+            profileBasePath="members"
           />
           <PeopleSection
             title={tEvents('detail.volunteers')}
@@ -443,7 +443,7 @@ export default async function EventDetailPage({ params }: Props) {
             accent="var(--color-brand-teal)"
             people={volunteers}
             locale={locale}
-            profileBasePath="volunteers"
+            profileBasePath="members"
           />
           <PeopleSection
             title={tEvents('detail.donors')}

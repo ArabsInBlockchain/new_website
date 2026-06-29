@@ -86,9 +86,10 @@ export default async function SpeakersPage({ params }: Props) {
         ) : (
           <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
             {speakers.map(({ slug, meta, name, title, events }) => (
-              <div
+              <Link
                 key={slug}
-                className="flex flex-col items-center gap-4 rounded-card p-6 text-center"
+                href={`/${locale}/community/members/${slug}`}
+                className="group flex flex-col items-center gap-4 rounded-card p-6 text-center transition-all duration-300 hover:-translate-y-1"
                 style={{
                   backgroundColor: 'var(--color-card-bg)',
                   border: '1px solid var(--color-card-border)',
@@ -163,7 +164,7 @@ export default async function SpeakersPage({ params }: Props) {
                     )}
                   </div>
                 )}
-              </div>
+              </Link>
             ))}
           </div>
         )}

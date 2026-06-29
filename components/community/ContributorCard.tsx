@@ -15,7 +15,7 @@ interface Props {
 
 const MAX_DOTS = 12;
 
-export default function ContributorCard({ meta, name, events, locale, profileBasePath = 'contributors', t }: Props) {
+export default function ContributorCard({ meta, name, events, locale, profileBasePath = 'members', t }: Props) {
   const roles = [...new Set(events.map((e) => e.role))];
   const visibleDots = events.slice(0, MAX_DOTS);
   const extra = events.length - MAX_DOTS;
