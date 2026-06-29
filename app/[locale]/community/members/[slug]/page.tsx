@@ -13,7 +13,7 @@ import {
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, MapPin, Calendar, ExternalLink, User, GitBranch } from 'lucide-react';
+import { ArrowLeft, MapPin, Calendar, ExternalLink, User, GitBranch, Mic2, Star, Users, Heart } from 'lucide-react';
 import { formatDate } from '@/lib/utils';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.com';
@@ -247,32 +247,71 @@ export default async function MemberProfilePage({ params }: Props) {
                 <p className="max-w-xl text-sm leading-relaxed text-muted">{bio}</p>
               )}
 
-              {/* Badges */}
-              <div className="flex flex-wrap justify-center gap-2 md:justify-start">
-                {meta.is_oss_contributor && (
-                  <span
-                    className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
-                    style={{
-                      backgroundColor: 'color-mix(in srgb, var(--color-brand-teal) 15%, transparent)',
-                      color: 'var(--color-brand-teal)',
-                    }}
-                  >
-                    <GitBranch size={11} aria-hidden />
-                    {tProfile('profile.openSource')}
-                  </span>
-                )}
-                {meta.is_donor && (
-                  <span
-                    className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
-                    style={{
-                      backgroundColor: 'color-mix(in srgb, #F43F5E 15%, transparent)',
-                      color: '#F43F5E',
-                    }}
-                  >
-                    ♥ {tProfile('donors.badge')}
-                  </span>
-                )}
-              </div>
+              {/* Contribution tags */}
+              {(speaking.length > 0 || organizing.length > 0 || volunteering.length > 0 || meta.is_oss_contributor || meta.is_donor) && (
+                <div className="flex flex-wrap justify-center gap-2 md:justify-start">
+                  {speaking.length > 0 && (
+                    <span
+                      className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
+                      style={{
+                        backgroundColor: 'color-mix(in srgb, var(--color-brand-teal) 15%, transparent)',
+                        color: 'var(--color-brand-teal)',
+                      }}
+                    >
+                      <Mic2 size={11} aria-hidden />
+                      {tProfile('profile.speaking')}
+                    </span>
+                  )}
+                  {organizing.length > 0 && (
+                    <span
+                      className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
+                      style={{
+                        backgroundColor: 'color-mix(in srgb, var(--color-brand-gold) 15%, transparent)',
+                        color: 'var(--color-brand-gold)',
+                      }}
+                    >
+                      <Star size={11} aria-hidden />
+                      {tProfile('profile.organizing')}
+                    </span>
+                  )}
+                  {volunteering.length > 0 && (
+                    <span
+                      className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
+                      style={{
+                        backgroundColor: 'color-mix(in srgb, var(--color-brand-teal) 15%, transparent)',
+                        color: 'var(--color-brand-teal)',
+                      }}
+                    >
+                      <Users size={11} aria-hidden />
+                      {tProfile('profile.volunteering')}
+                    </span>
+                  )}
+                  {meta.is_oss_contributor && (
+                    <span
+                      className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
+                      style={{
+                        backgroundColor: 'color-mix(in srgb, var(--color-brand-teal) 15%, transparent)',
+                        color: 'var(--color-brand-teal)',
+                      }}
+                    >
+                      <GitBranch size={11} aria-hidden />
+                      {tProfile('profile.openSource')}
+                    </span>
+                  )}
+                  {meta.is_donor && (
+                    <span
+                      className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
+                      style={{
+                        backgroundColor: 'color-mix(in srgb, #F43F5E 15%, transparent)',
+                        color: '#F43F5E',
+                      }}
+                    >
+                      <Heart size={11} aria-hidden />
+                      {tProfile('donors.badge')}
+                    </span>
+                  )}
+                </div>
+              )}
 
               {/* Social links */}
               <div className="flex flex-wrap justify-center gap-4 md:justify-start">
@@ -427,7 +466,7 @@ export default async function MemberProfilePage({ params }: Props) {
             <ActivitySection
               title={tProfile('profile.volunteering')}
               subtitle={tProfile('profile.volunteeringSubtitle')}
-              accentColor="var(--color-brand-violet)"
+              accentColor="var(--color-brand-teal)"
             >
               <ol className="space-y-3">
                 {volunteering.map((event) => {
@@ -437,7 +476,7 @@ export default async function MemberProfilePage({ params }: Props) {
                       key={event.slug}
                       event={event}
                       badge={tProfile('contributors.roles.volunteer')}
-                      accentColor="var(--color-brand-violet)"
+                      accentColor="var(--color-brand-teal)"
                       locale={locale}
                       eventTitle={eventTitle}
                       eventLocation={eventLocation}

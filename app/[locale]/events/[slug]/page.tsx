@@ -438,7 +438,7 @@ export default async function EventDetailPage({ params }: Props) {
           <PeopleSection
             title={tEvents('detail.volunteers')}
             subtitle={tEvents('detail.volunteersSubtitle')}
-            accent="var(--color-brand-teal)"
+            accent="var(--color-success)"
             people={volunteers}
             locale={locale}
             profileBasePath="members"
