@@ -316,7 +316,7 @@ export default async function MemberProfilePage({ params }: Props) {
       </div>
 
       {/* Stats bar */}
-      {totalEvents > 0 && (
+      {(totalEvents > 0 || meta.is_oss_contributor) && (
         <div className="theme-always-dark px-4 py-5" style={{ backgroundColor: 'var(--color-brand-violet)' }}>
           <div className="mx-auto flex max-w-4xl flex-wrap justify-center gap-10 md:px-8">
             {speaking.length > 0 && (
@@ -351,6 +351,14 @@ export default async function MemberProfilePage({ params }: Props) {
                   {donations.length}
                 </p>
                 <p className="text-xs text-white/80">{tProfile('profile.supported')}</p>
+              </div>
+            )}
+            {meta.is_oss_contributor && (
+              <div className="text-center">
+                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-brand-teal)' }}>
+                  <GitBranch size={28} className="mx-auto" aria-hidden />
+                </p>
+                <p className="text-xs text-white/80">{tProfile('profile.openSource')}</p>
               </div>
             )}
           </div>
