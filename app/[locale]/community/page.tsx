@@ -2,15 +2,22 @@ import type { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import Link from 'next/link';
-import { Users, Mic2, GitMerge, Heart } from 'lucide-react';
+import Image from 'next/image';
+import { ArrowRight, User } from 'lucide-react';
 import {
   getAllVolunteerSlugs,
   getAllSpeakerSlugs,
   getAllOssContributorSlugs,
   getAllDonorSlugs,
+  getPersonMeta,
+  getVolunteerEvents,
+  getSpeakerEventMetas,
+  getDonorEventMetas,
+  avatarUrl,
 } from '@/lib/content';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.com';
+const PREVIEW = 8;
 
 type Props = { params: Promise<{ locale: string }> };
 
@@ -35,49 +42,201 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-const sections = [
-  {
-    key: 'volunteers',
-    href: 'volunteers',
-    Icon: Users,
-    color: 'var(--color-brand-teal)',
-    bg: 'color-mix(in srgb, var(--color-brand-teal) 12%, transparent)',
-  },
-  {
-    key: 'speakers',
-    href: 'speakers',
-    Icon: Mic2,
-    color: 'var(--color-brand-gold)',
-    bg: 'color-mix(in srgb, var(--color-brand-gold) 12%, transparent)',
-  },
-  {
-    key: 'contributors',
-    href: 'contributors',
-    Icon: GitMerge,
-    color: '#A78BFA',
-    bg: 'color-mix(in srgb, #A78BFA 12%, transparent)',
-  },
-  {
-    key: 'donors',
-    href: 'donors',
-    Icon: Heart,
-    color: '#F43F5E',
-    bg: 'color-mix(in srgb, #F43F5E 12%, transparent)',
-  },
-] as const;
+interface PersonPreview {
+  slug: string;
+  name: string;
+  photo: string;
+  count: number;
+}
+
+interface CategorySectionProps {
+  locale: string;
+  title: string;
+  subtitle: string;
+  accent: string;
+  people: PersonPreview[];
+  total: number;
+  href: string;
+  viewAllLabel: string;
+  countLabel: string;
+}
+
+function CategorySection({
+  locale,
+  title,
+  subtitle,
+  accent,
+  people,
+  total,
+  href,
+  viewAllLabel,
+  countLabel,
+}: CategorySectionProps) {
+  const preview = people.slice(0, PREVIEW);
+  const extra = total - preview.length;
+
+  return (
+    <section
+      className="rounded-card p-8"
+      style={{ backgroundColor: 'var(--color-card-bg)', border: '1px solid var(--color-card-border)' }}
+    >
+      {/* Header */}
+      <div className="mb-6 flex items-start justify-between gap-4">
+        <div>
+          <div className="mb-1 flex items-center gap-2">
+            <div className="h-5 w-1 rounded-full" style={{ backgroundColor: accent }} aria-hidden />
+            <h2 className="text-xl font-extrabold text-foreground">{title}</h2>
+            <span
+              className="rounded-badge px-2 py-0.5 text-xs font-bold"
+              style={{
+                backgroundColor: `color-mix(in srgb, ${accent} 15%, transparent)`,
+                color: accent,
+              }}
+            >
+              {total}
+            </span>
+          </div>
+          <p className="ps-3 text-sm text-muted">{subtitle}</p>
+        </div>
+      </div>
+
+      {/* Avatar grid */}
+      <div className="mb-6 flex flex-wrap gap-5">
+        {preview.map(({ slug, name, photo, count }) => (
+          <Link
+            key={slug}
+            href={`/${locale}/community/members/${slug}`}
+            className="group flex flex-col items-center gap-1.5"
+            title={name}
+          >
+            <div
+              className="rounded-full p-0.5 transition-transform duration-200 group-hover:scale-110"
+              style={{ background: `linear-gradient(135deg, ${accent}, var(--color-brand-teal))` }}
+            >
+              <div
+                className="relative h-14 w-14 overflow-hidden rounded-full"
+                style={{ backgroundColor: 'var(--color-bg-dark)' }}
+              >
+                {photo ? (
+                  <Image
+                    src={avatarUrl(photo, 150)}
+                    alt={name}
+                    fill
+                    className="object-cover"
+                    sizes="56px"
+                  />
+                ) : (
+                  <div
+                    className="flex h-full w-full items-center justify-center"
+                    style={{ background: 'var(--gradient-cta)' }}
+                  >
+                    <User size={22} className="text-white/60" aria-hidden />
+                  </div>
+                )}
+              </div>
+            </div>
+            <span className="max-w-[72px] truncate text-center text-xs text-muted transition-colors group-hover:text-brand-teal">
+              {name.split(' ')[0]}
+            </span>
+            {count > 0 && (
+              <span
+                className="rounded-full px-1.5 py-0.5 text-[10px] font-semibold"
+                style={{
+                  backgroundColor: `color-mix(in srgb, ${accent} 15%, transparent)`,
+                  color: accent,
+                }}
+              >
+                {count}
+              </span>
+            )}
+          </Link>
+        ))}
+
+        {extra > 0 && (
+          <Link href={`/${locale}/community/${href}`} className="flex flex-col items-center gap-1.5">
+            <div
+              className="flex h-14 w-14 items-center justify-center rounded-full text-sm font-bold text-foreground transition-opacity hover:opacity-80"
+              style={{ backgroundColor: 'var(--color-bg-dark)', border: '1px solid var(--color-card-border)' }}
+            >
+              +{extra}
+            </div>
+            <span className="text-xs text-muted">{countLabel}</span>
+          </Link>
+        )}
+      </div>
+
+      {/* View All */}
+      <Link
+        href={`/${locale}/community/${href}`}
+        className="inline-flex items-center gap-2 text-sm font-semibold transition-colors hover:text-brand-teal"
+        style={{ color: accent }}
+      >
+        {viewAllLabel}
+        <ArrowRight size={14} aria-hidden />
+      </Link>
+    </section>
+  );
+}
 
 export default async function CommunityPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations({ locale, namespace: 'community' });
+  const [t, tPeople] = await Promise.all([
+    getTranslations({ locale, namespace: 'community' }),
+    getTranslations({ locale, namespace: 'contributors' }),
+  ]);
 
-  const counts = {
-    volunteers: getAllVolunteerSlugs().length,
-    speakers: getAllSpeakerSlugs().length,
-    contributors: getAllOssContributorSlugs().length,
-    donors: getAllDonorSlugs().length,
-  };
+  function nameOf(slug: string) {
+    try { return tPeople(`${slug}.name`); } catch { return slug; }
+  }
+  function photoOf(slug: string) {
+    try { return getPersonMeta(slug).photo ?? ''; } catch { return ''; }
+  }
+
+  // Volunteers — sorted by total event count
+  const volunteerSlugs = getAllVolunteerSlugs();
+  const volunteers: PersonPreview[] = volunteerSlugs
+    .map((slug) => ({
+      slug,
+      name: nameOf(slug),
+      photo: photoOf(slug),
+      count: getVolunteerEvents(slug).length,
+    }))
+    .sort((a, b) => b.count - a.count);
+
+  // Speakers — sorted by talk count
+  const speakerSlugs = getAllSpeakerSlugs();
+  const speakers: PersonPreview[] = speakerSlugs
+    .map((slug) => ({
+      slug,
+      name: nameOf(slug),
+      photo: photoOf(slug),
+      count: getSpeakerEventMetas(slug).length,
+    }))
+    .sort((a, b) => b.count - a.count);
+
+  // OSS contributors — no event count
+  const ossSlugs = getAllOssContributorSlugs();
+  const ossContributors: PersonPreview[] = ossSlugs.map((slug) => ({
+    slug,
+    name: nameOf(slug),
+    photo: photoOf(slug),
+    count: 0,
+  }));
+
+  // Donors — sorted by events supported
+  const donorSlugs = getAllDonorSlugs();
+  const donors: PersonPreview[] = donorSlugs
+    .map((slug) => ({
+      slug,
+      name: nameOf(slug),
+      photo: photoOf(slug),
+      count: getDonorEventMetas(slug).length,
+    }))
+    .sort((a, b) => b.count - a.count);
+
+  const moreLabel = t('contributors.contributions');
 
   return (
     <main>
@@ -97,44 +256,53 @@ export default async function CommunityPage({ params }: Props) {
         </div>
       </div>
 
-      {/* Section cards */}
-      <section className="mx-auto max-w-5xl px-4 py-16 md:px-8">
-        <div className="grid gap-6 sm:grid-cols-2">
-          {sections.map(({ key, href, Icon, color, bg }) => (
-            <Link
-              key={key}
-              href={`/${locale}/community/${href}`}
-              className="group flex items-center gap-5 rounded-card p-6 transition-all duration-300 hover:-translate-y-1"
-              style={{
-                backgroundColor: 'var(--color-card-bg)',
-                border: '1px solid var(--color-card-border)',
-                boxShadow: 'var(--shadow-card)',
-              }}
-            >
-              <div
-                className="flex h-14 w-14 shrink-0 items-center justify-center rounded-xl"
-                style={{ backgroundColor: bg }}
-              >
-                <Icon size={26} style={{ color }} aria-hidden />
-              </div>
-              <div className="flex-1">
-                <h2
-                  className="mb-1 text-lg font-bold transition-colors group-hover:text-brand-teal"
-                  style={{ color: 'var(--color-text-primary)' }}
-                >
-                  {t(`${key}.title`)}
-                </h2>
-                <p className="text-sm text-muted">{t(`${key}.subtitle`)}</p>
-              </div>
-              <div className="shrink-0 text-right">
-                <p className="text-2xl font-extrabold" style={{ color }}>
-                  {counts[key as keyof typeof counts]}
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
+      {/* Category sections */}
+      <div className="mx-auto max-w-6xl space-y-8 px-4 py-16 md:px-8">
+        <CategorySection
+          locale={locale}
+          title={t('volunteers.title')}
+          subtitle={t('volunteers.subtitle')}
+          accent="var(--color-brand-teal)"
+          people={volunteers}
+          total={volunteerSlugs.length}
+          href="volunteers"
+          viewAllLabel={t('volunteers.backToAll')}
+          countLabel={moreLabel}
+        />
+        <CategorySection
+          locale={locale}
+          title={t('speakers.title')}
+          subtitle={t('speakers.subtitle')}
+          accent="var(--color-brand-gold)"
+          people={speakers}
+          total={speakerSlugs.length}
+          href="speakers"
+          viewAllLabel={t('speakers.backToAll')}
+          countLabel={moreLabel}
+        />
+        <CategorySection
+          locale={locale}
+          title={t('contributors.title')}
+          subtitle={t('contributors.subtitle')}
+          accent="#A78BFA"
+          people={ossContributors}
+          total={ossSlugs.length}
+          href="contributors"
+          viewAllLabel={t('contributors.backToAll')}
+          countLabel={moreLabel}
+        />
+        <CategorySection
+          locale={locale}
+          title={t('donors.title')}
+          subtitle={t('donors.subtitle')}
+          accent="#F43F5E"
+          people={donors}
+          total={donorSlugs.length}
+          href="donors"
+          viewAllLabel={t('donors.backToAll')}
+          countLabel={moreLabel}
+        />
+      </div>
 
       {/* How to Join */}
       <section

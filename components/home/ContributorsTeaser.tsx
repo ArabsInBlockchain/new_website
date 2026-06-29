@@ -4,8 +4,10 @@ import { ArrowRight, User } from 'lucide-react';
 import { getTranslations } from 'next-intl/server';
 import {
   getAllVolunteerSlugs,
+  getAllSpeakerSlugs,
   getPersonMeta,
   getVolunteerEvents,
+  getSpeakerEventMetas,
   avatarUrl,
 } from '@/lib/content';
 
@@ -19,11 +21,16 @@ export default async function ContributorsTeaser({ locale }: Props) {
   const t = await getTranslations({ locale, namespace: 'home.contributors' });
   const tContribs = await getTranslations({ locale, namespace: 'contributors' });
 
-  const allSlugs = getAllVolunteerSlugs();
+  // Union of all volunteers and speakers
+  const allSlugs = [...new Set([...getAllVolunteerSlugs(), ...getAllSpeakerSlugs()])];
 
-  // Sort by event count descending — most active volunteers first
+  // Total activity count across all roles
   const ranked = allSlugs
-    .map((slug) => ({ slug, count: getVolunteerEvents(slug).length }))
+    .map((slug) => {
+      const volunteerCount = getVolunteerEvents(slug).length;
+      const speakingCount = getSpeakerEventMetas(slug).length;
+      return { slug, count: volunteerCount + speakingCount };
+    })
     .sort((a, b) => b.count - a.count);
 
   const preview = ranked.slice(0, PREVIEW_COUNT);
@@ -57,7 +64,6 @@ export default async function ContributorsTeaser({ locale }: Props) {
                 className="group flex flex-col items-center gap-2"
                 title={name}
               >
-                {/* Avatar */}
                 <div
                   className="rounded-full p-0.5 transition-transform duration-200 group-hover:scale-110"
                   style={{
@@ -88,12 +94,10 @@ export default async function ContributorsTeaser({ locale }: Props) {
                   </div>
                 </div>
 
-                {/* Name */}
                 <span className="max-w-[72px] truncate text-center text-xs text-muted transition-colors group-hover:text-brand-teal">
                   {name.split(' ')[0]}
                 </span>
 
-                {/* Event count dot */}
                 {count > 0 && (
                   <span
                     className="rounded-full px-1.5 py-0.5 text-[10px] font-semibold"
@@ -110,10 +114,9 @@ export default async function ContributorsTeaser({ locale }: Props) {
             );
           })}
 
-          {/* +N more pill */}
           {extra > 0 && (
             <Link
-              href={`/${locale}/community/volunteers`}
+              href={`/${locale}/community`}
               className="flex flex-col items-center gap-2"
             >
               <div
@@ -130,7 +133,7 @@ export default async function ContributorsTeaser({ locale }: Props) {
         {/* View All CTA */}
         <div className="text-center">
           <Link
-            href={`/${locale}/community/volunteers`}
+            href={`/${locale}/community`}
             className="inline-flex items-center gap-2 rounded-btn border px-6 py-2.5 text-sm font-semibold transition-colors hover:border-brand-teal hover:text-brand-teal"
             style={{ borderColor: 'var(--color-card-border)', color: 'var(--color-text-muted)' }}
           >
