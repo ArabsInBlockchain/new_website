@@ -52,7 +52,7 @@ export default async function ContributorsTeaser({ locale }: Props) {
 
         {/* Avatar grid */}
         <div className="mb-8 flex flex-wrap justify-center gap-6">
-          {preview.map(({ slug, count }) => {
+          {preview.map(({ slug }) => {
             const meta = getPersonMeta(slug);
             let name = slug;
             try { name = tContribs(`${slug}.name`); } catch { /* missing */ }
@@ -97,19 +97,6 @@ export default async function ContributorsTeaser({ locale }: Props) {
                 <span className="max-w-[72px] truncate text-center text-xs text-muted transition-colors group-hover:text-brand-teal">
                   {name.split(' ')[0]}
                 </span>
-
-                {count > 0 && (
-                  <span
-                    className="rounded-full px-1.5 py-0.5 text-[10px] font-semibold"
-                    style={{
-                      backgroundColor:
-                        'color-mix(in srgb, var(--color-brand-teal) 15%, transparent)',
-                      color: 'var(--color-brand-teal)',
-                    }}
-                  >
-                    {count}
-                  </span>
-                )}
               </Link>
             );
           })}

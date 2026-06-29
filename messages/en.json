@@ -106,7 +106,7 @@
     },
     "contributors": {
       "title": "People Who Make It Happen",
-      "subtitle": "Every event is powered by community volunteers",
+      "subtitle": "Every event, every talk, every line of code — built by the people in this community.",
       "viewAll": "View All Contributors"
     }
   },
@@ -242,13 +242,13 @@
       "title": "The Crew",
       "subtitle": "The people who show up, roll up their sleeves, and make every event happen",
       "noMembers": "No volunteers yet",
-      "backToAll": "All Community"
+      "backToAll": "All Crew"
     },
     "speakers": {
       "title": "On Stage",
       "subtitle": "Voices who've taken the mic and shared their knowledge with the community",
       "noMembers": "No speakers listed yet",
-      "backToAll": "All Community"
+      "backToAll": "All Speakers"
     },
     "donors": {
       "title": "Community Pillars",
@@ -257,7 +257,7 @@
       "badge": "Community Pillar",
       "eventsSupported": "Events supported",
       "supportingSince": "Supporting since",
-      "backToAll": "All Community"
+      "backToAll": "All Pillars"
     },
     "contributors": {
       "title": "Open-Source Builders",
@@ -271,7 +271,7 @@
       "viewEvent": "View Event",
       "activeSince": "Contributing since",
       "shareProfile": "Share Profile",
-      "backToAll": "All Community",
+      "backToAll": "All OSS Builders",
       "backToContributors": "All Contributors"
     },
     "profile": {
@@ -347,7 +347,9 @@
       "github": "Open Source on GitHub"
     }
   },
-  "speakers": {},
+  "speakers": {
+    "backToAll": "All Speakers"
+  },
   "partners_data": {},
   "team": {},
   "events_data": {
@@ -857,7 +859,8 @@
       "name": "Mohamed Elsharabassi",
       "title": "",
       "bio": ""
-    }
+    },
+    "backToAll": "All OSS Builders"
   },
   "common": {
     "loading": "Loading...",

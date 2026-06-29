@@ -43,10 +43,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   let title = slug;
   let description = '';
-  let location = '';
   try { title = tData(`${slug}.title`); } catch { /* missing */ }
   try { description = tData(`${slug}.description`); } catch { /* missing */ }
-  try { location = tData(`${slug}.location`); } catch { /* missing */ }
 
   let meta = null;
   try { meta = getEventMeta(slug); } catch { /* missing */ }

@@ -19,7 +19,7 @@ export default function Logo({ height = 40, width: widthProp, className = '', li
     : { height, width: 'auto' as const };
 
   const h = height ?? 40;
-  const w = widthProp ?? h * 4;
+  const w = widthProp ?? Math.round(h * (714 / 297));
 
   const content = forceLight ? (
     /* Always-dark surface: only ever show the white-text logo */
@@ -27,8 +27,9 @@ export default function Logo({ height = 40, width: widthProp, className = '', li
       <Image
         src="/logo-light.png"
         alt="Arabs in Blockchain — العرب × بلوكتشين"
-        height={h}
-        width={w}
+        width={714}
+        height={297}
+        sizes={`${w}px`}
         priority
         style={imgStyle}
       />
@@ -43,8 +44,9 @@ export default function Logo({ height = 40, width: widthProp, className = '', li
       <Image
         src="/logo-light.png"
         alt="Arabs in Blockchain — العرب × بلوكتشين"
-        height={h}
-        width={w}
+        width={714}
+        height={297}
+        sizes={`${w}px`}
         className="block [.light-mode_&]:hidden"
         priority
         style={imgStyle}
@@ -52,8 +54,9 @@ export default function Logo({ height = 40, width: widthProp, className = '', li
       <Image
         src="/logo-dark.png"
         alt="Arabs in Blockchain — العرب × بلوكتشين"
-        height={h}
-        width={w}
+        width={714}
+        height={297}
+        sizes={`${w}px`}
         className="hidden [.light-mode_&]:block"
         priority
         style={imgStyle}

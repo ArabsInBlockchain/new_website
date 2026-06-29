@@ -32,11 +32,11 @@ export default function Hero() {
           <Image
             src="/logo-light.png"
             alt="Arabs in Blockchain — العرب × بلوكتشين"
-            width={480}
-            height={160}
+            width={714}
+            height={297}
+            sizes="(max-width: 768px) 288px, (max-width: 1024px) 420px, 480px"
             priority
-            className="mx-auto w-72 md:w-[420px] lg:w-[480px]"
-            style={{ height: 'auto' }}
+            className="mx-auto h-auto w-72 md:w-[420px] lg:w-[480px]"
           />
         </div>
 
