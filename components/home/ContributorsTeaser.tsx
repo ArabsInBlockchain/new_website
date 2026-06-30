@@ -112,7 +112,7 @@ export default async function ContributorsTeaser({ locale }: Props) {
               >
                 +{extra}
               </div>
-              <span className="text-xs text-muted">more</span>
+              <span className="text-xs text-muted">{t('more')}</span>
             </Link>
           )}
         </div>

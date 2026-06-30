@@ -23,9 +23,9 @@ export default function EventsClient({ upcoming, past, locale }: EventsClientPro
   const cardT = {
     register: t('card.register'),
     addToCalendar: t('card.addToCalendar'),
-    viewRecap: t('card.viewRecap'),
     photos: t('card.photos'),
-    viewDetails: t('detail.viewDetails'),
+    viewDetails: t('card.viewDetails'),
+    eventPage: t('card.eventPage'),
   };
 
   const FILTERS: { key: FilterType; label: string }[] = [

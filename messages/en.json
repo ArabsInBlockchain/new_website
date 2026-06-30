@@ -1,11 +1,11 @@
 {
   "metadata": {
     "siteName": "Arabs in Blockchain",
-    "siteDescription": "An open, borderless community empowering Arabs in blockchain technology"
+    "siteDescription": "An open, borderless community empowering Arabs to lead the future of blockchain technology."
   },
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "About Us",
     "events": "Events",
     "upcoming": "Upcoming",
     "past": "Past",
@@ -13,10 +13,10 @@
     "opportunities": "Opportunities",
     "partners": "Partners",
     "gallery": "Gallery",
-    "contact": "Contact",
-    "join": "Get Involved",
+    "contact": "Get in Touch",
+    "join": "Join Us",
     "toggleTheme": "Toggle theme",
-    "toggleLanguage": "Switch to Arabic",
+    "toggleLanguage": "العربية",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
@@ -51,136 +51,138 @@
       "title": "What We Do",
       "learn": {
         "title": "Learn Together",
-        "description": "Study sessions, workshops, and live Q&As — for every level, from curious to building"
+        "description": "Study groups, hands-on workshops, and live Q&As — tailored for everyone from the crypto-curious to seasoned builders."
       },
       "meet": {
         "title": "Meet & Network",
-        "description": "Community-run meetups across Arab countries and at major global blockchain conferences"
+        "description": "Grassroots, community-run meetups across Arab nations and side-events at major global blockchain conferences."
       },
       "represent": {
         "title": "Arabs in Web3",
-        "description": "We show up at Devcon, ETHcc, DevConnect, and more — so Arabs have a voice in this space"
+        "description": "We make sure Arab builders show up strong at Devcon, ETHcc, Devconnect, and beyond — making our voices heard."
       }
     },
     "upcomingEvents": {
-      "title": "Upcoming Events",
+      "title": "What's Coming Up",
       "viewAll": "View All Events"
     },
     "opportunities": {
       "title": "The Community Has Your Back",
-      "intro": "Since 2020, this community has put members in rooms they wouldn't have found alone.",
-      "cultureNote": "It happened because people here pay attention and pass things along. That is the culture, and it keeps going.",
+      "intro": "Since 2020, this community has been opening doors and getting members into rooms they wouldn't have found alone.",
+      "cultureNote": "It all happens because people here actually pay attention and pass opportunities down the line. That's our culture, and we keep it moving.",
       "strip": {
-        "item1": "🎟  Free tickets to Devcon",
-        "item2": "🎟  Free tickets to DevConnect",
-        "item3": "📚  25+ free scholarships to Consensys Academy Bootcamp",
-        "item4": "🌍  Connections to global Web3 learning programs",
-        "note": "These happened. This is who we are."
+        "item1": "🎟 Free tickets to Devcon",
+        "item2": "🎟 Free tickets to Devconnect",
+        "item3": "📚 25+ fully funded scholarships to Consensys Academy Bootcamp",
+        "item4": "🌍 Direct tracks to global Web3 builder ecosystems",
+        "note": "Real impact. This is who we are."
       },
       "tickets": {
         "title": "Free Tickets",
-        "description": "We've sent members to Devcon and DevConnect. When tickets come our way, the community gets first access."
+        "description": "We've sent active members straight to Devcon and Devconnect. Whenever conference tickets come our way, the community gets first dibs."
       },
       "scholarships": {
-        "title": "Learning Opportunities",
-        "description": "We watch the ecosystem and bring the best to Arab learners. It started with 25+ free Consensys Academy scholarships."
+        "title": "Learning Tracks",
+        "description": "We keep an eye on the ecosystem to bring the best educational resources to Arab learners, starting with our legendary 25+ free Consensys slots."
       },
       "grants": {
         "title": "Grants & Funding",
-        "description": "Members share grant leads and support each other through applications when they come up."
+        "description": "Members actively share grant leads and jump in to help review applications to give you the best shot at securing funding."
       },
       "jobs": {
-        "title": "Job Opportunities",
-        "description": "Members pass along Web3 job openings and make introductions when they can."
+        "title": "Job Openings",
+        "description": "We pass along hot Web3 job openings, share insider leads, and make internal recommendations whenever possible."
       },
-      "cta": "Join the Community"
+      "cta": "Jump into the Community"
     },
     "partners": {
-      "supporters": "Supporters",
-      "partners": "Partners"
+      "supporters": "Backed By",
+      "partners": "Our Partners"
     },
     "join": {
       "title": "Your People Are Here",
-      "subtitle": "1,000+ members across 15+ countries. Come learn, connect, and find your place in the Web3 world.",
+      "subtitle": "1,000+ builders across 15+ countries. Come learn, network, and find your place in the future of Web3.",
       "cta": "Join Us"
     },
     "contributors": {
-      "title": "People Who Make It Happen",
-      "subtitle": "Every event, every talk, every line of code — built by the people in this community.",
-      "viewAll": "View All Contributors"
+      "title": "The People Behind It All",
+      "subtitle": "Speakers, builders, organizers, donors, and volunteers — every role, every contribution, every act of showing up makes this community what it is.",
+      "viewAll": "Meet the Community",
+      "more": "more"
     }
   },
   "events": {
     "upcoming": {
       "title": "Upcoming Events",
-      "subtitle": "Where the Arab blockchain community comes together"
+      "subtitle": "Where the Arab blockchain ecosystem comes alive."
     },
     "past": {
-      "title": "Past Events",
+      "title": "Past Gatherings",
       "subtitle": "Our journey so far"
     },
     "types": {
       "all": "All Events",
-      "inPerson": "In-Person",
+      "inPerson": "In-Person (IRL)",
       "online": "Online",
       "sideEvent": "Side Event"
     },
     "card": {
-      "register": "Register Now",
+      "register": "Grab Your Spot",
       "addToCalendar": "Add to Calendar",
-      "viewRecap": "View more",
-      "photos": "Photos"
+      "viewDetails": "View Details",
+      "eventPage": "Event Page",
+      "photos": "Event Photos"
     },
     "host": {
-      "title": "Want to host an event with us?",
-      "cta": "Contact Us"
+      "title": "Want to co-host an event with us?",
+      "cta": "Let's Talk"
     },
     "search": "Search events...",
-    "noResults": "No events found",
+    "noResults": "No events scheduled just yet!",
     "gridView": "Grid view",
     "listView": "List view",
     "detail": {
       "backToEvents": "All Events",
       "speakers": "On Stage",
-      "speakersSubtitle": "The voices who shared their knowledge at this event",
-      "organizers": "The Team Behind It",
-      "organizersSubtitle": "The people who planned, coordinated, and brought this event to life",
+      "speakersSubtitle": "The brilliant minds who shared their knowledge at this event",
+      "organizers": "The Brains Behind It",
+      "organizersSubtitle": "The amazing team who planned, coordinated, and brought this event to life",
       "volunteers": "Community Heroes",
-      "volunteersSubtitle": "Community members who showed up and helped to make it happen",
+      "volunteersSubtitle": "The epic members who showed up, rolled up their sleeves, and made it run smoothly",
       "donors": "Made Possible By",
-      "donorsSubtitle": "Those who believed in this event and financially supported it",
+      "donorsSubtitle": "Generous souls who believed in this event and stepped up to fund it",
       "viewDetails": "View Details",
       "tags": "Tags"
     }
   },
   "about": {
-    "title": "About Us",
-    "subtitle": "Our story, mission, and the people behind the community",
+    "title": "Our Story",
+    "subtitle": "The mission, the milestones, and the faces behind the movement.",
     "mission": {
       "title": "Our Mission",
-      "body": "Arabs in Blockchain is a borderless community dedicated to advancing Arab participation in Web3. We foster education, collaboration, and opportunity for Arabic speakers and Arabs globally, helping them go from enthusiasts to leaders in the blockchain space since 2020."
+      "body": "Arabs in Blockchain is a borderless community dedicated to accelerating Arab representation in Web3. Since 2020, we’ve been fostering native education, collaboration, and real opportunities for Arabic speakers globally — helping builders evolve from tech enthusiasts into ecosystem leaders."
     },
     "whoWeWelcome": {
-      "title": "Who We Welcome",
+      "title": "Who belongs here?",
       "speakers": {
         "title": "Arabic Speakers",
-        "description": "Anyone who speaks Arabic as their primary language"
+        "description": "Anyone who speaks Arabic or is passionate about native content."
       },
       "origin": {
-        "title": "Arab Origin",
-        "description": "People of Arab heritage from anywhere in the world"
+        "title": "Arab Heritage",
+        "description": "People of Arab descent thriving anywhere across the globe."
       },
       "living": {
-        "title": "Living in Arab Countries",
-        "description": "Anyone residing in the Arab world"
+        "title": "Based in the Arab World",
+        "description": "Anyone currently living, working, or building within the region."
       }
     },
     "values": {
-      "title": "Our Values",
+      "title": "What We Stand For",
       "communityFirst": "Community First",
-      "collectiveLearning": "Collective Learning",
+      "collectiveLearning": "Collective Brainpower",
       "arabExcellence": "Arab Excellence",
-      "trueInclusivity": "True Inclusivity",
+      "trueInclusivity": "Radical Inclusivity",
       "opportunityDriven": "Opportunity-Driven",
       "transparencyTrust": "Transparency & Trust"
     },
@@ -189,163 +191,163 @@
     },
     "timeline": {
       "title": "Our Journey",
-      "2020": "Founded on Facebook, LinkedIn & Discord — launched our webinar series",
-      "2021": "Hosted the first Arab Blockchain Week — secured 25+ Consensys Academy scholarships — Telegram group launched, community building begins",
-      "2022": "First in-person events at AUC Cairo — Web3 Wellness Day — exhibited at GITEX Tech Week Dubai — co-organized Pitch Run Arabia",
-      "2024": "First side event in Cairo — introducing the concept to Egypt. First side event at a major global conference (ETHcc 7). Secured free Devcon Bangkok tickets for 20+ members, majority women and students.",
-      "2026": "Hosting IRL hub for Dev3pack Hack — uniting builders in Cairo for an intense, high-energy hacking experience"
+      "2020": "Started as a spark on Facebook, LinkedIn & Discord — launched our very first tech webinar series.",
+      "2021": "Hosted the inaugural Arab Blockchain Week — secured 25+ Consensys scholarships — launched our Telegram hub, kicking off true community building.",
+      "2022": "Broke ground with our first IRL events at AUC Cairo — hosted Web3 Wellness Day — took over the stage at GITEX Dubai — co-organized Pitch Run Arabia.",
+      "2024": "Brought the web3 side-event concept to Egypt with our Cairo mixer. Expanded globally with our first flagship international side-event at ETHcc 7 Brussels. Secured fully funded Devcon Bangkok tickets for 20+ community members, prioritizing brilliant women and student builders.",
+      "2026": "Hosting the official high-energy IRL hacking hub for the Dev3pack Hack — bringing local builders under one roof in Cairo for an intense, caffeine-fueled building experience."
     },
     "stats": {
-      "title": "Our Impact",
-      "members": "Members",
+      "title": "Our Numbers",
+      "members": "Builders",
       "events": "Events",
       "countries": "Countries",
       "since": "Since"
     }
   },
   "community": {
-    "title": "Join the Community",
-    "subtitle": "Become part of the Arab blockchain movement",
+    "title": "Join the Movement",
+    "subtitle": "Be a part of shaping the Arab blockchain frontier.",
     "join": {
-      "title": "We're on Telegram",
-      "subtitle": "Free to join. Open to all. Come say hi."
+      "title": "We hang out on Telegram",
+      "subtitle": "Free to join. Open to all. Come say hi and introduce yourself!"
     },
-    "joinCta": "Join on Telegram",
+    "joinCta": "Jump into Telegram",
     "channels": {
       "title": "Our Channels"
     },
     "opportunities": {
       "title": "We Open Doors",
-      "subtitle": "Resources and opportunities for our community members",
+      "subtitle": "Exclusive resources curated directly for our community members.",
       "tickets": {
-        "title": "Free Conference Tickets",
-        "description": "We distribute free tickets to global Web3 conferences including Devcon, ETHcc, and more"
+        "title": "Free Conference Passes",
+        "description": "We secure and distribute free passes to premier Web3 conferences worldwide, including Devcon, ETHcc, and more."
       },
       "scholarships": {
-        "title": "Course Scholarships",
-        "description": "Access to premium Web3 education resources and courses"
+        "title": "Premium Ecosystem Training",
+        "description": "Get direct access to top-tier, structured Web3 bootcamps, courses, and educational grants."
       },
       "grants": {
-        "title": "Grants & Funding",
-        "description": "Opportunities for grants and funding for your blockchain projects"
+        "title": "Project Funding & Grants",
+        "description": "Get early leads on ecosystem grants and get community feedback to polish your project pitch."
       },
       "jobs": {
-        "title": "Job Opportunities",
-        "description": "Curated Web3 jobs from our partner network"
+        "title": "Curated Job Opportunities",
+        "description": "Handpicked Web3 job openings directly from our trusted global partner network."
       }
     },
     "people": {
       "title": "People Who Make It Happen",
-      "subtitle": "Every event, every line of code, every stage moment — powered by community"
+      "subtitle": "Every local meetup, technical talk, and line of open-source code is powered entirely by this community."
     },
     "volunteers": {
-      "title": "The Crew",
-      "subtitle": "The people who show up, roll up their sleeves, and make every event happen",
-      "noMembers": "No volunteers yet",
+      "title":  "The Crew",
+      "subtitle": "The legends who show up, roll up their sleeves, and bring every single event to life.",
+      "noMembers": "No volunteers yet — be the first!",
       "backToAll": "All Crew"
     },
     "speakers": {
       "title": "On Stage",
-      "subtitle": "Voices who've taken the mic and shared their knowledge with the community",
+      "subtitle": "The voices who have taken the mic to pass down their technical knowledge to the community.",
       "noMembers": "No speakers listed yet",
       "backToAll": "All Speakers"
     },
     "donors": {
       "title": "Community Pillars",
-      "subtitle": "Those who believe in this community deeply enough to fund it",
-      "noMembers": "No community pillars listed yet",
+      "subtitle": "Visionaries who believe in our mission deeply enough to support it financially.",
+      "noMembers": "No pillars listed yet",
       "badge": "Community Pillar",
-      "eventsSupported": "Events supported",
-      "eventSupported": "Event supported",
+      "eventsSupported": "Events backed",
+      "eventSupported": "Event backed",
       "supportingSince": "Supporting since",
       "backToAll": "All Pillars"
     },
     "contributors": {
       "title": "Open-Source Builders",
-      "subtitle": "Developers putting in real work — PRs merged, bugs squashed, features shipped",
+      "subtitle": "Developers shipping real code — PRs merged, bugs squashed, and protocols deployed.",
       "roles": {
         "organizer": "Organizer",
         "volunteer": "Event Volunteer"
       },
       "contributions": "Contributions",
-      "noContributions": "No contributors yet",
+      "noContributions": "No code contributors yet — check out our GitHub!",
       "viewEvent": "View Event",
-      "activeSince": "Contributing since",
+      "activeSince": "Shipping since",
       "shareProfile": "Share Profile",
       "backToAll": "All OSS Builders",
       "backToContributors": "All Contributors"
     },
     "profile": {
-      "backToAll": "All Community",
+      "backToAll": "Back to Community",
       "speaking": "On Stage",
-      "speakingSubtitle": "Events where they shared their knowledge",
-      "organizing": "Organizing",
-      "organizingSubtitle": "Events they planned and brought to life",
-      "volunteering": "Volunteering",
-      "volunteeringSubtitle": "Events they showed up to help make happen",
-      "openSource": "Open Source",
-      "openSourceSubtitle": "Contributing to Arabs in Blockchain on GitHub",
-      "openSourceCta": "View contributions on GitHub",
-      "supporting": "Financially Supporting",
-      "supportingSubtitle": "Events they believed in and helped fund",
-      "viewEvent": "View Event",
+      "speakingSubtitle": "Events where they took the stage",
+      "organizing": "Organizing Team",
+      "organizingSubtitle": "Events they masterminded and coordinated",
+      "volunteering": "Volunteered At",
+      "volunteeringSubtitle": "Events they kept running smoothly behind the scenes",
+      "openSource": "Open Source Code",
+      "openSourceSubtitle": "Active code contributions to Arabs in Blockchain repositories",
+      "openSourceCta": "Check out their GitHub contributions",
+      "supporting": "Financial Support",
+      "supportingSubtitle": "Events they helped bootstrap and fund",
+      "viewEvent": "See Event",
       "talk": "Talk",
       "talks": "Talks",
       "organized": "Organized",
       "volunteered": "Volunteered",
-      "supported": "Supported"
+      "supported": "Funded"
     }
   },
   "partners": {
-    "title": "Partners & Sponsors",
-    "subtitle": "Organizations that share our mission",
-    "current": "Current Partners",
+    "title": "Partners & Ecosystem Sponsors",
+    "subtitle": "Global organizations that fiercely back our mission.",
+    "current": "Ecosystem Partners",
     "past": "Past Collaborations",
     "types": {
-      "technology": "Technology",
-      "event": "Event",
-      "education": "Education",
+      "technology": "Tech Protocol",
+      "event": "Event Partner",
+      "education": "Education Track",
       "sponsor": "Sponsor"
     },
     "visitWebsite": "Visit Website",
     "become": {
-      "title": "Become a Partner",
-      "subtitle": "Join us in empowering the Arab blockchain community",
+      "title": "Let's Build Together",
+      "subtitle": "Partner with us to support and tap into the brightest minds in the Arab Web3 space.",
       "cta": "Get in Touch"
     }
   },
   "gallery": {
-    "title": "Gallery",
-    "subtitle": "Moments from our community events",
+    "title": "Our Gallery",
+    "subtitle": "Unforgettable moments captured from our global gatherings.",
     "filters": {
-      "all": "All"
+      "all": "All Moments"
     },
-    "loadMore": "Load More Photos",
+    "loadMore": "Load More Memories",
     "photoAlt": "Community event photo"
   },
   "contact": {
-    "title": "Get in Touch",
-    "subtitle": "We'd love to hear from you",
+    "title": "Drop Us a Line",
+    "subtitle": "We'd love to hear from you. Let's make things happen!",
     "form": {
-      "name": "Full Name",
+      "name": "Your Name",
       "email": "Email Address",
-      "subject": "Subject",
+      "subject": "What's this about?",
       "subjects": {
-        "partnership": "Partnership",
-        "speaking": "Speaking",
-        "media": "Media",
-        "general": "General",
-        "other": "Other"
+        "partnership": "Ecosystem Partnership",
+        "speaking": "Speaking / Hosting",
+        "media": "Media Inquiry",
+        "general": "General Chat",
+        "other": "Something Else!"
       },
-      "message": "Message",
-      "submit": "Send Message",
-      "privacy": "Your information will only be used to respond to your inquiry.",
-      "success": "Message sent successfully! We'll get back to you soon.",
-      "error": "Failed to send message. Please try again."
+      "message": "Your Message",
+      "submit": "Send It Over",
+      "privacy": "No spam, ever. Your info is safe with us.",
+      "success": "Message sent successfully! We'll get back to you shortly.",
+      "error": "Oops! Failed to send. Please try again."
     },
     "info": {
-      "title": "Contact Information",
-      "github": "Open Source on GitHub"
+      "title": "Contact Details",
+      "github": "Explore Our GitHub"
     }
   },
   "speakers": {
@@ -410,7 +412,7 @@
       "location": "Cairo, Egypt"
     },
     "0xcairo-tech-day-1-2024": {
-      "title": "0xCairo Tech Day I",
+      "title": "0xCairo I",
       "description": "A full-day Web3 educational event at The Egyptian Chinese University — featuring Blockchain 101, a hands-on CCIP cross-chain workshop, real-world ZK applications, and a panel on Web3's future in Egypt.",
       "location": "The Egyptian Chinese University (ECU), Ain Shams, Cairo, Egypt"
     },
@@ -663,8 +665,8 @@
     },
     "khawla-hassan": {
       "name": "Khawla Hassan",
-      "title": "Technical Product Manager — Digital Assets, Blockchain & AI",
-      "bio": ""
+      "title": "Research Assistant & Blockchain Researcher",
+      "bio": "Research Assistant with nearly 3 years of experience, two of which focused on blockchain. Mathematics undergraduate who combines a passion for coding with research, bridging theoretical and practical perspectives. Graduate of the Frankfurt School Blockchain Center's DLT Talents program, which deepened her understanding of distributed ledger technology."
     },
     "mustafa-elnaquip": {
       "name": "Mustafa Abdullah Elnaquip",
@@ -883,8 +885,8 @@
     },
     "mohamed-elsharabassi": {
       "name": "Mohamed Elsharabassi",
-      "title": "",
-      "bio": ""
+      "title": "Data Scientist / X-Analyst at ILLA Holdings | Musician | People of Data | Arabs in Blockchain | Ex-Intern at Nethermind",
+      "bio": "Data scientist and analyst at ILLA Holdings with a passion for music and community building. Active member of Arabs in Blockchain and People of Data communities, with previous experience as an intern at Nethermind."
     },
     "backToAll": "All OSS Builders"
   },

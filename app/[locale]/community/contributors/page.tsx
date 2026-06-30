@@ -87,6 +87,7 @@ export default async function ContributorsPage({ params }: Props) {
                 meta={meta}
                 name={name}
                 title={title}
+                locale={locale}
               />
             ))}
           </div>

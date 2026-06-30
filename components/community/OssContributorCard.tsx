@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import { User, GitBranch, ExternalLink } from 'lucide-react';
 import type { PersonMeta } from '@/lib/content';
 import { avatarUrl } from '@/lib/content';
@@ -7,9 +8,10 @@ interface Props {
   meta: PersonMeta;
   name: string;
   title?: string;
+  locale: string;
 }
 
-export default function OssContributorCard({ meta, name, title }: Props) {
+export default function OssContributorCard({ meta, name, title, locale }: Props) {
   const githubProfileUrl = meta.github ? `https://github.com/${meta.github}` : null;
   const contributionsUrl = meta.github
     ? `https://github.com/search?q=org%3AArabsInBlockchain+author%3A${meta.github}&type=pullrequests`
@@ -17,16 +19,23 @@ export default function OssContributorCard({ meta, name, title }: Props) {
 
   return (
     <div
-      className="flex flex-col items-center gap-4 rounded-card p-6 text-center"
+      className="relative flex flex-col items-center gap-4 rounded-card p-6 text-center transition-colors hover:border-brand-teal"
       style={{
         backgroundColor: 'var(--color-card-bg)',
         border: '1px solid var(--color-card-border)',
         boxShadow: 'var(--shadow-card)',
       }}
     >
+      {/* Full-card link overlay — sits below interactive elements */}
+      <Link
+        href={`/${locale}/community/members/${meta.slug}`}
+        className="absolute inset-0 rounded-card"
+        aria-label={name}
+      />
+
       {/* Avatar */}
       <div
-        className="rounded-full p-0.5"
+        className="relative z-10 rounded-full p-0.5"
         style={{ background: 'linear-gradient(135deg, var(--color-brand-gold), var(--color-brand-teal))' }}
       >
         <div
@@ -47,7 +56,7 @@ export default function OssContributorCard({ meta, name, title }: Props) {
       </div>
 
       {/* Name + title */}
-      <div className="flex flex-col gap-1">
+      <div className="relative z-10 flex flex-col gap-1">
         <h3 className="text-base font-bold text-foreground">{name}</h3>
         {title && <p className="text-xs text-muted">{title}</p>}
       </div>
@@ -58,7 +67,7 @@ export default function OssContributorCard({ meta, name, title }: Props) {
           href={githubProfileUrl!}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold transition-opacity hover:opacity-80"
+          className="relative z-10 flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold transition-opacity hover:opacity-80"
           style={{
             backgroundColor: 'color-mix(in srgb, var(--color-brand-teal) 15%, transparent)',
             color: 'var(--color-brand-teal)',
@@ -76,7 +85,7 @@ export default function OssContributorCard({ meta, name, title }: Props) {
           href={contributionsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1 text-xs text-muted transition-colors hover:text-brand-teal"
+          className="relative z-10 flex items-center gap-1 text-xs text-muted transition-colors hover:text-brand-teal"
           aria-label="View contributions to ArabsInBlockchain"
         >
           View contributions
@@ -86,7 +95,7 @@ export default function OssContributorCard({ meta, name, title }: Props) {
 
       {/* Social links */}
       {(meta.twitter || meta.linkedin) && (
-        <div className="flex gap-3 text-xs text-muted">
+        <div className="relative z-10 flex gap-3 text-xs text-muted">
           {meta.twitter && (
             <a
               href={`https://x.com/${meta.twitter}`}

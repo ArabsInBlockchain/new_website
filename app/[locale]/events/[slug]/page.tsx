@@ -396,7 +396,7 @@ export default async function EventDetailPage({ params }: Props) {
               className="inline-flex items-center gap-2 rounded-btn border border-foreground/20 px-4 py-2.5 text-sm text-muted transition-colors hover:border-brand-teal hover:text-brand-teal"
             >
               <BookOpen size={14} aria-hidden />
-              {tEvents('card.viewRecap')}
+              {tEvents('card.eventPage')}
             </a>
           )}
         </div>

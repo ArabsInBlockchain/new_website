@@ -17,9 +17,9 @@ interface EventCardProps {
   t: {
     register: string;
     addToCalendar: string;
-    viewRecap: string;
     photos: string;
     viewDetails: string;
+    eventPage: string;
   };
   compact?: boolean;
 }
@@ -150,7 +150,7 @@ export default function EventCard({ event, locale, t, compact = false }: EventCa
             className="inline-flex items-center gap-1.5 rounded-btn border border-foreground/20 px-3 py-2 text-xs text-muted transition-colors hover:border-brand-teal hover:text-brand-teal"
           >
             <BookOpen size={12} aria-hidden />
-            {t.viewRecap}
+            {t.eventPage}
           </a>
         )}
 
