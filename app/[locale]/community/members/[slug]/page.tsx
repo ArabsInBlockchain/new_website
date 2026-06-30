@@ -253,10 +253,7 @@ export default async function MemberProfilePage({ params }: Props) {
                   {speaking.length > 0 && (
                     <span
                       className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
-                      style={{
-                        backgroundColor: 'color-mix(in srgb, var(--color-brand-teal) 15%, transparent)',
-                        color: 'var(--color-brand-teal)',
-                      }}
+                      style={{ backgroundColor: 'var(--bg-cat-speaking)', color: 'var(--color-cat-speaking)' }}
                     >
                       <Mic2 size={11} aria-hidden />
                       {tProfile('profile.speaking')}
@@ -265,10 +262,7 @@ export default async function MemberProfilePage({ params }: Props) {
                   {organizing.length > 0 && (
                     <span
                       className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
-                      style={{
-                        backgroundColor: 'color-mix(in srgb, var(--color-brand-gold) 15%, transparent)',
-                        color: 'var(--color-brand-gold)',
-                      }}
+                      style={{ backgroundColor: 'var(--bg-cat-organizing)', color: 'var(--color-cat-organizing)' }}
                     >
                       <Star size={11} aria-hidden />
                       {tProfile('profile.organizing')}
@@ -277,10 +271,7 @@ export default async function MemberProfilePage({ params }: Props) {
                   {volunteering.length > 0 && (
                     <span
                       className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
-                      style={{
-                        backgroundColor: 'color-mix(in srgb, var(--color-brand-teal) 15%, transparent)',
-                        color: 'var(--color-brand-teal)',
-                      }}
+                      style={{ backgroundColor: 'var(--bg-cat-volunteering)', color: 'var(--color-cat-volunteering)' }}
                     >
                       <Users size={11} aria-hidden />
                       {tProfile('profile.volunteering')}
@@ -289,10 +280,7 @@ export default async function MemberProfilePage({ params }: Props) {
                   {meta.is_oss_contributor && (
                     <span
                       className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
-                      style={{
-                        backgroundColor: 'color-mix(in srgb, var(--color-brand-teal) 15%, transparent)',
-                        color: 'var(--color-brand-teal)',
-                      }}
+                      style={{ backgroundColor: 'var(--bg-cat-opensource)', color: 'var(--color-cat-opensource)' }}
                     >
                       <GitBranch size={11} aria-hidden />
                       {tProfile('profile.openSource')}
@@ -301,10 +289,7 @@ export default async function MemberProfilePage({ params }: Props) {
                   {meta.is_donor && (
                     <span
                       className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
-                      style={{
-                        backgroundColor: 'color-mix(in srgb, #F43F5E 15%, transparent)',
-                        color: '#F43F5E',
-                      }}
+                      style={{ backgroundColor: 'var(--bg-cat-donor)', color: 'var(--color-cat-donor)' }}
                     >
                       <Heart size={11} aria-hidden />
                       {tProfile('donors.badge')}
@@ -360,7 +345,7 @@ export default async function MemberProfilePage({ params }: Props) {
           <div className="mx-auto flex max-w-4xl flex-wrap justify-center gap-10 md:px-8">
             {speaking.length > 0 && (
               <div className="text-center">
-                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-brand-gold)' }}>
+                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-cat-speaking)' }}>
                   {speaking.length}
                 </p>
                 <p className="text-xs text-white/80">
@@ -370,7 +355,7 @@ export default async function MemberProfilePage({ params }: Props) {
             )}
             {organizing.length > 0 && (
               <div className="text-center">
-                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-brand-gold)' }}>
+                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-cat-organizing)' }}>
                   {organizing.length}
                 </p>
                 <p className="text-xs text-white/80">{tProfile('profile.organized')}</p>
@@ -378,7 +363,7 @@ export default async function MemberProfilePage({ params }: Props) {
             )}
             {volunteering.length > 0 && (
               <div className="text-center">
-                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-brand-gold)' }}>
+                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-cat-volunteering)' }}>
                   {volunteering.length}
                 </p>
                 <p className="text-xs text-white/80">{tProfile('profile.volunteered')}</p>
@@ -386,7 +371,7 @@ export default async function MemberProfilePage({ params }: Props) {
             )}
             {donations.length > 0 && (
               <div className="text-center">
-                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-brand-gold)' }}>
+                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-cat-donor)' }}>
                   {donations.length}
                 </p>
                 <p className="text-xs text-white/80">{tProfile('profile.supported')}</p>
@@ -394,7 +379,7 @@ export default async function MemberProfilePage({ params }: Props) {
             )}
             {meta.is_oss_contributor && (
               <div className="text-center">
-                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-brand-teal)' }}>
+                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-cat-opensource)' }}>
                   <GitBranch size={28} className="mx-auto" aria-hidden />
                 </p>
                 <p className="text-xs text-white/80">{tProfile('profile.openSource')}</p>
@@ -412,7 +397,7 @@ export default async function MemberProfilePage({ params }: Props) {
             <ActivitySection
               title={tProfile('profile.speaking')}
               subtitle={tProfile('profile.speakingSubtitle')}
-              accentColor="var(--color-brand-teal)"
+              accentColor="var(--color-cat-speaking)"
             >
               <ol className="space-y-3">
                 {speaking.map((event) => {
@@ -422,7 +407,7 @@ export default async function MemberProfilePage({ params }: Props) {
                       key={event.slug}
                       event={event}
                       badge={tProfile('profile.speaking')}
-                      accentColor="var(--color-brand-teal)"
+                      accentColor="var(--color-cat-speaking)"
                       locale={locale}
                       eventTitle={eventTitle}
                       eventLocation={eventLocation}
@@ -439,7 +424,7 @@ export default async function MemberProfilePage({ params }: Props) {
             <ActivitySection
               title={tProfile('profile.organizing')}
               subtitle={tProfile('profile.organizingSubtitle')}
-              accentColor="var(--color-brand-gold)"
+              accentColor="var(--color-cat-organizing)"
             >
               <ol className="space-y-3">
                 {organizing.map((event) => {
@@ -449,7 +434,7 @@ export default async function MemberProfilePage({ params }: Props) {
                       key={event.slug}
                       event={event}
                       badge={tProfile('contributors.roles.organizer')}
-                      accentColor="var(--color-brand-gold)"
+                      accentColor="var(--color-cat-organizing)"
                       locale={locale}
                       eventTitle={eventTitle}
                       eventLocation={eventLocation}
@@ -466,7 +451,7 @@ export default async function MemberProfilePage({ params }: Props) {
             <ActivitySection
               title={tProfile('profile.volunteering')}
               subtitle={tProfile('profile.volunteeringSubtitle')}
-              accentColor="var(--color-brand-teal)"
+              accentColor="var(--color-cat-volunteering)"
             >
               <ol className="space-y-3">
                 {volunteering.map((event) => {
@@ -476,7 +461,7 @@ export default async function MemberProfilePage({ params }: Props) {
                       key={event.slug}
                       event={event}
                       badge={tProfile('contributors.roles.volunteer')}
-                      accentColor="var(--color-brand-teal)"
+                      accentColor="var(--color-cat-volunteering)"
                       locale={locale}
                       eventTitle={eventTitle}
                       eventLocation={eventLocation}
@@ -493,14 +478,18 @@ export default async function MemberProfilePage({ params }: Props) {
             <ActivitySection
               title={tProfile('profile.openSource')}
               subtitle={tProfile('profile.openSourceSubtitle')}
-              accentColor="var(--color-brand-teal)"
+              accentColor="var(--color-cat-opensource)"
             >
               {meta.github && (
                 <a
                   href={`https://github.com/search?q=org%3AArabsInBlockchain+author%3A${meta.github}&type=pullrequests`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-btn border border-brand-teal/40 px-4 py-2.5 text-sm text-brand-teal transition-colors hover:bg-brand-teal/10"
+                  className="inline-flex items-center gap-2 rounded-btn px-4 py-2.5 text-sm transition-colors"
+                  style={{
+                    border: '1px solid color-mix(in srgb, var(--color-cat-opensource) 40%, transparent)',
+                    color: 'var(--color-cat-opensource)',
+                  }}
                 >
                   <GitBranch size={15} aria-hidden />
                   {tProfile('profile.openSourceCta')}
@@ -515,7 +504,7 @@ export default async function MemberProfilePage({ params }: Props) {
             <ActivitySection
               title={tProfile('profile.supporting')}
               subtitle={tProfile('profile.supportingSubtitle')}
-              accentColor="#F43F5E"
+              accentColor="var(--color-cat-donor)"
             >
               <ol className="space-y-3">
                 {donations.map((event) => {
@@ -525,7 +514,7 @@ export default async function MemberProfilePage({ params }: Props) {
                       key={event.slug}
                       event={event}
                       badge={tProfile('donors.badge')}
-                      accentColor="#F43F5E"
+                      accentColor="var(--color-cat-donor)"
                       locale={locale}
                       eventTitle={eventTitle}
                       eventLocation={eventLocation}

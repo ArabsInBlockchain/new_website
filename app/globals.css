@@ -68,6 +68,22 @@
   /* Volunteer badge — lighter violet text readable on dark card bg */
   --badge-volunteer-color: #9b80f0;
   --badge-volunteer-bg: rgba(59, 31, 140, 0.25);
+
+  /* Category accent colors — one unique color per contribution type */
+  --color-cat-speaking: #00d4b4;
+  --bg-cat-speaking: rgba(0, 212, 180, 0.15);
+
+  --color-cat-organizing: #f5a623;
+  --bg-cat-organizing: rgba(245, 166, 35, 0.15);
+
+  --color-cat-volunteering: #10b981;
+  --bg-cat-volunteering: rgba(16, 185, 129, 0.15);
+
+  --color-cat-opensource: #60a5fa;
+  --bg-cat-opensource: rgba(96, 165, 250, 0.15);
+
+  --color-cat-donor: #fb7185;
+  --bg-cat-donor: rgba(251, 113, 133, 0.15);
 }
 
 /* Light mode overrides — toggled by .light-mode class on <html> */
@@ -96,6 +112,20 @@
   --shadow-card: 0 2px 16px rgba(59, 31, 140, 0.08);
   --shadow-card-hover: 0 4px 24px rgba(59, 31, 140, 0.15);
   --shadow-nav: 0 1px 0 rgba(0, 0, 0, 0.08);
+  --color-cat-speaking: #008a75;
+  --bg-cat-speaking: rgba(0, 212, 180, 0.1);
+
+  --color-cat-organizing: #b87100;
+  --bg-cat-organizing: rgba(245, 166, 35, 0.1);
+
+  --color-cat-volunteering: #047857;
+  --bg-cat-volunteering: rgba(16, 185, 129, 0.1);
+
+  --color-cat-opensource: #1d4ed8;
+  --bg-cat-opensource: rgba(29, 78, 216, 0.08);
+
+  --color-cat-donor: #be123c;
+  --bg-cat-donor: rgba(190, 18, 60, 0.08);
 }
 
 /*

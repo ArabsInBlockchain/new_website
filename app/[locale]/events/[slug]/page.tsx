@@ -423,14 +423,14 @@ export default async function EventDetailPage({ params }: Props) {
           <PeopleSection
             title={tEvents('detail.speakers')}
             subtitle={tEvents('detail.speakersSubtitle')}
-            accent="var(--color-brand-teal)"
+            accent="var(--color-cat-speaking)"
             people={speakers}
             locale={locale}
           />
           <PeopleSection
             title={tEvents('detail.organizers')}
             subtitle={tEvents('detail.organizersSubtitle')}
-            accent="var(--color-brand-gold)"
+            accent="var(--color-cat-organizing)"
             people={organizers}
             locale={locale}
             profileBasePath="members"
@@ -438,7 +438,7 @@ export default async function EventDetailPage({ params }: Props) {
           <PeopleSection
             title={tEvents('detail.volunteers')}
             subtitle={tEvents('detail.volunteersSubtitle')}
-            accent="var(--color-success)"
+            accent="var(--color-cat-volunteering)"
             people={volunteers}
             locale={locale}
             profileBasePath="members"
@@ -446,7 +446,7 @@ export default async function EventDetailPage({ params }: Props) {
           <PeopleSection
             title={tEvents('detail.donors')}
             subtitle={tEvents('detail.donorsSubtitle')}
-            accent="#F43F5E"
+            accent="var(--color-cat-donor)"
             people={donors}
             locale={locale}
           />
