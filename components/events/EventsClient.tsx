@@ -66,7 +66,7 @@ export default function EventsClient({ upcoming, past, locale }: EventsClientPro
   const pastByYear = useMemo(() => {
     const map = new Map<number, EventDisplay[]>();
     filteredPast.forEach((e) => {
-      const y = new Date(e.date).getFullYear();
+      const y = parseInt(e.date.slice(0, 4), 10);
       if (!map.has(y)) map.set(y, []);
       map.get(y)!.push(e);
     });

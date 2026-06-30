@@ -54,8 +54,8 @@ export default function Logo({ height = 40, width: widthProp, className = '', li
       <Image
         src="/logo-dark.png"
         alt="Arabs in Blockchain — العرب × بلوكتشين"
-        width={714}
-        height={297}
+        width={359}
+        height={150}
         sizes={`${w}px`}
         className="hidden [.light-mode_&]:block"
         priority

@@ -40,7 +40,7 @@ export default async function NotFound() {
           <Image
             src="/logo-dark.png"
             alt="Arabs in Blockchain"
-            width={80}
+            width={192}
             height={80}
             className="mx-auto opacity-60"
           />
