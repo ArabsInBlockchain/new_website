@@ -189,13 +189,14 @@ function CtfAuthorsSection({
   const avatarXs = centerGroup.people.map((_, i) =>
     n === 1 ? CH.cx : CH.cx - ((n - 1) / 2) * avatarGap + i * avatarGap,
   );
+  const centerWords = centerGroup.trackLabel.toUpperCase().split(' ');
+
   const CA_R = 22;   // center-hex avatar radius
-  const CA_Y = 265;  // avatar y-centre inside center hex
+  // Keep 27px gap between last label baseline and avatar top, regardless of word count
+  const CA_Y = Math.max(265, 192 + (centerWords.length - 1) * 24 + 27 + CA_R);
 
   const SIDE_R = 28; // side-hex avatar radius
   const SIDE_AY = 505; // side avatar y-centre
-
-  const centerWords = centerGroup.trackLabel.toUpperCase().split(' ');
 
   return (
     <section>
