@@ -933,6 +933,321 @@
       "name": "مليح بيريم",
       "title": "المدير التقني والمؤسس الشريك في TUBU ARGE",
       "bio": "المدير التقني والمؤسس الشريك لشركة TUBU ARGE. يقود جهود البحث والتطوير على حدود تقنية البلوكتشين، بناءً لحلول بنية تحتية قابلة للتوسع ومُسهِماً في مجتمع أبحاث البلوكتشين العالمي."
+    },
+    "sam-lia": {
+      "name": "سام ليا",
+      "title": "خبير الميتافيرس",
+      "bio": ""
+    },
+    "wassim-jarkas": {
+      "name": "وسيم جرقس",
+      "title": "",
+      "bio": ""
+    },
+    "ida-kymmer": {
+      "name": "إيدا كيمر",
+      "title": "",
+      "bio": ""
+    },
+    "hassan-algarhy": {
+      "name": "حسن الجارحي",
+      "title": "",
+      "bio": ""
+    },
+    "charbel-choueh": {
+      "name": "شربل شويح",
+      "title": "",
+      "bio": ""
+    },
+    "jacob-vandersteen": {
+      "name": "جاكوب فاندرستين",
+      "title": "",
+      "bio": ""
+    },
+    "rudy-shoushany": {
+      "name": "رودي شوشاني",
+      "title": "",
+      "bio": ""
+    },
+    "omrei-abu-madi": {
+      "name": "عمري أبو مادي",
+      "title": "",
+      "bio": ""
+    },
+    "reema-diab": {
+      "name": "ريما دياب",
+      "title": "",
+      "bio": ""
+    },
+    "giorgio-torre": {
+      "name": "جورجيو توري",
+      "title": "",
+      "bio": ""
+    },
+    "jeremy-denisty": {
+      "name": "جيريمي دينستي",
+      "title": "",
+      "bio": ""
+    },
+    "federico-de-simoni": {
+      "name": "فيديريكو دي سيموني",
+      "title": "",
+      "bio": ""
+    },
+    "jane-thomason": {
+      "name": "د. جين توماسون",
+      "title": "",
+      "bio": ""
+    },
+    "haluk-gul": {
+      "name": "هالوك غول",
+      "title": "",
+      "bio": ""
+    },
+    "mohammad-yasser-tabbaa": {
+      "name": "محمد ياسر طبا",
+      "title": "",
+      "bio": ""
+    },
+    "laith-kasas": {
+      "name": "ليث كساس",
+      "title": "",
+      "bio": ""
+    },
+    "claudio-fiorillo": {
+      "name": "كلاوديو فيوريلو",
+      "title": "",
+      "bio": ""
+    },
+    "giovanni-everduin": {
+      "name": "جيوفاني إيفردوين",
+      "title": "",
+      "bio": ""
+    },
+    "erdem-dereli": {
+      "name": "إردم ديريلي",
+      "title": "",
+      "bio": ""
+    },
+    "parimal-priyadarshi": {
+      "name": "باريمال برياداراشي",
+      "title": "",
+      "bio": ""
+    },
+    "chioma-onyekelu": {
+      "name": "شيوما أونيكيلو",
+      "title": "",
+      "bio": ""
+    },
+    "asharaf-al-astal": {
+      "name": "أشرف العسطل",
+      "title": "",
+      "bio": ""
+    },
+    "christopher-quet": {
+      "name": "كريستوفر كيت",
+      "title": "",
+      "bio": ""
+    },
+    "luise-frohberg": {
+      "name": "د. لويزه فروهبرغ",
+      "title": "",
+      "bio": ""
+    },
+    "gaby-slezak": {
+      "name": "غابي سليزاك",
+      "title": "",
+      "bio": ""
+    },
+    "hasan-dayoub": {
+      "name": "حسن ديوب",
+      "title": "",
+      "bio": ""
+    },
+    "amna-usman-chaudhry": {
+      "name": "آمنة عثمان تشودري",
+      "title": "",
+      "bio": ""
+    },
+    "karnika-yashwant": {
+      "name": "كارنيكا يشوانت",
+      "title": "",
+      "bio": ""
+    },
+    "mazin-gadir": {
+      "name": "مازن قادر",
+      "title": "",
+      "bio": ""
+    },
+    "ergi-sener": {
+      "name": "إرغي شنر",
+      "title": "",
+      "bio": ""
+    },
+    "ahmet-aysan": {
+      "name": "أحمد أيسان",
+      "title": "",
+      "bio": ""
+    },
+    "ahmet-ekmel-karaman": {
+      "name": "أحمد إكمل كارامان",
+      "title": "",
+      "bio": ""
+    },
+    "king-leung": {
+      "name": "كينغ ليونغ",
+      "title": "",
+      "bio": ""
+    },
+    "mohammed-kateeb": {
+      "name": "محمد الكاتب",
+      "title": "",
+      "bio": ""
+    },
+    "fatima-abbas": {
+      "name": "فاطمة عباس",
+      "title": "",
+      "bio": ""
+    },
+    "hanane-benkhallouk": {
+      "name": "حنان بنخلوق",
+      "title": "",
+      "bio": ""
+    },
+    "zouheir-lakhdissi": {
+      "name": "زهير لخديسي",
+      "title": "",
+      "bio": ""
+    },
+    "hatem-el-shammaa": {
+      "name": "حاتم الشماع",
+      "title": "",
+      "bio": ""
+    },
+    "braa-albahr": {
+      "name": "براء البحر",
+      "title": "",
+      "bio": ""
+    },
+    "ahmed-manzoor": {
+      "name": "أحمد منظور",
+      "title": "",
+      "bio": ""
+    },
+    "ammar-manla-hasan": {
+      "name": "عمار ملا حسن",
+      "title": "",
+      "bio": ""
+    },
+    "elmustafa-mahmoud-salih": {
+      "name": "المصطفى محمود صالح",
+      "title": "",
+      "bio": ""
+    },
+    "ziad-bushra": {
+      "name": "زياد بشرى",
+      "title": "",
+      "bio": ""
+    },
+    "jim-kwok": {
+      "name": "جيم كووك",
+      "title": "",
+      "bio": ""
+    },
+    "madeeha-khan-yousafzai": {
+      "name": "ماديحة خان يوسفزاي",
+      "title": "",
+      "bio": ""
+    },
+    "fatema-bannat-wala": {
+      "name": "فاطمة بنات والا",
+      "title": "",
+      "bio": ""
+    },
+    "anju-de-alwis": {
+      "name": "د. أنجو دي ألويس",
+      "title": "",
+      "bio": ""
+    },
+    "mohammad-asghari": {
+      "name": "د. محمد أصغري",
+      "title": "",
+      "bio": ""
+    },
+    "moutaz-abojeib": {
+      "name": "د. معتز أبو جيب",
+      "title": "",
+      "bio": ""
+    },
+    "kainat-gohar": {
+      "name": "د. كانعت غوهر",
+      "title": "",
+      "bio": ""
+    },
+    "kaan-ozcelik": {
+      "name": "كان أوزجيليك",
+      "title": "",
+      "bio": ""
+    },
+    "rahma-tizzane": {
+      "name": "رحمة تيزان",
+      "title": "",
+      "bio": ""
+    },
+    "roshaan-sheikh": {
+      "name": "روشان شيخ",
+      "title": "",
+      "bio": ""
+    },
+    "diala-al-samarani": {
+      "name": "ديالا السمراني",
+      "title": "",
+      "bio": ""
+    },
+    "syed-jaffer-hussain": {
+      "name": "سيد جعفر حسين",
+      "title": "",
+      "bio": ""
+    },
+    "haiyan-alsaiyed": {
+      "name": "هيان السيد",
+      "title": "",
+      "bio": ""
+    },
+    "emna-harigua": {
+      "name": "أمنة هريقع",
+      "title": "",
+      "bio": ""
+    },
+    "ghazi-al-hashimi": {
+      "name": "غازي الهاشمي",
+      "title": "",
+      "bio": ""
+    },
+    "hussein-al-hussein": {
+      "name": "حسين الحسين",
+      "title": "",
+      "bio": ""
+    },
+    "imad-agi": {
+      "name": "عماد أجي",
+      "title": "",
+      "bio": ""
+    },
+    "b-gultekin-cetiner": {
+      "name": "أ.د. غولتيكين تشيتينر",
+      "title": "",
+      "bio": ""
+    },
+    "souhail-mssassi": {
+      "name": "سهيل مساسي",
+      "title": "",
+      "bio": ""
+    },
+    "mohannad-elkalsh": {
+      "name": "مهند الكلش",
+      "title": "",
+      "bio": ""
     }
   },
   "common": {
