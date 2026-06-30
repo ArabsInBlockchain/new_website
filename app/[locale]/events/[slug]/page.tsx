@@ -110,7 +110,7 @@ function AvatarCard({
       >
         {person.personMeta?.photo ? (
           <Image
-            src={avatarUrl(person.personMeta.photo, 160)}
+            src={avatarUrl(person.personMeta.photo, 160, person.personMeta.photo_gravity)}
             alt={person.name}
             fill
             className="object-cover"
@@ -157,6 +157,54 @@ function AvatarCard({
     );
   }
   return content;
+}
+
+function CtfAuthorsSection({
+  title,
+  subtitle,
+  groups,
+  locale,
+}: {
+  title: string;
+  subtitle: string;
+  groups: Array<{ trackLabel: string; people: PersonCard[] }>;
+  locale: string;
+}) {
+  if (groups.length === 0) return null;
+  return (
+    <section>
+      <div className="mb-6 flex items-start gap-3">
+        <div className="mt-1 h-8 w-1 shrink-0 rounded-full" style={{ backgroundColor: 'var(--color-cat-ctf)' }} aria-hidden />
+        <div>
+          <h2 className="text-xl font-extrabold text-foreground">{title}</h2>
+          <p className="mt-0.5 text-sm text-muted">{subtitle}</p>
+        </div>
+      </div>
+      <div className="space-y-8">
+        {groups.map(({ trackLabel, people }) => (
+          <div key={trackLabel}>
+            <div className="mb-3">
+              <span
+                className="rounded-badge px-2.5 py-1 text-xs font-semibold"
+                style={{ backgroundColor: 'var(--bg-cat-ctf)', color: 'var(--color-cat-ctf)' }}
+              >
+                {trackLabel}
+              </span>
+            </div>
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+              {people.map((p) => (
+                <AvatarCard
+                  key={p.slug}
+                  person={p}
+                  profileHref={`/${locale}/community/members/${p.slug}`}
+                />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }
 
 function PeopleSection({
@@ -235,12 +283,29 @@ export default async function EventDetailPage({ params }: Props) {
   const volunteers = meta.contributors
     .filter((c) => c.role_key === 'volunteer')
     .map((c) => loadPerson(c.slug, tPeople));
+  const mentors = (meta.mentors ?? []).map((s) => loadPerson(s, tPeople, 'title'));
   const donors = meta.donors.map((d) => loadPerson(d, tPeople));
+
+  const ctfAuthorGroups = (() => {
+    if (!meta.ctf_authors?.length) return [];
+    const byTrack = new Map<string, PersonCard[]>();
+    for (const { slug, track_key } of meta.ctf_authors) {
+      if (!byTrack.has(track_key)) byTrack.set(track_key, []);
+      byTrack.get(track_key)!.push(loadPerson(slug, tPeople, 'title'));
+    }
+    return [...byTrack.entries()].map(([track_key, people]) => {
+      let trackLabel = track_key;
+      try { trackLabel = tEvents(`detail.tracks.${track_key}`); } catch { /* missing */ }
+      return { trackLabel, people };
+    });
+  })();
 
   const hasPeople =
     speakers.length > 0 ||
     organizers.length > 0 ||
     volunteers.length > 0 ||
+    mentors.length > 0 ||
+    ctfAuthorGroups.length > 0 ||
     donors.length > 0;
 
   const jsonLd = {
@@ -436,12 +501,26 @@ export default async function EventDetailPage({ params }: Props) {
             profileBasePath="members"
           />
           <PeopleSection
+            title={tEvents('detail.mentors')}
+            subtitle={tEvents('detail.mentorsSubtitle')}
+            accent="var(--color-cat-opensource)"
+            people={mentors}
+            locale={locale}
+            profileBasePath="members"
+          />
+          <PeopleSection
             title={tEvents('detail.volunteers')}
             subtitle={tEvents('detail.volunteersSubtitle')}
             accent="var(--color-cat-volunteering)"
             people={volunteers}
             locale={locale}
             profileBasePath="members"
+          />
+          <CtfAuthorsSection
+            title={tEvents('detail.ctfAuthors')}
+            subtitle={tEvents('detail.ctfAuthorsSubtitle')}
+            groups={ctfAuthorGroups}
+            locale={locale}
           />
           <PeopleSection
             title={tEvents('detail.donors')}

@@ -1,0 +1,22 @@
+{
+  "slug": "arab-student-mentorship-2021",
+  "type": "online",
+  "status": "past",
+  "date": "2021-03-01",
+  "time": "",
+  "timezone": "Africa/Cairo",
+  "platform": null,
+  "conference": null,
+  "registration_url": "",
+  "recap_url": "https://arabsinblockchain.substack.com/p/announcing-the-arab-student-mentorship",
+  "photos_count": 0,
+  "banner_image": "https://substackcdn.com/image/fetch/w_1456,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fbucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com%2Fpublic%2Fimages%2Fb23869e1-aee0-41f9-89d7-1e8f348fe4ff_1000x560.png",
+  "tags": ["mentorship", "students", "education", "research", "university"],
+  "speakers": [],
+  "mentors": ["eman-herawy", "hassan-imam"],
+  "contributors": [
+    { "slug": "eman-herawy", "role_key": "organizer" }
+  ],
+  "ctf_authors": [],
+  "donors": []
+}

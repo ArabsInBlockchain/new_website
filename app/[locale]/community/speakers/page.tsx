@@ -106,7 +106,7 @@ export default async function SpeakersPage({ params }: Props) {
                   >
                     {meta?.photo ? (
                       <Image
-                        src={avatarUrl(meta.photo, 200)}
+                        src={avatarUrl(meta.photo, 200, meta?.photo_gravity)}
                         alt={name}
                         fill
                         className="object-cover"

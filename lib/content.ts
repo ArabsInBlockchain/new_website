@@ -34,7 +34,9 @@ export interface EventMeta {
   banner_image: string;
   tags: string[];
   speakers: string[];
+  mentors: string[];
   contributors: Array<{ slug: string; role_key: string }>;
+  ctf_authors: Array<{ slug: string; track_key: string }>;
   donors: string[];
 }
 
@@ -88,6 +90,7 @@ export function getAllTeamSlugs(): string[] {
 export interface PersonMeta {
   slug: string;
   photo: string;
+  photo_gravity?: string;
   twitter: string;
   linkedin: string;
   github?: string;
@@ -135,6 +138,23 @@ export function getSpeakerEventMetas(personSlug: string): EventMeta[] {
     .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 }
 
+// Events where this person appears in event.mentors[]
+export function getMentorEventMetas(personSlug: string): EventMeta[] {
+  return getAllEventSlugs()
+    .map(getEventMeta)
+    .filter((meta) => meta.mentors?.includes(personSlug))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
+// All unique person slugs who appear in any event.mentors[]
+export function getAllMentorSlugs(): string[] {
+  const slugs = new Set<string>();
+  for (const slug of getAllEventSlugs()) {
+    getEventMeta(slug).mentors?.forEach((s) => slugs.add(s));
+  }
+  return [...slugs];
+}
+
 // Events where this person appears in event.donors[]
 export function getDonorEventMetas(personSlug: string): EventMeta[] {
   return getAllEventSlugs()
@@ -177,7 +197,7 @@ export function getAllOssContributorSlugs(): string[] {
 
 // Transforms a Cloudinary URL to use face-detected square crop.
 // Passes non-Cloudinary URLs through unchanged.
-export function avatarUrl(photo: string, size = 400): string {
+export function avatarUrl(photo: string, size = 400, gravity = 'auto:face'): string {
   if (!photo || !photo.includes('res.cloudinary.com')) return photo;
-  return photo.replace('/image/upload/', `/image/upload/c_fill,g_face,w_${size},h_${size}/`);
+  return photo.replace('/image/upload/', `/image/upload/c_fill,g_${gravity},w_${size},h_${size}/`);
 }

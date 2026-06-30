@@ -103,7 +103,7 @@ export default async function DonorsPage({ params }: Props) {
                   >
                     {meta.photo ? (
                       <Image
-                        src={avatarUrl(meta.photo, 200)}
+                        src={avatarUrl(meta.photo, 200, meta.photo_gravity)}
                         alt={name}
                         fill
                         className="object-cover"

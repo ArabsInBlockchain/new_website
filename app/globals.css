@@ -84,6 +84,9 @@
 
   --color-cat-donor: #fb7185;
   --bg-cat-donor: rgba(251, 113, 133, 0.15);
+
+  --color-cat-ctf: #a78bfa;
+  --bg-cat-ctf: rgba(167, 139, 250, 0.15);
 }
 
 /* Light mode overrides — toggled by .light-mode class on <html> */
@@ -126,6 +129,9 @@
 
   --color-cat-donor: #be123c;
   --bg-cat-donor: rgba(190, 18, 60, 0.08);
+
+  --color-cat-ctf: #7c3aed;
+  --bg-cat-ctf: rgba(124, 58, 237, 0.08);
 }
 
 /*

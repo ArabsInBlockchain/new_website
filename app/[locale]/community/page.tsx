@@ -9,10 +9,12 @@ import {
   getAllSpeakerSlugs,
   getAllOssContributorSlugs,
   getAllDonorSlugs,
+  getAllMentorSlugs,
   getPersonMeta,
   getVolunteerEvents,
   getSpeakerEventMetas,
   getDonorEventMetas,
+  getMentorEventMetas,
   avatarUrl,
 } from '@/lib/content';
 
@@ -46,6 +48,7 @@ interface PersonPreview {
   slug: string;
   name: string;
   photo: string;
+  photoGravity?: string;
   count: number;
 }
 
@@ -102,7 +105,7 @@ function CategorySection({
 
       {/* Avatar grid */}
       <div className="mb-6 flex flex-wrap justify-center gap-5">
-        {preview.map(({ slug, name, photo, count }) => (
+        {preview.map(({ slug, name, photo, photoGravity, count }) => (
           <Link
             key={slug}
             href={`/${locale}/community/members/${slug}`}
@@ -119,7 +122,7 @@ function CategorySection({
               >
                 {photo ? (
                   <Image
-                    src={avatarUrl(photo, 150)}
+                    src={avatarUrl(photo, 150, photoGravity)}
                     alt={name}
                     fill
                     className="object-cover"
@@ -192,50 +195,36 @@ export default async function CommunityPage({ params }: Props) {
   function nameOf(slug: string) {
     try { return tPeople(`${slug}.name`); } catch { return slug; }
   }
-  function photoOf(slug: string) {
-    try { return getPersonMeta(slug).photo ?? ''; } catch { return ''; }
+  function metaOf(slug: string) {
+    try { return getPersonMeta(slug); } catch { return null; }
   }
 
   // Volunteers — sorted by total event count
   const volunteerSlugs = getAllVolunteerSlugs();
   const volunteers: PersonPreview[] = volunteerSlugs
-    .map((slug) => ({
-      slug,
-      name: nameOf(slug),
-      photo: photoOf(slug),
-      count: getVolunteerEvents(slug).length,
-    }))
+    .map((slug) => { const m = metaOf(slug); return { slug, name: nameOf(slug), photo: m?.photo ?? '', photoGravity: m?.photo_gravity, count: getVolunteerEvents(slug).length }; })
     .sort((a, b) => b.count - a.count);
 
   // Speakers — sorted by talk count
   const speakerSlugs = getAllSpeakerSlugs();
   const speakers: PersonPreview[] = speakerSlugs
-    .map((slug) => ({
-      slug,
-      name: nameOf(slug),
-      photo: photoOf(slug),
-      count: getSpeakerEventMetas(slug).length,
-    }))
+    .map((slug) => { const m = metaOf(slug); return { slug, name: nameOf(slug), photo: m?.photo ?? '', photoGravity: m?.photo_gravity, count: getSpeakerEventMetas(slug).length }; })
     .sort((a, b) => b.count - a.count);
 
   // OSS contributors — no event count
   const ossSlugs = getAllOssContributorSlugs();
-  const ossContributors: PersonPreview[] = ossSlugs.map((slug) => ({
-    slug,
-    name: nameOf(slug),
-    photo: photoOf(slug),
-    count: 0,
-  }));
+  const ossContributors: PersonPreview[] = ossSlugs.map((slug) => { const m = metaOf(slug); return { slug, name: nameOf(slug), photo: m?.photo ?? '', photoGravity: m?.photo_gravity, count: 0 }; });
+
+  // Mentors — sorted by events mentored
+  const mentorSlugs = getAllMentorSlugs();
+  const mentors: PersonPreview[] = mentorSlugs
+    .map((slug) => { const m = metaOf(slug); return { slug, name: nameOf(slug), photo: m?.photo ?? '', photoGravity: m?.photo_gravity, count: getMentorEventMetas(slug).length }; })
+    .sort((a, b) => b.count - a.count);
 
   // Donors — sorted by events supported
   const donorSlugs = getAllDonorSlugs();
   const donors: PersonPreview[] = donorSlugs
-    .map((slug) => ({
-      slug,
-      name: nameOf(slug),
-      photo: photoOf(slug),
-      count: getDonorEventMetas(slug).length,
-    }))
+    .map((slug) => { const m = metaOf(slug); return { slug, name: nameOf(slug), photo: m?.photo ?? '', photoGravity: m?.photo_gravity, count: getDonorEventMetas(slug).length }; })
     .sort((a, b) => b.count - a.count);
 
   const moreLabel = t('contributors.contributions');
@@ -280,6 +269,17 @@ export default async function CommunityPage({ params }: Props) {
           total={speakerSlugs.length}
           href="speakers"
           viewAllLabel={t('speakers.backToAll')}
+          countLabel={moreLabel}
+        />
+        <CategorySection
+          locale={locale}
+          title={t('mentors.title')}
+          subtitle={t('mentors.subtitle')}
+          accent="var(--color-cat-opensource)"
+          people={mentors}
+          total={mentorSlugs.length}
+          href="mentors"
+          viewAllLabel={t('mentors.backToAll')}
           countLabel={moreLabel}
         />
         <CategorySection

@@ -21,6 +21,7 @@
     "cairo"
   ],
   "speakers": [],
+  "mentors": ["yehia-tarek", "eman-herawy", "nour-elden-nader", "janna-elsheshtawy"],
   "contributors": [
     {
       "slug": "eman-herawy",
@@ -53,7 +54,21 @@
     {
       "slug": "sherief-elhamy",
       "role_key": "volunteer"
-    }
+    },
+    { "slug": "doaa-karem",     "role_key": "ctf-author" },
+    { "slug": "ahmad-alaa",     "role_key": "ctf-author" },
+    { "slug": "rahma-mohamed",  "role_key": "ctf-author" },
+    { "slug": "adham-elhawary", "role_key": "ctf-author" },
+    { "slug": "al-qaqaa",       "role_key": "ctf-author" },
+    { "slug": "frank-castle",   "role_key": "ctf-author" }
+  ],
+  "ctf_authors": [
+    { "slug": "doaa-karem",     "track_key": "genai-security" },
+    { "slug": "ahmad-alaa",     "track_key": "genai-security" },
+    { "slug": "rahma-mohamed",  "track_key": "genai-security" },
+    { "slug": "adham-elhawary", "track_key": "genai-security" },
+    { "slug": "al-qaqaa",       "track_key": "evm" },
+    { "slug": "frank-castle",   "track_key": "solana" }
   ],
   "donors": []
 }

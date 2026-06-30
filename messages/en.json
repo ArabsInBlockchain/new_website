@@ -151,6 +151,15 @@
       "volunteersSubtitle": "The epic members who showed up, rolled up their sleeves, and made it run smoothly",
       "donors": "Made Possible By",
       "donorsSubtitle": "Generous souls who believed in this event and stepped up to fund it",
+      "mentors": "The Mentors",
+      "mentorsSubtitle": "The experts who gave their time and knowledge to guide others",
+      "ctfAuthors": "The Trap Setters",
+      "ctfAuthorsSubtitle": "They built every trap, every puzzle, every hidden vulnerability. Think you can find them all?",
+      "tracks": {
+        "genai-security": "GenAI Security",
+        "evm": "EVM",
+        "solana": "Solana"
+      },
       "viewDetails": "View Details",
       "tags": "Tags"
     }
@@ -262,6 +271,12 @@
       "supportingSince": "Supporting since",
       "backToAll": "All Pillars"
     },
+    "mentors": {
+      "title": "The Mentors",
+      "subtitle": "Community experts who volunteer their time to guide students, builders, and researchers.",
+      "noMembers": "No mentors listed yet",
+      "backToAll": "All Mentors"
+    },
     "contributors": {
       "title": "Open-Source Builders",
       "subtitle": "Developers shipping real code — PRs merged, bugs squashed, and protocols deployed.",
@@ -295,7 +310,10 @@
       "talks": "Talks",
       "organized": "Organized",
       "volunteered": "Volunteered",
-      "supported": "Funded"
+      "supported": "Funded",
+      "mentoring": "Mentor",
+      "mentoringSubtitle": "Programs where they guided and supported others",
+      "mentored": "Mentored"
     }
   },
   "partners": {
@@ -356,6 +374,11 @@
   "partners_data": {},
   "team": {},
   "events_data": {
+    "arab-student-mentorship-2021": {
+      "title": "Arab Student Mentorship Program",
+      "description": "A mentorship program for Arab university students working on blockchain-based research or graduation projects. Selected teams received up to 5 direct office hours with expert mentors — with an extra 2-hour bonus for women-led or mixed-gender teams. This program is now closed.",
+      "location": "Online"
+    },
     "0xcairo-iii-security-day-2026": {
       "title": "0xCairo III: Security Day",
       "description": "A full-day security event with hands-on EVM and Solana auditing workshops, an Agentic AI Security track, and Cairo's first live Web3 CTF (Capture The Flag) competition. Limited seats — workshops and CTF available separately.",
@@ -1253,6 +1276,26 @@
       "name": "Sherief Elhamy",
       "title": "",
       "bio": ""
+    },
+    "doaa-karem": {
+      "name": "Doaa Karem",
+      "title": "AI Security Researcher & ArabGuard Co-creator",
+      "bio": "AI Security Engineer and Researcher specializing in Large Language Model (LLM) vulnerabilities and prompt injection defenses. Co-creator of \"ArabGuard,\" a pioneering dialect-aware defense framework for Arabic LLMs, with research published in IEEE ITC-Egypt. Lead designer of the GenAI Security CTF challenges at 0xCairo III."
+    },
+    "ahmad-alaa": {
+      "name": "Ahmad Alaa",
+      "title": "Cybersecurity Enthusiast | Penetration Tester",
+      "bio": "Computer Science and Artificial Intelligence graduate interested in cybersecurity, ethical hacking, Linux, and AI security."
+    },
+    "rahma-mohamed": {
+      "name": "Rahma Mohamed",
+      "title": "Mobile App Developer",
+      "bio": "Computer Science student passionate about cross-platform mobile application development with Flutter. Creating user-friendly, high-quality applications and always eager to learn new technologies."
+    },
+    "adham-elhawary": {
+      "name": "Adham Elhawary",
+      "title": "AI & Deep Learning Engineer",
+      "bio": "AI and Deep Learning Engineer specializing in Natural Language Processing (NLP)."
     }
   },
   "common": {

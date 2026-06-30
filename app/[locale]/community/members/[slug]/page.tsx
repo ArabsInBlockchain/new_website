@@ -7,13 +7,14 @@ import {
   getSpeakerEventMetas,
   getVolunteerEvents,
   getDonorEventMetas,
+  getMentorEventMetas,
   avatarUrl,
   type EventMeta,
 } from '@/lib/content';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowLeft, MapPin, Calendar, ExternalLink, User, GitBranch, Mic2, Star, Users, Heart } from 'lucide-react';
+import { ArrowLeft, MapPin, Calendar, ExternalLink, User, GitBranch, Mic2, Star, Users, Heart, GraduationCap } from 'lucide-react';
 import { formatDate } from '@/lib/utils';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://arabsinblockchain.com';
@@ -166,6 +167,7 @@ export default async function MemberProfilePage({ params }: Props) {
   const contributions = getVolunteerEvents(slug);
   const organizing = contributions.filter((c) => c.role === 'organizer').map((c) => c.eventMeta);
   const volunteering = contributions.filter((c) => c.role === 'volunteer').map((c) => c.eventMeta);
+  const mentoring = getMentorEventMetas(slug);
   const donations = getDonorEventMetas(slug);
 
   function eventInfo(event: EventMeta) {
@@ -181,6 +183,7 @@ export default async function MemberProfilePage({ params }: Props) {
     speaking.length > 0 ||
     organizing.length > 0 ||
     volunteering.length > 0 ||
+    mentoring.length > 0 ||
     meta.is_oss_contributor ||
     donations.length > 0;
 
@@ -188,6 +191,7 @@ export default async function MemberProfilePage({ params }: Props) {
     ...speaking.map((e) => e.slug),
     ...organizing.map((e) => e.slug),
     ...volunteering.map((e) => e.slug),
+    ...mentoring.map((e) => e.slug),
   ]).size;
 
   return (
@@ -215,7 +219,7 @@ export default async function MemberProfilePage({ params }: Props) {
               >
                 {meta.photo ? (
                   <Image
-                    src={avatarUrl(meta.photo, 400)}
+                    src={avatarUrl(meta.photo, 400, meta.photo_gravity)}
                     alt={name}
                     fill
                     className="object-cover"
@@ -248,7 +252,7 @@ export default async function MemberProfilePage({ params }: Props) {
               )}
 
               {/* Contribution tags */}
-              {(speaking.length > 0 || organizing.length > 0 || volunteering.length > 0 || meta.is_oss_contributor || meta.is_donor) && (
+              {(speaking.length > 0 || organizing.length > 0 || volunteering.length > 0 || mentoring.length > 0 || meta.is_oss_contributor || meta.is_donor) && (
                 <div className="flex flex-wrap justify-center gap-2 md:justify-start">
                   {speaking.length > 0 && (
                     <span
@@ -275,6 +279,15 @@ export default async function MemberProfilePage({ params }: Props) {
                     >
                       <Users size={11} aria-hidden />
                       {tProfile('profile.volunteering')}
+                    </span>
+                  )}
+                  {mentoring.length > 0 && (
+                    <span
+                      className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
+                      style={{ backgroundColor: 'var(--bg-cat-opensource)', color: 'var(--color-cat-opensource)' }}
+                    >
+                      <GraduationCap size={11} aria-hidden />
+                      {tProfile('profile.mentoring')}
                     </span>
                   )}
                   {meta.is_oss_contributor && (
@@ -369,6 +382,14 @@ export default async function MemberProfilePage({ params }: Props) {
                 <p className="text-xs text-white/80">{tProfile('profile.volunteered')}</p>
               </div>
             )}
+            {mentoring.length > 0 && (
+              <div className="text-center">
+                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-cat-opensource)' }}>
+                  {mentoring.length}
+                </p>
+                <p className="text-xs text-white/80">{tProfile('profile.mentored')}</p>
+              </div>
+            )}
             {donations.length > 0 && (
               <div className="text-center">
                 <p className="text-2xl font-extrabold" style={{ color: 'var(--color-cat-donor)' }}>
@@ -435,6 +456,33 @@ export default async function MemberProfilePage({ params }: Props) {
                       event={event}
                       badge={tProfile('contributors.roles.organizer')}
                       accentColor="var(--color-cat-organizing)"
+                      locale={locale}
+                      eventTitle={eventTitle}
+                      eventLocation={eventLocation}
+                      viewEventLabel={viewEventLabel}
+                    />
+                  );
+                })}
+              </ol>
+            </ActivitySection>
+          )}
+
+          {/* Mentoring */}
+          {mentoring.length > 0 && (
+            <ActivitySection
+              title={tProfile('profile.mentoring')}
+              subtitle={tProfile('profile.mentoringSubtitle')}
+              accentColor="var(--color-cat-opensource)"
+            >
+              <ol className="space-y-3">
+                {mentoring.map((event) => {
+                  const { eventTitle, eventLocation } = eventInfo(event);
+                  return (
+                    <EventRow
+                      key={event.slug}
+                      event={event}
+                      badge={tProfile('profile.mentoring')}
+                      accentColor="var(--color-cat-opensource)"
                       locale={locale}
                       eventTitle={eventTitle}
                       eventLocation={eventLocation}

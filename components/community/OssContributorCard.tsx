@@ -43,7 +43,7 @@ export default function OssContributorCard({ meta, name, title, locale }: Props)
           style={{ backgroundColor: 'var(--color-bg-dark)' }}
         >
           {meta.photo ? (
-            <Image src={avatarUrl(meta.photo, 200)} alt={name} fill className="object-cover" sizes="80px" />
+            <Image src={avatarUrl(meta.photo, 200, meta.photo_gravity)} alt={name} fill className="object-cover" sizes="80px" />
           ) : (
             <div
               className="flex h-full w-full items-center justify-center"

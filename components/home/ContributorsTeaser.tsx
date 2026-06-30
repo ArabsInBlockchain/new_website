@@ -77,7 +77,7 @@ export default async function ContributorsTeaser({ locale }: Props) {
                   >
                     {meta.photo ? (
                       <Image
-                        src={avatarUrl(meta.photo, 150)}
+                        src={avatarUrl(meta.photo, 150, meta.photo_gravity)}
                         alt={name}
                         fill
                         className="object-cover"
