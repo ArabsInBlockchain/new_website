@@ -18,7 +18,28 @@
     "speakers",
     "community"
   ],
-  "speakers": [],
+  "speakers": [
+    "yehia-tarek",
+    "eman-herawy",
+    "hatem-mabrouk",
+    "mohamed-behairy",
+    "kholoud-al-yami",
+    "insaf-nori",
+    "randa-al-rifai",
+    "ramy-aldamati",
+    "fadi-amroush",
+    "mohamed-taysir",
+    "hassan-imam",
+    "rabeb-ben-othmen",
+    "khawla-hassan",
+    "francis-mendoza",
+    "bianca-trovo",
+    "melih-birim",
+    "zakaria-hasaneen",
+    "marilyne-ordekian",
+    "andy-tudhope",
+    "yasmin-razack"
+  ],
   "contributors": [
     {
       "slug": "omar-osman",

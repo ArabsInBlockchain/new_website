@@ -241,7 +241,7 @@
       "subtitle": "Every local meetup, technical talk, and line of open-source code is powered entirely by this community."
     },
     "volunteers": {
-      "title":  "The Crew",
+      "title": "The Crew",
       "subtitle": "The legends who show up, roll up their sleeves, and bring every single event to life.",
       "noMembers": "No volunteers yet — be the first!",
       "backToAll": "All Crew"
@@ -740,8 +740,8 @@
     },
     "hassan-imam": {
       "name": "Hassan Imam",
-      "title": "Co-Founder @ Arabs in Blockchain",
-      "bio": "M.Sc. in International Relations from Aydin University, with a thesis on blockchain technology and the future of US power in international relations. Researcher in blockchain social impact with articles and educational videos published on the الفلاشاية platform."
+      "title": "Blockchain Social Impact Researcher",
+      "bio": "M.Sc. in International Relations from Aydin University, with a thesis on \"Blockchain Technology and the Future of US Power in International Relations\". Researcher in blockchain social impact with articles and educational videos published on the الفلاشاية platform on Facebook and YouTube."
     },
     "marilyne-ordekian": {
       "name": "Marilyne Ordekian",
@@ -888,7 +888,52 @@
       "title": "Data Scientist / X-Analyst at ILLA Holdings | Musician | People of Data | Arabs in Blockchain | Ex-Intern at Nethermind",
       "bio": "Data scientist and analyst at ILLA Holdings with a passion for music and community building. Active member of Arabs in Blockchain and People of Data communities, with previous experience as an intern at Nethermind."
     },
-    "backToAll": "All OSS Builders"
+    "backToAll": "All OSS Builders",
+    "hatem-mabrouk": {
+      "name": "Hatem Mabrouk",
+      "title": "Professor of International Business & Blockchain — Tecnológico de Monterrey",
+      "bio": "Professor specializing in international business and blockchain technology at Tecnológico de Monterrey. Bridges academic research and real-world blockchain applications, with a focus on the economic and business implications of distributed ledger technology."
+    },
+    "mohamed-behairy": {
+      "name": "Mohamed Behairy",
+      "title": "Product Manager at Capital One",
+      "bio": "Product Manager at Capital One with expertise in fintech and digital financial products. Passionate about leveraging emerging technologies including blockchain to drive innovation in the financial services sector."
+    },
+    "kholoud-al-yami": {
+      "name": "Kholoud Al-Yami",
+      "title": "Concept Senior Manager — Innovation Hub",
+      "bio": "Concept Senior Manager at a leading innovation hub, focused on fostering entrepreneurship and emerging technology adoption. Drives strategic initiatives that bridge innovation ecosystems with blockchain and Web3 opportunities."
+    },
+    "insaf-nori": {
+      "name": "Insaf Nori",
+      "title": "Blockchain Practitioner",
+      "bio": "Blockchain practitioner with a focus on education and community building in the Arab world. Advocates for accessible blockchain knowledge and supports initiatives that empower Arab-speaking communities to participate in the decentralized economy."
+    },
+    "randa-al-rifai": {
+      "name": "Randa Al-Rifai",
+      "title": "Founder — Bitcoin Blockchain Beirut Labs & Lebanese Association for Digital Transformation",
+      "bio": "Founder of Bitcoin Blockchain Beirut Labs and the Lebanese Association for Digital Transformation. A pioneer in the Lebanese and Arab blockchain ecosystem, she has been building community infrastructure and driving digital literacy since Bitcoin's early days in the region."
+    },
+    "ramy-aldamati": {
+      "name": "Ramy AlDamati",
+      "title": "Co-Founder & CSO at AlBrza",
+      "bio": "Co-Founder and Chief Strategy Officer at AlBrza. Focused on building blockchain-powered solutions and strategic frameworks that serve the Arab market, combining deep industry knowledge with a mission to accelerate Web3 adoption across the region."
+    },
+    "fadi-amroush": {
+      "name": "Dr. Fadi Amroush",
+      "title": "CTO at Niuversity",
+      "bio": "Chief Technology Officer at Niuversity, leading technology strategy at the intersection of education and blockchain. Brings extensive technical expertise to building decentralized educational platforms that empower learners across the Arab world and beyond."
+    },
+    "rabeb-ben-othmen": {
+      "name": "Rabeb Ben Othmen",
+      "title": "Blockchain Researcher",
+      "bio": "Blockchain researcher dedicated to advancing academic and applied understanding of distributed ledger technology. Her work explores the technical and societal dimensions of blockchain, contributing to the growing body of Arabic-language blockchain research."
+    },
+    "melih-birim": {
+      "name": "Melih Birim",
+      "title": "CTO & Co-Founder at TUBU ARGE",
+      "bio": "Chief Technology Officer and Co-Founder of TUBU ARGE. Leads R&D efforts at the frontier of blockchain technology, building scalable infrastructure solutions and contributing to the global blockchain research community."
+    }
   },
   "common": {
     "loading": "Loading...",
