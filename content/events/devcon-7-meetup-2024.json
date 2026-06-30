@@ -27,6 +27,10 @@
     {
       "slug": "eman-herawy",
       "role_key": "organizer"
+    },
+    {
+      "slug": "ilham-el-bouloumi",
+      "role_key": "organizer"
     }
   ],
   "donors": ["eman-herawy"]
