@@ -33,6 +33,26 @@
     {
       "slug": "nour-elden-nader",
       "role_key": "organizer"
+    },
+    {
+      "slug": "abdelrahman-ahmed",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "abdulrahman-fiala",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "abdulrahman-reda",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "kareem-akram",
+      "role_key": "volunteer"
+    },
+    {
+      "slug": "sherief-elhamy",
+      "role_key": "volunteer"
     }
   ],
   "donors": []
