@@ -138,32 +138,6 @@ export default async function SpeakersPage({ params }: Props) {
                   {events.length} {events.length === 1 ? 'Event' : 'Events'}
                 </span>
 
-                {meta && (
-                  <div className="flex gap-3">
-                    {meta.twitter && (
-                      <a
-                        href={`https://x.com/${meta.twitter}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="X / Twitter"
-                        className="text-xs text-muted transition-colors hover:text-brand-teal"
-                      >
-                        X
-                      </a>
-                    )}
-                    {meta.linkedin && (
-                      <a
-                        href={`https://linkedin.com/in/${meta.linkedin}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="LinkedIn"
-                        className="text-xs text-muted transition-colors hover:text-brand-teal"
-                      >
-                        in
-                      </a>
-                    )}
-                  </div>
-                )}
               </Link>
             ))}
           </div>
