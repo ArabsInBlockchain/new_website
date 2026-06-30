@@ -498,8 +498,8 @@
     },
     "omar-osman": {
       "name": "Omar Osman",
-      "title": "",
-      "bio": ""
+      "title": "Backend Engineer",
+      "bio": "Computer Engineering graduate from the American University in Cairo. Passionate about full-stack blockchain development and system design. Ex-Nethermind DevOps intern. Currently building a ticketing and membership Web3 system."
     },
     "hossam-elanany": {
       "name": "Hossam Elanany",
@@ -738,8 +738,38 @@
     },
     "hassan-imam": {
       "name": "Hassan Imam",
-      "title": "Blockchain Researcher & Educator",
+      "title": "Co-Founder @ Arabs in Blockchain",
       "bio": "M.Sc. in International Relations from Aydin University, with a thesis on blockchain technology and the future of US power in international relations. Researcher in blockchain social impact with articles and educational videos published on the الفلاشاية platform."
+    },
+    "marilyne-ordekian": {
+      "name": "Marilyne Ordekian",
+      "title": "Junior Lawyer & Postgraduate Researcher",
+      "bio": "Junior lawyer at the Beirut Bar Association with a taught Master's in Law and a Research Master's in Criminal Law. Her research papers are among the first academic works in the Arab region to discuss the regulation of cryptocurrencies in legal and criminal fields. Granted full funding from UCL and EPSRC to pursue a Ph.D. researching cybersecurity and regulatory aspects of cryptocurrency exchanges."
+    },
+    "zakaria-hasaneen": {
+      "name": "Zakaria Hasaneen",
+      "title": "Certified Blockchain Expert & Teaching Assistant",
+      "bio": "Certified Blockchain Expert from Blockchain Council and Blockchain Technology Researcher with over 5 years of experience in accounting. University instructor and professional trainer dedicated to improving students' skills and advancing knowledge in the blockchain space."
+    },
+    "andy-tudhope": {
+      "name": "Andy Tudhope",
+      "title": "Janitor",
+      "bio": "Finding the one thread beneath all the different stories we tell about value, and learning every day about what trust really means."
+    },
+    "yasmin-razack": {
+      "name": "Dr. Yasmin Razack",
+      "title": "Cybersecurity & Blockchain Specialist",
+      "bio": "25+ years of experience in IT, airline, and fintech industries. Headed change management divisions in a leading fintech company in the Middle East and a global airline in Dubai. Holds professional certifications including ITIL, PMP, Lean Six Sigma Black Belt, ISO 20000, CISA, and SaFE Agilist. Member of IEEE and PMI."
+    },
+    "francis-mendoza": {
+      "name": "Francis Mendoza",
+      "title": "Software Engineer at Intel",
+      "bio": "MS Student at Arizona State University specializing in Distributed Ledger Technology for IoT and Autonomous Systems Cybersecurity."
+    },
+    "bianca-trovo": {
+      "name": "Bianca Trovò",
+      "title": "PhD Researcher & Co-founder of Ants-Review",
+      "bio": "Doctoral candidate at CEA Saclay (France) and Sorbonne University researching spontaneous brain activity using EEG/MEG. Co-founded Ants-Review, a protocol for incentivizing scientific peer-reviews on Ethereum — winner of the first prize at ETH Turin 2020 hackathon. KERNEL Genesis Block Fellow (Gitcoin). Published researcher in blockchain applications for open science."
     },
     "soha-safwat": {
       "name": "Dr. Soha Safwat",
