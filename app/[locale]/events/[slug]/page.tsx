@@ -129,7 +129,7 @@ function AvatarCard({
   );
 
   const content = (
-    <div className="flex flex-col items-center gap-3 rounded-card p-4 text-center transition-all duration-300"
+    <div className="flex h-full flex-col items-center gap-3 rounded-card p-4 text-center transition-all duration-300"
       style={{
         backgroundColor: 'var(--color-card-bg)',
         border: '1px solid var(--color-card-border)',
@@ -140,7 +140,7 @@ function AvatarCard({
       <div>
         <p className="text-sm font-semibold text-foreground leading-snug">{person.name}</p>
         {person.subtitle && (
-          <p className="mt-0.5 text-xs text-muted">{person.subtitle}</p>
+          <p className="mt-0.5 text-xs text-foreground/65">{person.subtitle}</p>
         )}
       </div>
     </div>
@@ -150,7 +150,7 @@ function AvatarCard({
     return (
       <Link
         href={profileHref}
-        className="block hover:-translate-y-0.5 transition-transform duration-300"
+        className="block h-full hover:-translate-y-0.5 transition-transform duration-300"
       >
         {content}
       </Link>
@@ -171,36 +171,75 @@ function CtfAuthorsSection({
   locale: string;
 }) {
   if (groups.length === 0) return null;
+
+  const allAuthors = groups.flatMap(({ trackLabel, people }) =>
+    people.map((p) => ({ ...p, trackLabel })),
+  );
+
   return (
     <section>
       <div className="mb-6 flex items-start gap-3">
         <div className="mt-1 h-8 w-1 shrink-0 rounded-full" style={{ backgroundColor: 'var(--color-cat-ctf)' }} aria-hidden />
         <div>
           <h2 className="text-xl font-extrabold text-foreground">{title}</h2>
-          <p className="mt-0.5 text-sm text-muted">{subtitle}</p>
+          <p className="mt-0.5 text-sm text-foreground/80">{subtitle}</p>
         </div>
       </div>
-      <div className="space-y-8">
-        {groups.map(({ trackLabel, people }) => (
-          <div key={trackLabel}>
-            <div className="mb-3">
+      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+        {allAuthors.map(({ slug, personMeta, name, subtitle: role, trackLabel }) => (
+          <Link
+            key={slug}
+            href={`/${locale}/community/members/${slug}`}
+            className="group block h-full hover:-translate-y-0.5 transition-transform duration-300"
+          >
+            <div
+              className="flex h-full flex-col items-center gap-3 rounded-card p-4 text-center transition-all duration-300"
+              style={{
+                backgroundColor: 'var(--color-card-bg)',
+                border: '1px solid var(--color-card-border)',
+                boxShadow: 'var(--shadow-card)',
+              }}
+            >
+              <div
+                className="rounded-full p-0.5"
+                style={{ background: 'linear-gradient(135deg, var(--color-brand-gold), var(--color-brand-teal))' }}
+              >
+                <div
+                  className="relative h-16 w-16 overflow-hidden rounded-full"
+                  style={{ backgroundColor: 'var(--color-bg-dark)' }}
+                >
+                  {personMeta?.photo ? (
+                    <Image
+                      src={avatarUrl(personMeta.photo, 128, personMeta.photo_gravity)}
+                      alt={name}
+                      fill
+                      className="object-cover"
+                      sizes="64px"
+                    />
+                  ) : (
+                    <div
+                      className="flex h-full w-full items-center justify-center"
+                      style={{ background: 'var(--gradient-cta)' }}
+                    >
+                      <User size={24} className="text-white/60" aria-hidden />
+                    </div>
+                  )}
+                </div>
+              </div>
+              <div className="flex-1">
+                <p className="text-sm font-semibold leading-snug text-foreground">{name}</p>
+                {role && (
+                  <p className="mt-0.5 line-clamp-2 text-xs text-foreground/65">{role}</p>
+                )}
+              </div>
               <span
-                className="rounded-badge px-2.5 py-1 text-xs font-semibold"
+                className="rounded-badge px-2.5 py-0.5 text-[10px] font-semibold"
                 style={{ backgroundColor: 'var(--bg-cat-ctf)', color: 'var(--color-cat-ctf)' }}
               >
                 {trackLabel}
               </span>
             </div>
-            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-              {people.map((p) => (
-                <AvatarCard
-                  key={p.slug}
-                  person={p}
-                  profileHref={`/${locale}/community/members/${p.slug}`}
-                />
-              ))}
-            </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
@@ -229,7 +268,7 @@ function PeopleSection({
         <div className="mt-1 h-8 w-1 shrink-0 rounded-full" style={{ backgroundColor: accent }} aria-hidden />
         <div>
           <h2 className="text-xl font-extrabold text-foreground">{title}</h2>
-          <p className="mt-0.5 text-sm text-muted">{subtitle}</p>
+          <p className="mt-0.5 text-sm text-foreground/80">{subtitle}</p>
         </div>
       </div>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
@@ -484,7 +523,7 @@ export default async function EventDetailPage({ params }: Props) {
 
       {/* People sections */}
       {hasPeople && (
-        <div className="mx-auto max-w-4xl space-y-12 px-4 py-10 md:px-8">
+        <div className="mx-auto max-w-4xl space-y-16 px-4 py-10 md:px-8">
           <PeopleSection
             title={tEvents('detail.speakers')}
             subtitle={tEvents('detail.speakersSubtitle')}
@@ -499,6 +538,12 @@ export default async function EventDetailPage({ params }: Props) {
             people={organizers}
             locale={locale}
             profileBasePath="members"
+          />
+          <CtfAuthorsSection
+            title={tEvents('detail.ctfAuthors')}
+            subtitle={tEvents('detail.ctfAuthorsSubtitle')}
+            groups={ctfAuthorGroups}
+            locale={locale}
           />
           <PeopleSection
             title={tEvents('detail.mentors')}
@@ -515,12 +560,6 @@ export default async function EventDetailPage({ params }: Props) {
             people={volunteers}
             locale={locale}
             profileBasePath="members"
-          />
-          <CtfAuthorsSection
-            title={tEvents('detail.ctfAuthors')}
-            subtitle={tEvents('detail.ctfAuthorsSubtitle')}
-            groups={ctfAuthorGroups}
-            locale={locale}
           />
           <PeopleSection
             title={tEvents('detail.donors')}
