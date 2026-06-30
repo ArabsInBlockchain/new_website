@@ -256,6 +256,7 @@
       "noMembers": "No community pillars listed yet",
       "badge": "Community Pillar",
       "eventsSupported": "Events supported",
+      "eventSupported": "Event supported",
       "supportingSince": "Supporting since",
       "backToAll": "All Pillars"
     },

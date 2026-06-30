@@ -138,7 +138,7 @@ export default async function DonorsPage({ params }: Props) {
                 {/* Events count */}
                 {events.length > 0 && (
                   <p className="text-xs text-muted">
-                    {events.length} {tCommunity('donors.eventsSupported')}
+                    {events.length} {events.length === 1 ? tCommunity('donors.eventSupported') : tCommunity('donors.eventsSupported')}
                   </p>
                 )}
 
