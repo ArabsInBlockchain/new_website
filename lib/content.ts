@@ -155,6 +155,14 @@ export function getAllMentorSlugs(): string[] {
   return [...slugs];
 }
 
+// Events where this person appears in event.ctf_authors[]
+export function getCTFAuthorEventMetas(personSlug: string): EventMeta[] {
+  return getAllEventSlugs()
+    .map(getEventMeta)
+    .filter((meta) => meta.ctf_authors?.some((a) => a.slug === personSlug))
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+}
+
 // Events where this person appears in event.donors[]
 export function getDonorEventMetas(personSlug: string): EventMeta[] {
   return getAllEventSlugs()

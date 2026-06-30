@@ -20,7 +20,7 @@
     "0xcairo",
     "cairo"
   ],
-  "speakers": [],
+  "speakers": ["mohamed-abumuslim", "frank-castle", "al-qaqaa"],
   "mentors": ["yehia-tarek", "eman-herawy", "nour-elden-nader", "janna-elsheshtawy"],
   "contributors": [
     {

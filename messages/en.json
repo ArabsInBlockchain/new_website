@@ -313,7 +313,10 @@
       "supported": "Funded",
       "mentoring": "Mentor",
       "mentoringSubtitle": "Programs where they guided and supported others",
-      "mentored": "Mentored"
+      "mentored": "Mentored",
+      "ctfAuthor": "CTF Challenge Author",
+      "ctfAuthorSubtitle": "Security puzzles and traps they engineered for the community",
+      "ctfAuthored": "Challenges Built"
     }
   },
   "partners": {
@@ -750,6 +753,11 @@
       "name": "Frank Castle",
       "title": "Rust/Solana Security Auditor",
       "bio": "Professional smart contract security researcher with focused expertise in auditing Rust-based programs and decentralized infrastructure across leading blockchain ecosystems, with 2 years of experience in Solana programs auditing."
+    },
+    "mohamed-abumuslim": {
+      "name": "Mohamed AbuMuslim",
+      "title": "Security Expert",
+      "bio": "Mohamed AbuMuslim is a security researcher and offensive security engineer specializing in red teaming, penetration testing, adversarial AI, and product security. His work focuses on identifying exploitable weaknesses across web applications, APIs, cloud platforms, enterprise infrastructure, Active Directory, and AI-enabled systems. Over the years, he has worked across offensive security roles in organizations including Microsoft, PwC, and EY, contributing to security capability building and leading offensive security engagements in complex environments. Mohamed is a frequent speaker at Black Hat, DEF CON, BSides, and OWASP Cairo. He also supports the security community through speaking, education, and initiatives including AI Village, BSides Albuquerque, OWASP Cairo, and CyberDose."
     },
     "rami-khalil": {
       "name": "Rami Khalil",

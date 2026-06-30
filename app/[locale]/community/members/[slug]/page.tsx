@@ -8,6 +8,7 @@ import {
   getVolunteerEvents,
   getDonorEventMetas,
   getMentorEventMetas,
+  getCTFAuthorEventMetas,
   avatarUrl,
   type EventMeta,
 } from '@/lib/content';
@@ -168,6 +169,7 @@ export default async function MemberProfilePage({ params }: Props) {
   const organizing = contributions.filter((c) => c.role === 'organizer').map((c) => c.eventMeta);
   const volunteering = contributions.filter((c) => c.role === 'volunteer').map((c) => c.eventMeta);
   const mentoring = getMentorEventMetas(slug);
+  const ctfAuthoring = getCTFAuthorEventMetas(slug);
   const donations = getDonorEventMetas(slug);
 
   function eventInfo(event: EventMeta) {
@@ -184,6 +186,7 @@ export default async function MemberProfilePage({ params }: Props) {
     organizing.length > 0 ||
     volunteering.length > 0 ||
     mentoring.length > 0 ||
+    ctfAuthoring.length > 0 ||
     meta.is_oss_contributor ||
     donations.length > 0;
 
@@ -192,6 +195,7 @@ export default async function MemberProfilePage({ params }: Props) {
     ...organizing.map((e) => e.slug),
     ...volunteering.map((e) => e.slug),
     ...mentoring.map((e) => e.slug),
+    ...ctfAuthoring.map((e) => e.slug),
   ]).size;
 
   return (
@@ -252,7 +256,7 @@ export default async function MemberProfilePage({ params }: Props) {
               )}
 
               {/* Contribution tags */}
-              {(speaking.length > 0 || organizing.length > 0 || volunteering.length > 0 || mentoring.length > 0 || meta.is_oss_contributor || meta.is_donor) && (
+              {(speaking.length > 0 || organizing.length > 0 || volunteering.length > 0 || mentoring.length > 0 || ctfAuthoring.length > 0 || meta.is_oss_contributor || meta.is_donor) && (
                 <div className="flex flex-wrap justify-center gap-2 md:justify-start">
                   {speaking.length > 0 && (
                     <span
@@ -288,6 +292,15 @@ export default async function MemberProfilePage({ params }: Props) {
                     >
                       <GraduationCap size={11} aria-hidden />
                       {tProfile('profile.mentoring')}
+                    </span>
+                  )}
+                  {ctfAuthoring.length > 0 && (
+                    <span
+                      className="inline-flex items-center gap-1.5 rounded-badge px-3 py-1 text-xs font-semibold"
+                      style={{ backgroundColor: 'var(--bg-cat-ctf)', color: 'var(--color-cat-ctf)' }}
+                    >
+                      <GitBranch size={11} aria-hidden />
+                      {tProfile('profile.ctfAuthor')}
                     </span>
                   )}
                   {meta.is_oss_contributor && (
@@ -390,6 +403,14 @@ export default async function MemberProfilePage({ params }: Props) {
                 <p className="text-xs text-white/80">{tProfile('profile.mentored')}</p>
               </div>
             )}
+            {ctfAuthoring.length > 0 && (
+              <div className="text-center">
+                <p className="text-2xl font-extrabold" style={{ color: 'var(--color-cat-ctf)' }}>
+                  {ctfAuthoring.length}
+                </p>
+                <p className="text-xs text-white/80">{tProfile('profile.ctfAuthored')}</p>
+              </div>
+            )}
             {donations.length > 0 && (
               <div className="text-center">
                 <p className="text-2xl font-extrabold" style={{ color: 'var(--color-cat-donor)' }}>
@@ -483,6 +504,33 @@ export default async function MemberProfilePage({ params }: Props) {
                       event={event}
                       badge={tProfile('profile.mentoring')}
                       accentColor="var(--color-cat-opensource)"
+                      locale={locale}
+                      eventTitle={eventTitle}
+                      eventLocation={eventLocation}
+                      viewEventLabel={viewEventLabel}
+                    />
+                  );
+                })}
+              </ol>
+            </ActivitySection>
+          )}
+
+          {/* CTF Challenge Authoring */}
+          {ctfAuthoring.length > 0 && (
+            <ActivitySection
+              title={tProfile('profile.ctfAuthor')}
+              subtitle={tProfile('profile.ctfAuthorSubtitle')}
+              accentColor="var(--color-cat-ctf)"
+            >
+              <ol className="space-y-3">
+                {ctfAuthoring.map((event) => {
+                  const { eventTitle, eventLocation } = eventInfo(event);
+                  return (
+                    <EventRow
+                      key={event.slug}
+                      event={event}
+                      badge={tProfile('profile.ctfAuthor')}
+                      accentColor="var(--color-cat-ctf)"
                       locale={locale}
                       eventTitle={eventTitle}
                       eventLocation={eventLocation}
