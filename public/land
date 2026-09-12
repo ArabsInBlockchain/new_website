@@ -1,0 +1,1172 @@
+export default function ElevareSportsCoachFramerTemplate() {
+  return (
+    <div className="flex flex-col items-start bg-[#FFF] min-w-screen min-h-screen relative">
+      <div className="flex flex-col items-start bg-[#FFF] w-full">
+        <div className="flex min-h-[732px] flex-col items-center bg-[#FFF] w-full h-full overflow-hidden">
+          <div className="shrink-0 w-full h-[732px] overflow-hidden relative">
+            <div className="flex justify-center items-center gap-2.5 w-full h-[732px] absolute left-0 top-0 overflow-hidden">
+              <div className="flex flex-col items-start shrink-0 w-full h-[1018px] overflow-hidden"></div>
+            </div>
+            <div className="bg-linear-[180deg,rgba(84,84,84,0.00)0%,rgba(0,0,0,0.60)100%] w-full h-[435px] absolute left-0 top-[297px] overflow-hidden"></div>
+            <div className="flex py-5 px-10 flex-col justify-end items-center gap-[100px] w-full h-[732px] absolute left-0 top-0 overflow-hidden">
+              <div className="flex max-w-[1360px] flex-col justify-end items-start gap-2.5 shrink-0 w-[1360px] h-[300px] overflow-hidden">
+                <div className="flex justify-center items-center shrink-0 w-[1360px] h-[300px] overflow-hidden">
+                  <div className="flex flex-col items-start shrink-0 w-full">
+                    <p className="text-[#F8DC6C] font-inter text-[300px] font-bold leading-[300px] w-fit tracking-[-0.04em]">
+                      Sports
+                    </p>
+                  </div>
+                  <div className="flex flex-col justify-center items-start gap-10 shrink-0 w-[398px] h-[210px] overflow-hidden">
+                    <p className="text-[#FFF] font-inter text-[32px] font-medium leading-[38.4px] w-[399px] tracking-[-0.0313em]">
+                      Achieve Your Dreams with Coaching that Delivers Results!
+                    </p>
+                    <div className="flex py-3 px-6 justify-center items-center shrink-0 rounded-xl bg-[#F8DC6C] w-[157px] h-[55px]">
+                      <div className="flex justify-center items-center shrink-0 w-[109px] h-[31px] overflow-hidden">
+                        <div className="flex items-start shrink-0 w-[109px] h-[31px] overflow-hidden">
+                          <div className="flex flex-col items-start w-fit h-full">
+                            <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                              J
+                            </p>
+                          </div>
+                          <div className="flex flex-col items-start w-fit h-full">
+                            <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                              o
+                            </p>
+                          </div>
+                          <div className="flex flex-col items-start w-fit h-full">
+                            <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                              i
+                            </p>
+                          </div>
+                          <div className="flex flex-col items-start w-fit h-full">
+                            <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                              n
+                            </p>
+                          </div>
+                          <div className="shrink-0 w-1.5 h-full"></div>
+                          <div className="flex flex-col items-start w-fit h-full">
+                            <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                              N
+                            </p>
+                          </div>
+                          <div className="flex flex-col items-start w-fit h-full">
+                            <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                              o
+                            </p>
+                          </div>
+                          <div className="flex flex-col items-start w-fit h-full">
+                            <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                              w
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex py-[140px] px-[41px] flex-col justify-center items-center shrink-0 bg-[#FFF] w-full h-[1218px] overflow-hidden">
+            <div className="flex max-w-[1360px] flex-col items-start gap-20 shrink-0 w-[1360px] h-[938px]">
+              <div className="flex flex-col items-end gap-16 shrink-0 w-[1360px] h-[458px]">
+                <div className="max-w-[780px] shrink-0 w-[780px] h-[202px] relative">
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[140px] h-[68px] absolute left-3 -top-px text-right tracking-[-0.04em]">
+                    Since
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[138px] h-[68px] absolute left-40 -top-px text-right tracking-[-0.04em]">
+                    2015,
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[183px] h-[68px] absolute left-[311px] -top-px text-right tracking-[-0.04em]">
+                    Elevare
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[92px] h-[68px] absolute left-[506px] -top-px text-right tracking-[-0.04em]">
+                    has
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[172px] h-[68px] absolute left-[609px] -top-px text-right tracking-[-0.04em]">
+                    helped
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-28 h-[68px] absolute left-[84px] top-[66px] text-right tracking-[-0.04em]">
+                    over
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[174px] h-[68px] absolute left-[203px] top-[66px] text-right tracking-[-0.04em]">
+                    10,000
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[202px] h-[68px] absolute left-[386px] top-[66px] text-right tracking-[-0.04em]">
+                    athletes
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[182px] h-[68px] absolute left-[599px] top-[66px] text-right tracking-[-0.04em]">
+                    elevate
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[115px] h-[68px] absolute left-[314px] top-[134px] text-right tracking-[-0.04em]">
+                    their
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[337px] h-[68px] absolute left-[444px] top-[134px] text-right tracking-[-0.04em]">
+                    performance.
+                  </p>
+                </div>
+                <div className="flex flex-col justify-center items-start gap-2.5 shrink-0 w-[1360px] h-48 overflow-hidden">
+                  <div className="flex max-w-[448px] flex-col items-start w-[448px]">
+                    <p className="text-[#000] font-inter text-[120px] font-semibold leading-[144px] w-fit tracking-[-0.04em]">
+                      10,000+
+                    </p>
+                  </div>
+                  <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-fit tracking-[-0.0313em]">
+                    Athletes Trained Since 2010
+                  </p>
+                </div>
+              </div>
+              <div className="flex justify-between items-start shrink-0 w-[1360px] h-[400px]">
+                <div className="shrink-0 w-[414px] h-[400px] overflow-hidden relative">
+                  <div className="flex justify-center items-center gap-2.5 w-[207px] h-[200px] absolute left-0 top-0 overflow-hidden">
+                    <div className="flex flex-col items-start shrink-0 rounded-[34px] w-full h-[200px] overflow-hidden"></div>
+                  </div>
+                  <div className="flex justify-center items-center gap-2.5 rounded-[360px] w-[207px] h-[200px] absolute left-[207px] top-0 overflow-hidden">
+                    <div className="flex flex-col items-start shrink-0 rounded-[360px] w-full h-[200px] overflow-hidden"></div>
+                  </div>
+                  <div className="flex justify-center items-center gap-2.5 rounded-[360px] w-[207px] h-[200px] absolute left-0 top-[200px] overflow-hidden">
+                    <div className="flex flex-col items-start shrink-0 rounded-[360px] w-full h-[200px] overflow-hidden"></div>
+                  </div>
+                  <div className="flex justify-center items-center gap-2.5 w-[207px] h-[200px] absolute left-[207px] top-[200px] overflow-hidden">
+                    <div className="flex flex-col items-start shrink-0 rounded-[34px] w-[207px] h-[200px] overflow-hidden"></div>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-between items-start shrink-0 w-[698px] h-full">
+                  <div className="flex items-center gap-2.5 w-[698px] h-[115px]">
+                    <div className="max-w-[520px] shrink-0 w-full h-[115px] relative">
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[71px] h-[39px] absolute left-0 -top-px tracking-[-0.0313em]">
+                        Over
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[49px] h-[39px] absolute left-[77px] -top-px tracking-[-0.0313em]">
+                        the
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[65px] h-[39px] absolute left-[131px] -top-px tracking-[-0.0313em]">
+                        past
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[21px] h-[39px] absolute left-[200px] -top-px tracking-[-0.0313em]">
+                        8
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[89px] h-[39px] absolute left-[227px] -top-px tracking-[-0.0313em]">
+                        years,
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[100px] h-[39px] absolute left-[323px] -top-px tracking-[-0.0313em]">
+                        helped
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[75px] h-[39px] absolute left-[429px] -top-px tracking-[-0.0313em]">
+                        more
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[66px] h-[39px] absolute left-0 top-[38px] tracking-[-0.0313em]">
+                        than
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[101px] h-[39px] absolute left-[71px] top-[38px] tracking-[-0.0313em]">
+                        10,000
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[154px] h-[39px] absolute left-[177px] top-[38px] tracking-[-0.0313em]">
+                        individuals
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[83px] h-[39px] absolute left-[337px] top-[38px] tracking-[-0.0313em]">
+                        reach
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[67px] h-[39px] absolute left-[427px] top-[38px] tracking-[-0.0313em]">
+                        their
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[108px] h-[39px] absolute left-0 top-[76px] tracking-[-0.0313em]">
+                        athletic
+                      </p>
+                      <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-[71px] h-[39px] absolute left-28 top-[76px] tracking-[-0.0313em]">
+                        goal.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-[84px] w-[698px] h-[186px]">
+                    <div className="flex items-start gap-8 shrink-0 w-full h-[186px]">
+                      <div className="flex flex-col items-start shrink-0 w-1 h-[185px]">
+                        <div className="shrink-0 w-full h-[185px] overflow-hidden"></div>
+                      </div>
+                      <div className="flex flex-col justify-center items-start gap-4 shrink-0 w-full h-[186px] overflow-hidden">
+                        <div className="flex flex-col justify-center items-start gap-2 shrink-0 w-[179px] h-[126px] overflow-hidden">
+                          <div className="flex flex-col items-start w-[126px]">
+                            <div className="flex justify-center items-center w-fit">
+                              <div className="flex flex-col items-start w-fit">
+                                <p className="text-[#000] font-inter text-[68px] font-semibold w-fit">
+                                  12
+                                </p>
+                              </div>
+                              <div className="flex flex-col items-start w-fit">
+                                <p className="text-[#000] font-clashDisplay text-[68px] w-fit">
+                                  %
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <p className="text-[#000] font-inter text-2xl font-semibold leading-[33.6px] w-fit tracking-[-0.0417em]">
+                            Satisfaction Rate
+                          </p>
+                        </div>
+                        <div className="flex flex-col items-start w-[271px]">
+                          <p className="text-[rgba(0,0,0,0.75)] font-inter text-base leading-[22.4px] w-[271px] tracking-[-0.0625em]">
+                            Almost all of our participants report significant{" "}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-8 shrink-0 w-full h-[186px]">
+                      <div className="flex flex-col items-start shrink-0 w-1 h-[185px]">
+                        <div className="shrink-0 w-full h-[185px] overflow-hidden"></div>
+                      </div>
+                      <div className="flex flex-col justify-center items-start gap-4 shrink-0 w-full h-[186px] overflow-hidden">
+                        <div className="flex flex-col justify-center items-start gap-2 shrink-0 w-[244px] h-[126px] overflow-hidden">
+                          <div className="flex flex-col items-start w-[108px]">
+                            <div className="flex justify-center items-center w-fit">
+                              <div className="flex flex-col items-start w-fit">
+                                <p className="text-[#000] font-inter text-[68px] font-semibold w-fit">
+                                  10
+                                </p>
+                              </div>
+                              <div className="flex flex-col items-start w-fit">
+                                <p className="text-[#000] font-clashDisplay text-[68px] w-fit">
+                                  +
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <p className="text-[#000] font-inter text-2xl font-semibold leading-[33.6px] w-fit tracking-[-0.0417em]">
+                            Professinal Experience
+                          </p>
+                        </div>
+                        <div className="flex flex-col items-start w-[271px]">
+                          <p className="text-[rgba(0,0,0,0.75)] font-inter text-base leading-[22.4px] w-[271px] tracking-[-0.0625em]">
+                            Our team consists of seasoned professional with
+                            extensive{" "}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex py-[140px] px-10 flex-col justify-center items-center shrink-0 bg-[#F6F6F6] w-full h-[940px] overflow-hidden">
+            <div className="flex max-w-[1360px] items-center gap-6 shrink-0 w-[1360px] h-[660px]">
+              <div className="flex p-[41px] items-center gap-2.5 shrink-0 rounded-[24.6px] bg-[#FFF] w-full h-[660px]">
+                <div className="flex flex-col justify-between items-start shrink-0 w-full h-[578px]">
+                  <div className="shrink-0 w-[591px] h-[153px] relative">
+                    <div className="flex py-4 px-6 justify-center items-center gap-3 rounded-[16.4px] bg-[#F6F6F6] w-[189px] h-[70px] absolute left-0 top-0">
+                      <div className="flex flex-col items-start w-fit">
+                        <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-fit tracking-[-0.0313em]">
+                          Programs
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex py-4 px-6 justify-center items-center gap-3 rounded-[16.4px] bg-[#F8DC6C] w-[189px] h-[70px] absolute left-[201px] top-0">
+                      <div className="flex flex-col items-start w-fit">
+                        <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-fit tracking-[-0.0313em]">
+                          Coaches
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex py-4 px-6 justify-center items-center gap-3 rounded-[16.4px] bg-[#F6F6F6] w-[189px] h-[70px] absolute left-[402px] top-0">
+                      <div className="flex flex-col items-start w-fit">
+                        <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-fit tracking-[-0.0313em]">
+                          Nutrition
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex py-4 px-6 justify-center items-center gap-3 rounded-[16.4px] bg-[#F6F6F6] w-[189px] h-[70px] absolute left-0 top-[82px]">
+                      <div className="flex flex-col items-start w-fit">
+                        <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-fit tracking-[-0.0313em]">
+                          Support
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex py-4 px-6 justify-center items-center gap-3 rounded-[16.4px] bg-[#F6F6F6] w-[189px] h-[70px] absolute left-[201px] top-[82px]">
+                      <div className="flex flex-col items-start w-fit">
+                        <p className="text-[#000] font-inter text-[32px] font-medium leading-[38.4px] w-fit tracking-[-0.0313em]">
+                          Community
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start gap-8 shrink-0 w-[591px] h-[262px]">
+                    <div className="max-w-[516px] shrink-0 w-[516px] h-[134px] relative">
+                      <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[115px] h-[68px] absolute left-0 -top-px tracking-[-0.04em]">
+                        Why
+                      </p>
+                      <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[132px] h-[68px] absolute left-[127px] -top-px tracking-[-0.04em]">
+                        great
+                      </p>
+                      <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[230px] h-[68px] absolute left-[271px] -top-px tracking-[-0.04em]">
+                        coaching
+                      </p>
+                      <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[215px] h-[68px] absolute left-0 top-[66px] tracking-[-0.04em]">
+                        changes
+                      </p>
+                      <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[267px] h-[68px] absolute left-[229px] top-[66px] tracking-[-0.04em]">
+                        everything
+                      </p>
+                    </div>
+                    <p className="text-[rgba(0,0,0,0.75)] font-inter text-xl leading-8 w-[500px] tracking-[-0.05em]">
+                      At Elevare, we recognize that every individual is unique.
+                      That’s why we design personalized programs tailored to
+                      your abilities, schedule, and goals
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="shrink-0 w-[663px] h-[660px] overflow-hidden relative">
+                <div className="flex justify-center items-center gap-2.5 rounded-3xl w-[663px] h-[660px] absolute left-0 top-0 overflow-hidden">
+                  <div className="flex flex-col justify-center items-center shrink-0 w-full h-[786px] overflow-hidden">
+                    <div className="flex flex-col items-start shrink-0 w-fit overflow-hidden"></div>
+                  </div>
+                </div>
+                <div className="flex flex-col justify-end items-center gap-2.5 w-[615px] h-[612px] absolute left-6 top-6 overflow-hidden">
+                  <div className="flex flex-col justify-center items-start gap-10 shrink-0 w-[615px] h-[197px] overflow-hidden">
+                    <p className="text-[#FFF] font-inter text-[32px] font-medium leading-[38.4px] w-[615px] tracking-[-0.0313em]">
+                      We deliver training programs tailored to each
+                      participant’s unique needs and goals.
+                    </p>
+                    <div className="flex justify-between items-center shrink-0 w-[615px] h-20">
+                      <div className="flex items-center gap-2 shrink-0 w-[438px] h-20">
+                        <div className="flex justify-center items-center gap-2.5 shrink-0 w-20 h-20 overflow-hidden">
+                          <div className="flex flex-col items-start shrink-0 rounded-[80px] w-full h-20 overflow-hidden"></div>
+                        </div>
+                        <div className="flex flex-col justify-center items-start shrink-0 w-full h-[66px] overflow-hidden">
+                          <div className="flex flex-col items-start w-[350px]">
+                            <p className="text-[#FFF] font-inter text-2xl font-semibold leading-[33.6px] w-fit tracking-[-0.0417em]">
+                              Olivia Grant,
+                            </p>
+                          </div>
+                          <div className="flex flex-col items-start w-[350px]">
+                            <p className="text-[rgba(255,255,255,0.75)] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                              Football Coach
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex py-3 px-6 justify-center items-center shrink-0 rounded-xl bg-[#FFF] w-[177px] h-16">
+                        <div className="flex justify-center items-center shrink-0 w-[109px] h-[31px] overflow-hidden">
+                          <div className="flex items-start shrink-0 w-[109px] h-[31px] overflow-hidden">
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                J
+                              </p>
+                            </div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                o
+                              </p>
+                            </div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                i
+                              </p>
+                            </div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                n
+                              </p>
+                            </div>
+                            <div className="shrink-0 w-1.5 h-full"></div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                N
+                              </p>
+                            </div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                o
+                              </p>
+                            </div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                w
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex py-[140px] px-10 flex-col justify-center items-center gap-2.5 shrink-0 bg-[#FFF] w-full h-[1038px] overflow-hidden">
+            <div className="flex max-w-[1360px] flex-col items-start gap-16 shrink-0 w-[1360px] h-[758px]">
+              <div className="flex justify-between items-end shrink-0 w-[1360px] h-[134px]">
+                <div className="max-w-[826px] shrink-0 w-[826px] h-[134px] relative">
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[195px] h-[68px] absolute left-0 -top-px tracking-[-0.04em]">
+                    Choose
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[113px] h-[68px] absolute left-[205px] -top-px tracking-[-0.04em]">
+                    your
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[148px] h-[68px] absolute left-[329px] -top-px tracking-[-0.04em]">
+                    sport,
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[109px] h-[68px] absolute left-[485px] -top-px tracking-[-0.04em]">
+                    we’ll
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[141px] h-[68px] absolute left-[608px] -top-px tracking-[-0.04em]">
+                    guide
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[94px] h-[68px] absolute left-0 top-[66px] tracking-[-0.04em]">
+                    you
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[141px] h-[68px] absolute left-[105px] top-[66px] tracking-[-0.04em]">
+                    every
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-28 h-[68px] absolute left-[257px] top-[66px] tracking-[-0.04em]">
+                    step
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[53px] h-[68px] absolute left-[377px] top-[66px] tracking-[-0.04em]">
+                    of
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[84px] h-[68px] absolute left-[440px] top-[66px] tracking-[-0.04em]">
+                    the
+                  </p>
+                  <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[105px] h-[68px] absolute left-[532px] top-[66px] tracking-[-0.04em]">
+                    way
+                  </p>
+                </div>
+                <div className="flex py-3 px-6 justify-center items-center shrink-0 rounded-xl bg-[#FFF] w-[173px] h-[55px]">
+                  <div className="flex justify-center items-center shrink-0 w-[125px] h-[31px] overflow-hidden">
+                    <div className="flex items-start shrink-0 w-[125px] h-[31px] overflow-hidden">
+                      <div className="flex flex-col items-start w-fit h-full">
+                        <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                          V
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-start w-fit h-full">
+                        <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                          i
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-start w-fit h-full">
+                        <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                          e
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-start w-fit h-full">
+                        <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                          w
+                        </p>
+                      </div>
+                      <div className="shrink-0 w-1.5 h-full"></div>
+                      <div className="flex flex-col items-start w-fit h-full">
+                        <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                          M
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-start w-fit h-full">
+                        <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                          o
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-start w-fit h-full">
+                        <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                          r
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-start w-fit h-full">
+                        <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                          e
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-5 shrink-0 w-[1360px] h-[560px]">
+                <div className="shrink-0 rounded-3xl w-[587px] h-[560px] overflow-hidden relative">
+                  <div className="inline-flex flex-col items-start absolute left-0 top-0 overflow-hidden"></div>
+                  <div className="bg-linear-[180deg,rgba(84,84,84,0.00)0%,rgba(0,0,0,0.60)100%] w-[587px] h-[349px] absolute left-0 top-[211px] overflow-hidden"></div>
+                  <div className="flex flex-col justify-between items-start w-[539px] h-[512px] absolute left-6 top-6">
+                    <div className="flex items-center shrink-0 w-[167px] h-[46px]">
+                      <div className="flex py-3 px-6 items-center gap-2.5 shrink-0 rounded-[14.3px] bg-[rgba(0,0,0,0.16)] w-[62px] h-[45px]">
+                        <div className="flex flex-col items-start w-fit">
+                          <p className="text-[#FFF] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                            01
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex py-3 px-6 justify-center items-center shrink-0 rounded-[14.3px] bg-[rgba(0,0,0,0.16)] w-[105px] h-[46px]">
+                        <div className="flex flex-col items-start w-fit">
+                          <p className="text-[#FFF] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                            Program
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex flex-col items-start gap-3.5 shrink-0 w-[539px] h-[117px]">
+                      <div className="flex flex-col items-start w-[539px]">
+                        <p className="text-[#FFF] font-inter text-[32px] font-medium leading-[38.4px] w-fit tracking-[-0.0313em]">
+                          Running
+                        </p>
+                      </div>
+                      <p className="text-[#FFF] font-inter text-xl leading-8 w-[420px] tracking-[-0.05em]">
+                        Develop elite basketball skills, confidence, and game
+                        intelligence through structured,
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="shrink-0 rounded-3xl w-full h-[560px] overflow-hidden relative">
+                  <div className="inline-flex flex-col items-start absolute left-0 top-0 overflow-hidden"></div>
+                  <div className="bg-linear-[180deg,rgba(84,84,84,0.00)0%,rgba(0,0,0,0.60)100%] w-[331px] h-[349px] absolute left-0 top-[211px] overflow-hidden"></div>
+                  <div className="flex flex-col justify-between items-start w-[283px] h-[512px] absolute left-6 top-6">
+                    <div className="flex py-3 px-6 items-center gap-2.5 shrink-0 rounded-[14.3px] bg-[rgba(0,0,0,0.16)] w-[65px] h-[45px]">
+                      <div className="flex flex-col items-start w-fit">
+                        <p className="text-[#FFF] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                          02
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="shrink-0 rounded-3xl w-[219px] h-[560px] overflow-hidden relative">
+                  <div className="inline-flex flex-col items-start absolute left-0 top-0 overflow-hidden"></div>
+                  <div className="bg-linear-[180deg,rgba(84,84,84,0.00)0%,rgba(0,0,0,0.60)100%] w-[219px] h-[349px] absolute left-0 top-[211px] overflow-hidden"></div>
+                  <div className="flex flex-col justify-between items-start w-[171px] h-[512px] absolute left-6 top-6">
+                    <div className="flex py-3 px-6 items-center gap-2.5 shrink-0 rounded-[14.3px] bg-[rgba(0,0,0,0.16)] w-[65px] h-[45px]">
+                      <div className="flex flex-col items-start w-fit">
+                        <p className="text-[#FFF] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                          03
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="shrink-0 rounded-3xl w-[163px] h-[560px] overflow-hidden relative">
+                  <div className="inline-flex flex-col items-start absolute left-0 top-0 overflow-hidden"></div>
+                  <div className="bg-linear-[180deg,rgba(84,84,84,0.00)0%,rgba(0,0,0,0.60)100%] w-[163px] h-[349px] absolute left-0 top-[211px] overflow-hidden"></div>
+                  <div className="flex flex-col justify-between items-start w-[115px] h-[512px] absolute left-6 top-6">
+                    <div className="flex py-3 px-6 items-center gap-2.5 shrink-0 rounded-[14.3px] bg-[rgba(0,0,0,0.16)] w-[66px] h-[45px]">
+                      <div className="flex flex-col items-start w-fit">
+                        <p className="text-[#FFF] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                          04
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex py-[140px] px-10 flex-col justify-center items-center shrink-0 bg-[#FFF] w-full h-[1201px] overflow-hidden">
+            <div className="flex max-w-[1360px] flex-col items-start gap-20 shrink-0 w-[1360px] h-[921px]">
+              <div className="flex justify-between items-end shrink-0 w-[1360px] h-96">
+                <div className="flex flex-col items-start gap-5 shrink-0 w-[382px] h-44">
+                  <div className="flex items-center shrink-0 w-[382px] h-[118px] overflow-hidden relative">
+                    <div className="flex justify-center items-center gap-2.5 shrink-0 w-[118px] h-[118px] overflow-hidden">
+                      <div className="flex flex-col items-start shrink-0 rounded-[118px] w-full h-[118px] overflow-hidden"></div>
+                    </div>
+                    <div className="flex justify-center items-center gap-2.5 absolute left-[85px] w-[118px] h-[118px] overflow-hidden">
+                      <div className="flex flex-col items-start shrink-0 rounded-[118px] w-full h-[118px] overflow-hidden"></div>
+                    </div>
+                    <div className="flex justify-center items-center gap-2.5 absolute right-[89px] w-[119px] h-[118px] overflow-hidden">
+                      <div className="flex flex-col items-start shrink-0 w-full h-[118px] overflow-hidden"></div>
+                    </div>
+                    <div className="flex justify-center items-center gap-2.5 absolute right-0 w-[118px] h-[118px] overflow-hidden">
+                      <div className="flex flex-col items-start shrink-0 rounded-[118px] w-full h-[118px] overflow-hidden"></div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start w-full">
+                    <p className="text-[#959595] font-inter text-[32px] font-medium leading-[38.4px] w-fit tracking-[-0.0313em]">
+                      10k+ Athletes Review
+                    </p>
+                  </div>
+                </div>
+                <div className="flex max-w-[808px] justify-center items-start gap-2.5 shrink-0 w-[808px] h-96 overflow-hidden">
+                  <div className="max-w-[808px] shrink-0 w-full h-[202px] relative">
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[135px] h-[68px] absolute left-0 -top-px tracking-[-0.04em]">
+                      What
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[85px] h-[68px] absolute left-[147px] -top-px tracking-[-0.04em]">
+                      our
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[202px] h-[68px] absolute left-[242px] -top-px tracking-[-0.04em]">
+                      athletes
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[89px] h-[68px] absolute left-[453px] -top-px tracking-[-0.04em]">
+                      say
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[146px] h-[68px] absolute left-[556px] -top-px tracking-[-0.04em]">
+                      about
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[84px] h-[68px] absolute left-[713px] -top-px tracking-[-0.04em]">
+                      the
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[183px] h-[68px] absolute left-0 top-[66px] tracking-[-0.04em]">
+                      Elevare
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[277px] h-[68px] absolute left-[196px] top-[66px] tracking-[-0.04em]">
+                      experience
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-24 h-[68px] absolute left-[485px] top-[66px] tracking-[-0.04em]">
+                      and
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[84px] h-[68px] absolute left-[594px] top-[66px] tracking-[-0.04em]">
+                      the
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[168px] h-[68px] absolute left-0 top-[134px] tracking-[-0.04em]">
+                      results
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[184px] h-[68px] absolute left-[178px] top-[134px] tracking-[-0.04em]">
+                      they’ve
+                    </p>
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[227px] h-[68px] absolute left-[372px] top-[134px] tracking-[-0.04em]">
+                      achieved
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="flex items-center gap-5 shrink-0 w-[1360px] h-[457px]">
+                <div className="flex justify-center items-center gap-2.5 shrink-0 rounded-[34px] w-[465px] h-full overflow-hidden">
+                  <div className="flex flex-col items-start shrink-0 w-full h-[457px] overflow-hidden"></div>
+                </div>
+                <div className="flex p-[25px] flex-col justify-between items-end shrink-0 rounded-[34.8px] bg-[#F6F6F6] w-full h-[457px]">
+                  <div className="flex flex-col items-start w-[826px]">
+                    <p className="text-[#000] font-inter text-[32px] font-medium leading-[44.8px] w-[834px]">
+                      “As a beginner, I was nervous about starting a structured
+                      sports program. Elevare made the process smooth and
+                      encouraging. The step-by-step guidance, supportive
+                      community,”
+                    </p>
+                  </div>
+                  <div className="flex flex-col justify-center items-end gap-8 shrink-0 w-[826px] h-[154px]">
+                    <div className="flex justify-end items-center gap-2.5 shrink-0 w-[826px] h-[38px]">
+                      <div className="flex flex-col items-start w-fit">
+                        <p className="text-[#959595] font-inter text-[32px] font-medium leading-[38.4px] w-fit tracking-[-0.0313em]">
+                          Competitive Athlete
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex justify-end items-center gap-2.5 shrink-0 w-[178px] h-[84px]">
+                      <div className="flex pt-6 pr-9 pb-9 pl-6 items-center shrink-0 rounded-2xl bg-[#FFF] w-[84px] h-[84px]">
+                        <div className="shrink-0 w-6 h-6 overflow-hidden relative">
+                          <div className="w-3 h-3 absolute left-[18px] top-[17px]">
+                            <svg
+                              width="15"
+                              height="3"
+                              viewBox="0 0 15 3"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="w-3 h-0 absolute left-0 -top-1.5 "
+                            >
+                              <path
+                                d="M13.0244 1.0244L1.02441 1.0874"
+                                stroke="#BFBFBF"
+                                strokeWidth="2.04901"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="9"
+                              height="15"
+                              viewBox="0 0 9 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="w-1.5 h-3 absolute -left-1.5 top-0 "
+                            >
+                              <path
+                                d="M6.99364 13.0244L1.02464 7.05541L7.05664 1.02441"
+                                stroke="#BFBFBF"
+                                strokeWidth="2.04901"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex pt-6 pr-9 pb-9 pl-6 items-center shrink-0 rounded-2xl bg-[#FFF] w-[84px] h-[84px]">
+                        <div className="shrink-0 w-6 h-6 overflow-hidden relative">
+                          <div className="w-3 h-3 absolute left-1.5 top-[5px]">
+                            <svg
+                              width="15"
+                              height="3"
+                              viewBox="0 0 15 3"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="w-3 h-0 absolute left-0 top-1.5 "
+                            >
+                              <path
+                                d="M1.02441 1.08741L13.0244 1.02441"
+                                stroke="#020202"
+                                strokeWidth="2.04901"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                            <svg
+                              width="9"
+                              height="15"
+                              viewBox="0 0 9 15"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                              className="w-1.5 h-3 absolute left-1.5 top-0 "
+                            >
+                              <path
+                                d="M1.08741 1.02441L7.05641 6.99341L1.02441 13.0244"
+                                stroke="#020202"
+                                strokeWidth="2.04901"
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                              />
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="flex py-[140px] px-10 flex-col justify-center items-center gap-2.5 shrink-0 bg-[#FFF] w-full h-[948px] overflow-hidden">
+            <div className="flex max-w-[1360px] items-start gap-10 shrink-0 w-[1360px] h-[668px]">
+              <div className="flex flex-col justify-between items-start shrink-0 w-full h-full">
+                <div className="flex flex-col items-start gap-8 w-[660px] h-[138px]">
+                  <div className="flex pr-[372px] items-start gap-[15px] shrink-0 w-[660px] h-[68px]">
+                    <button className="cursor-pointer text-nowrap flex pr-px justify-center items-center w-[154px] h-[68px]">
+                      <p className="text-[#000] font-inter text-[68px] font-bold leading-[68px] w-[153px] h-[68px] tracking-[-0.015em]">
+                        Let’s
+                      </p>
+                    </button>
+                    <button className="cursor-pointer text-nowrap flex justify-center items-center w-[119px] h-[68px]">
+                      <p className="text-[#000] font-inter text-[68px] font-bold leading-[68px] w-[121px] h-[68px] tracking-[-0.015em]">
+                        talk
+                      </p>
+                    </button>
+                  </div>
+                  <div className="flex max-w-[460px] pr-[55px] items-start gap-2 shrink-0 w-[460px] h-[38px]">
+                    <button className="cursor-pointer text-nowrap flex justify-center items-center w-[49px] h-[38px]">
+                      <p className="text-[rgba(0,0,0,0.75)] font-inter text-[32px] font-medium leading-[38.4px] w-[51px] h-[39px] tracking-[-0.0313em]">
+                        Tell
+                      </p>
+                    </button>
+                    <button className="cursor-pointer text-nowrap flex flex-col justify-center items-center w-[34px] h-[38px]">
+                      <p className="text-[rgba(0,0,0,0.75)] font-inter text-[32px] font-medium leading-[38.4px] w-9 h-[39px] tracking-[-0.0313em]">
+                        us
+                      </p>
+                    </button>
+                    <button className="cursor-pointer text-nowrap flex justify-center items-center w-[82px] h-[38px]">
+                      <p className="text-[rgba(0,0,0,0.75)] font-inter text-[32px] font-medium leading-[38.4px] w-[85px] h-[39px] tracking-[-0.0313em]">
+                        about
+                      </p>
+                    </button>
+                    <button className="cursor-pointer text-nowrap flex justify-center items-center w-[65px] h-[38px]">
+                      <p className="text-[rgba(0,0,0,0.75)] font-inter text-[32px] font-medium leading-[38.4px] w-[66px] h-[39px] tracking-[-0.0313em]">
+                        your
+                      </p>
+                    </button>
+                    <button className="cursor-pointer text-nowrap flex justify-center items-center w-[143px] h-[38px]">
+                      <p className="text-[rgba(0,0,0,0.75)] font-inter text-[32px] font-medium leading-[38.4px] w-[147px] h-[39px] tracking-[-0.0313em]">
+                        intarested
+                      </p>
+                    </button>
+                  </div>
+                </div>
+                <div className="flex justify-end items-start gap-[174px] w-[660px] h-[123px]">
+                  <div className="flex flex-col items-start gap-5 shrink-0 w-full h-[118px]">
+                    <div className="flex flex-col items-start w-[243px]">
+                      <p className="text-[#959595] font-inter text-2xl font-semibold leading-[33.6px] w-fit tracking-[-0.0417em]">
+                        Location
+                      </p>
+                    </div>
+                    <p className="text-[#000] font-inter text-xl leading-8 w-[243px] tracking-[-0.05em]">
+                      152 Thatcher Road St, Mahattan, NY 10463, US
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-start gap-5 shrink-0 w-full h-[123px]">
+                    <div className="flex flex-col items-start w-[243px]">
+                      <p className="text-[#959595] font-inter text-2xl font-semibold leading-[33.6px] w-fit tracking-[-0.0417em]">
+                        Inquiry
+                      </p>
+                    </div>
+                    <div className="flex flex-col items-start gap-[5px] shrink-0 w-[243px] h-[69px]">
+                      <div className="flex flex-col items-start w-[243px]">
+                        <p className="text-[#000] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                          hello@coach.com
+                        </p>
+                      </div>
+                      <div className="flex flex-col items-start w-[243px]">
+                        <p className="text-[#000] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                          +0685689696
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="flex flex-col items-start gap-8 shrink-0 w-full h-[668px]">
+                <div className="shrink-0 w-[660px] h-[134px] relative">
+                  <div className="inline-flex justify-end items-center w-[248px] h-[67px] absolute left-0 top-0">
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[254px] h-[68px] absolute left-0 -top-px tracking-[-0.04em]">
+                      Interested
+                    </p>
+                  </div>
+                  <button className="cursor-pointer text-nowrap inline-flex flex-col justify-center items-center w-[43px] h-[67px] absolute left-[260px] top-0">
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[46px] h-[68px] absolute left-0 -top-px tracking-[-0.04em]">
+                      in
+                    </p>
+                  </button>
+                  <button className="cursor-pointer text-nowrap inline-flex pr-0.5 justify-center items-center w-[202px] h-[67px] absolute left-[316px] top-0">
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[200px] h-[68px] absolute left-0 -top-px tracking-[-0.04em]">
+                      learning
+                    </p>
+                  </button>
+                  <div className="inline-flex justify-end items-center w-[262px] h-[67px] absolute left-0 top-[67px]">
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[266px] h-[68px] absolute left-0 -top-px tracking-[-0.04em]">
+                      something
+                    </p>
+                  </div>
+                  <button className="cursor-pointer text-nowrap inline-flex justify-center items-center w-[69px] h-[67px] absolute left-[274px] top-[67px]">
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[71px] h-[68px] absolute left-0 -top-px tracking-[-0.04em]">
+                      for
+                    </p>
+                  </button>
+                  <button className="cursor-pointer text-nowrap inline-flex justify-center items-center w-[166px] h-[67px] absolute left-[356px] top-[67px]">
+                    <p className="text-[#000] font-inter text-[56px] font-medium leading-[67.2px] w-[169px] h-[68px] absolute left-0 -top-px tracking-[-0.04em]">
+                      fitness
+                    </p>
+                  </button>
+                </div>
+                <div className="flex flex-col items-start gap-5 shrink-0 w-[660px] h-[502px] overflow-hidden">
+                  <div className="flex flex-col items-start gap-2.5 shrink-0 w-[660px] h-24">
+                    <p className="text-[rgba(0,0,0,0.75)] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                      Name
+                    </p>
+                    <div className="flex py-4 px-3 items-center shrink-0 rounded-[10px] bg-[rgba(187,187,187,0.15)] w-[660px] h-[54px] overflow-hidden">
+                      <div className="flex flex-col justify-center items-start shrink-0 w-full h-[22px] overflow-hidden">
+                        <p className="text-[#959595] font-inter text-lg w-full">
+                          Jane Smith
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start gap-2.5 shrink-0 w-[660px] h-24">
+                    <p className="text-[rgba(0,0,0,0.75)] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                      Email
+                    </p>
+                    <div className="flex p-3 items-center shrink-0 rounded-[10px] bg-[rgba(187,187,187,0.15)] w-[660px] h-[54px] overflow-hidden">
+                      <div className="flex flex-col justify-center items-start shrink-0 w-full h-[30px] overflow-hidden">
+                        <p className="text-[#959595] font-inter text-lg w-full">
+                          jane@framer.com
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start gap-2.5 shrink-0 w-[660px] h-[142px]">
+                    <p className="text-[rgba(0,0,0,0.75)] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                      Email
+                    </p>
+                    <div className="flex min-h-[100px] items-center shrink-0 rounded-[10px] bg-[rgba(187,187,187,0.15)] w-[660px] h-[100px] overflow-hidden">
+                      <div className="flex min-h-[100px] p-3 flex-col items-start shrink-0 w-full h-[100px] overflow-hidden">
+                        <p className="text-[#959595] font-inter text-lg leading-[21.6px] w-full">
+                          Write a Message
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex py-4 px-0 justify-center items-center shrink-0 rounded-[10px] bg-[#000] w-[660px] h-[66px]">
+                    <div className="flex flex-col items-start w-fit">
+                      <p className="text-[#FFF] font-inter text-2xl font-medium leading-[33.6px] w-fit tracking-[-0.0417em]">
+                        Submit
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start w-[660px]">
+                    <p className="text-[rgba(0,0,0,0.75)] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                      Straighten your teeth comfortably with clear aligners or
+                      traditional braces
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="shrink-0 w-full h-[637px] overflow-hidden relative">
+            <div className="flex justify-center items-center gap-2.5 w-full h-[800px] absolute left-0 -top-[82px] overflow-hidden">
+              <div className="flex justify-center items-center shrink-0 w-full h-[800px] overflow-hidden">
+                <div className="flex flex-col items-start shrink-0 w-fit overflow-hidden"></div>
+              </div>
+            </div>
+            <div className="flex max-w-[1360px] flex-col items-center gap-20 w-[1360px] h-[537px] absolute left-[84px] top-20 overflow-hidden">
+              <div className="shrink-0 w-[642px] h-[60px] relative">
+                <div className="rounded-2xl bg-[rgba(25,25,25,0.24)] w-[648px] h-[60px] absolute -left-1 top-0"></div>
+                <div className="flex justify-center items-center w-[642px] h-[60px] absolute left-0 top-0">
+                  <div className="flex items-start gap-2.5 shrink-0 w-[642px]">
+                    <div className="flex p-4 flex-col justify-center items-start shrink-0 rounded-xl bg-[rgba(235,235,235,0.00)] w-[514px] h-[51px] overflow-hidden">
+                      <p className="text-[#F8DC6C] font-inter text-base w-full">
+                        name@email.com
+                      </p>
+                    </div>
+                    <div className="shrink-0 rounded-xl bg-[#F8DC6C] w-[118px] h-[51px]"></div>
+                  </div>
+                </div>
+              </div>
+              <div className="shrink-0 rounded-3xl w-[1360px] h-[397px] overflow-hidden relative">
+                <div className="rounded-[14.3px] bg-[rgba(0,0,0,0.44)] w-[1360px] h-[397px] absolute left-0 top-px overflow-hidden"></div>
+                <div className="flex flex-col items-start gap-8 w-[1280px] h-[317px] absolute left-10 top-10">
+                  <div className="flex justify-between items-start shrink-0 w-[1280px] h-[164px]">
+                    <div className="flex max-w-[600px] flex-col items-start gap-8 shrink-0 w-[600px] h-full">
+                      <p className="text-[#FFF] font-inter text-[32px] font-medium leading-[38.4px] w-[600px] tracking-[-0.0313em]">
+                        Join the Elevere Family and Let’s make your Coaching
+                        Journey{" "}
+                      </p>
+                      <div className="flex py-3 px-6 justify-center items-center rounded-xl bg-[#FFF] w-[157px] h-[55px]">
+                        <div className="flex justify-center items-center shrink-0 w-[109px] h-[31px] overflow-hidden">
+                          <div className="flex items-start shrink-0 w-[109px] h-[31px] overflow-hidden">
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                J
+                              </p>
+                            </div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                o
+                              </p>
+                            </div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                i
+                              </p>
+                            </div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                n
+                              </p>
+                            </div>
+                            <div className="shrink-0 w-1.5 h-full"></div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                N
+                              </p>
+                            </div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                o
+                              </p>
+                            </div>
+                            <div className="flex flex-col items-start w-fit h-full">
+                              <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                                w
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="flex items-start gap-8 shrink-0 w-[317px] h-[163px]">
+                      <div className="flex flex-col items-start gap-2.5 shrink-0 w-full h-[163px]">
+                        <div className="flex flex-col items-start w-[143px]">
+                          <p className="text-[#FFF] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                            Explore Sports
+                          </p>
+                        </div>
+                        <div className="flex flex-col items-start gap-2.5 shrink-0 w-[143px] h-[120px]">
+                          <div className="flex items-start gap-2.5 shrink-0 w-[143px] h-[22px]">
+                            <div className="flex flex-col items-start w-fit">
+                              <p className="text-[rgba(255,255,255,0.65)] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                                Course
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-2.5 shrink-0 w-[143px] h-[22px]">
+                            <div className="flex flex-col items-start w-fit">
+                              <p className="text-[rgba(255,255,255,0.65)] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                                Coach
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-2.5 shrink-0 w-[143px] h-[22px]">
+                            <div className="flex flex-col items-start w-fit">
+                              <p className="text-[rgba(255,255,255,0.65)] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                                Pricing
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-2.5 shrink-0 w-[143px] h-[22px]">
+                            <div className="flex flex-col items-start w-fit">
+                              <p className="text-[rgba(255,255,255,0.65)] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                                Blog
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex flex-col items-start gap-2.5 shrink-0 w-full h-[130px]">
+                        <div className="flex flex-col items-start w-[143px]">
+                          <p className="text-[#FFF] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                            Support
+                          </p>
+                        </div>
+                        <div className="flex flex-col items-start gap-2.5 shrink-0 w-[143px] h-[88px]">
+                          <div className="flex items-start gap-2.5 shrink-0 w-[143px] h-[22px]">
+                            <div className="flex flex-col items-start w-fit">
+                              <p className="text-[rgba(255,255,255,0.65)] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                                FAQs
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-2.5 shrink-0 w-[143px] h-[22px]">
+                            <div className="flex flex-col items-start w-fit">
+                              <p className="text-[rgba(255,255,255,0.65)] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                                Contact us
+                              </p>
+                            </div>
+                          </div>
+                          <div className="flex items-start gap-2.5 shrink-0 w-[143px] h-[22px]">
+                            <div className="flex flex-col items-start w-fit">
+                              <p className="text-[rgba(255,255,255,0.65)] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                                404
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-start shrink-0 w-[1280px] h-1">
+                    <div className="shrink-0 w-full h-1 overflow-hidden"></div>
+                  </div>
+                  <div className="flex justify-between items-end shrink-0 w-[1280px] h-[85px]">
+                    <div className="flex flex-col items-start shrink-0 w-[386px] h-[85px]">
+                      <div className="shrink-0 w-full h-[85px] overflow-hidden"></div>
+                    </div>
+                    <div className="flex items-center gap-[33px] shrink-0 w-[267px] h-[22px]">
+                      <div className="flex items-start gap-2.5 shrink-0 w-[105px] h-[22px]">
+                        <div className="flex flex-col items-start w-fit">
+                          <p className="text-[#FFF] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                            Privacy &amp; Policy
+                          </p>
+                        </div>
+                      </div>
+                      <div className="flex items-start gap-2.5 shrink-0 w-[129px] h-[22px]">
+                        <div className="flex flex-col items-start w-fit">
+                          <p className="text-[#FFF] font-inter text-base leading-[22.4px] w-fit tracking-[-0.0625em]">
+                            Terms &amp; Conditions
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex justify-center items-center gap-2.5 absolute left-[84px] top-2.5 w-[1360px] h-16 overflow-hidden">
+        <div className="flex justify-center items-center gap-2.5 shrink-0 w-full h-16 overflow-hidden">
+          <div className="flex justify-between items-center shrink-0 w-full h-16 overflow-hidden">
+            <div className="flex flex-col justify-center items-start gap-2.5 shrink-0 w-[179px] h-16">
+              <div className="flex items-center gap-3 shrink-0 w-[168px] h-[59px]">
+                <div className="flex flex-col items-start shrink-0 w-[55px] h-[55px]">
+                  <div className="shrink-0 w-full h-[55px] overflow-hidden"></div>
+                </div>
+                <div className="flex flex-col items-start w-fit">
+                  <p className="text-[#FFF] font-inter text-[32px] font-medium leading-[38.4px] w-fit tracking-[-0.0313em]">
+                    Elevare
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="flex p-1 justify-center items-center shrink-0 rounded-2xl bg-[rgba(25,25,25,0.24)] w-[505px] h-16 overflow-hidden">
+              <button className="cursor-pointer text-nowrap flex py-3 px-5 flex-col justify-center items-center gap-2.5 shrink-0 rounded-xl bg-[#FFF] w-[92px] h-14 overflow-hidden">
+                <p className="text-[#000] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                  Home
+                </p>
+              </button>
+              <button className="cursor-pointer text-nowrap flex py-3 px-5 flex-col justify-center items-center gap-2.5 shrink-0 rounded-2xl w-28 h-14 overflow-hidden">
+                <p className="text-[#FFF] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                  Courses
+                </p>
+              </button>
+              <button className="cursor-pointer text-nowrap flex py-3 px-5 flex-col justify-center items-center gap-2.5 shrink-0 rounded-2xl w-[117px] h-14 overflow-hidden">
+                <p className="text-[#FFF] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                  Coaches
+                </p>
+              </button>
+              <button className="cursor-pointer text-nowrap flex py-3 px-5 flex-col justify-center items-center gap-2.5 shrink-0 rounded-2xl w-[99px] h-14 overflow-hidden">
+                <p className="text-[#FFF] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                  Pricing
+                </p>
+              </button>
+              <button className="cursor-pointer text-nowrap flex py-3 px-5 flex-col justify-center items-center gap-2.5 shrink-0 rounded-2xl w-[78px] h-14 overflow-hidden">
+                <p className="text-[#FFF] font-inter text-xl leading-8 w-fit tracking-[-0.05em]">
+                  Blog
+                </p>
+              </button>
+            </div>
+            <div className="flex py-3 px-6 justify-center items-center shrink-0 rounded-xl bg-[#F8DC6C] w-[139px] h-full">
+              <div className="flex justify-center items-center shrink-0 w-[91px] h-[31px] overflow-hidden">
+                <div className="flex items-start shrink-0 w-[91px] h-[31px] overflow-hidden">
+                  <div className="flex flex-col items-start w-fit h-full">
+                    <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                      C
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-start w-fit h-full">
+                    <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                      o
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-start w-fit h-full">
+                    <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                      n
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-start w-fit h-full">
+                    <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                      t
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-start w-fit h-full">
+                    <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                      a
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-start w-fit h-full">
+                    <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                      c
+                    </p>
+                  </div>
+                  <div className="flex flex-col items-start w-fit h-full">
+                    <p className="text-[#000] font-inter text-[26px] font-medium leading-[31.2px] w-fit tracking-[-0.0385em]">
+                      t
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex p-5 justify-end items-start absolute top-[654px] w-full">
+        <div className="shrink-0 w-[140px] h-[38px] relative">
+          <div className="rounded-[10px] bg-[#FFF] shadow-[00.602px1.566px-1.5pxrgba(0,0,0,0.17),02.289px5.95px-3pxrgba(0,0,0,0.14),010px26px-4.5pxrgba(0,0,0,0.02)] w-[138px] h-9 absolute left-px top-px overflow-hidden"></div>
+          <div className="flex items-center gap-2.5 w-[119px] h-4 absolute left-[11px] top-[11px] relative">
+            <div className="flex flex-col justify-center items-center shrink-0 w-3 h-4">
+              <div className="shrink-0 bg-[#000] w-3 h-5"></div>
+            </div>
+            <div className="shrink-0 w-[97px] h-2.5"></div>
+            <div className="flex flex-col items-start absolute -right-[459px] -bottom-1.5 w-fit">
+              <p className="text-[#00E] font-arimo text-xs w-fit">
+                Create a free website with Framer, the website builder loved by
+                startups, designers and agencies.
+              </p>
+            </div>
+            <div className="absolute right-0 top-[3px] bg-[#000] w-[97px] h-2.5"></div>
+          </div>
+          <div className="rounded-[11px] opacity-[6%] bg-[rgba(255,255,255,0.00)] shadow-[0001px#000inset] w-[140px] h-[38px] absolute left-0 top-0"></div>
+          <div className="rounded-[11px] opacity-[4%] bg-[rgba(255,255,255,0.00)] shadow-[0001px#000inset] w-[140px] h-[38px] absolute left-0 top-0"></div>
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -1,0 +1,176 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'TheYearofHandicrafts';
+  src: url('/TheYearofHandicrafts-Regular.otf') format('opentype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/Outfit-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'thmanyah sans';
+  src: url('/TheYearofHandicrafts-Regular.otf') format('opentype'), url('/Outfit-Regular.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  --font-handicrafts: 'TheYearofHandicrafts', 'Outfit', sans-serif;
+  --font-outfit: 'TheYearofHandicrafts', 'Outfit', sans-serif;
+  --font-thmanyahsans: 'TheYearofHandicrafts', 'Outfit', sans-serif;
+  --font-manrope: 'TheYearofHandicrafts', 'Manrope', sans-serif;
+}
+
+/* Global RTL and base styles */
+html {
+  direction: rtl;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'TheYearofHandicrafts', 'Outfit', 'thmanyah sans', sans-serif;
+  direction: rtl;
+  text-align: right;
+  /* Force Arabic ligatures and contextual alternates to render properly */
+  font-feature-settings: "liga" 1, "calt" 1, "rlig" 1;
+  font-variant-ligatures: contextual;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin-slow {
+  animation: spin-slow 20s linear infinite;
+}
+
+
+/* Marquee animations for partner logo strips */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  direction: ltr;
+}
+
+.marquee-track-left {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+}
+
+.marquee-track-right {
+  display: flex;
+  width: max-content;
+  animation: scroll-right 40s linear infinite;
+}
+
+.marquee-track-left:hover,
+.marquee-track-right:hover {
+  animation-play-state: paused;
+}
+
+/* Interactive CTA Button Hover styles */
+.cta-button-interactive {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-button-interactive .arrow-icon-box {
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-interactive .arrow-svg path {
+  transition: stroke 0.3s ease;
+}
+
+.cta-button-interactive:hover {
+  background-color: #0B3231 !important;
+}
+
+.cta-button-interactive:hover span {
+  color: #C6FF77 !important;
+}
+
+.cta-button-interactive:hover .arrow-icon-box {
+  background-color: #C6FF77 !important;
+}
+
+.cta-button-interactive:hover .arrow-svg path {
+  stroke: #0B3231 !important;
+}
+
+/* Dark variant: Starts dark green, has lime icon box. On hover: turns lime, icon box turns dark green. */
+.cta-button-dark {
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-dark span {
+  transition: color 0.3s ease;
+}
+
+.cta-button-dark .arrow-icon-box {
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-dark .arrow-svg path {
+  transition: stroke 0.3s ease;
+}
+
+.cta-button-dark:hover {
+  background-color: #C6FF77 !important;
+}
+
+.cta-button-dark:hover span {
+  color: #0B3231 !important;
+}
+
+.cta-button-dark:hover .arrow-icon-box {
+  background-color: #0B3231 !important;
+}
+
+.cta-button-dark:hover .arrow-svg path {
+  stroke: #ffffff !important;
+}
